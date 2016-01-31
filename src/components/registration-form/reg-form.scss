@@ -1,0 +1,32 @@
+@import '../../../styles/foundation/settings';
+
+.form-item {
+  &.required {
+    label::after {
+      content: ' *';
+      color: $alert-color;
+    }
+  }
+  &.error {
+    input {
+      border-color: $alert-color;
+      box-shadow: none;
+    }
+    input[type='checkbox'] {
+      outline: 1px solid $alert-color;
+    }
+    select {
+      border-color: $alert-color;
+    }
+  }
+  .validation-message {
+    color: $alert-color;
+  }
+}
+
+body.direction-rtl .form-item .validation-message{
+    text-align: left;
+}
+body.direction-ltr .form-item .validation-message{
+    text-align: right;
+}

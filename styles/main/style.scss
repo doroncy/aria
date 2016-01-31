@@ -1,0 +1,91 @@
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+/* fullscreen setup */
+html, body {
+  /* give this to all tags from html to .fullscreen */
+  height:100%;
+}
+body {
+  margin:0;
+  text-align:center;
+}
+#root {
+  height:100%;
+}
+
+.bg1 {
+  background-image: url('../../assets/images/bg1.jpg');
+  height: 100%;
+}
+.bg2 {
+  background-image: url('../../assets/images/bg2.jpg');
+  height: 100%;
+}
+
+.content-box {
+  opacity:0.6;
+  padding:5px 10px;
+  &.content-box-light {
+    background-color: #fff;
+    .content-box-title {
+      color: black;
+    }
+  }
+  &.content-box-dark {
+    background-color: black;
+    .content-box-title {
+      color: #fff;
+    }
+  }
+  .content-box-title {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    text-transform: uppercase;
+    text-align: center;
+    //font-size:2em;
+  }
+}
+
+/* content centering styles */
+.content-a {
+	display:table;
+}
+.content-b {
+	display:table-cell;
+    position:relative;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.animated-fast {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
