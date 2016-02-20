@@ -1,3 +1,27 @@
+$text-color: black;
+$gold-color: #aba26e;
+
+@import './fonts';
+@import '../../node_modules/foundation-sites/scss/foundation';
+
+//fonts
+.font-light {
+  font-family: 'Montserrat-Light', Arial;
+}
+.font-Regular {
+  font-family: 'Montserrat-Regular', Arial;
+}
+.font-ExBold {
+  font-family: 'Montserrat-ExBold', Arial;
+}
+.font-SemiBold {
+  font-family: 'Montserrat-SemiBold', Arial;
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
+
 /* background setup */
 .background-1 {
     background-repeat:no-repeat;
@@ -15,23 +39,19 @@
     transition: all 0.6s;
   }
 }
-
-.bg1 {
-  background-image: url('../../assets/images/Home_ARIA01.jpg');
+.aria-logo {
+  background-image: url('../../assets/icons/Logo_head_B.svg');
 }
-.bg2 {
-  background-image: url('../../assets/images/Home_ARIA02.jpg');
+.upstairs-logo-b {
+  background-image: url('../../assets/icons/UPSTAIRS_B.png');
+  max-width: 250px;
+  margin-top: 18px
 }
-.bg3 {
-  background-image: url('../../assets/images/Home_ARIA03.jpg');
+.downstairs-logo-b {
+  background-image: url('../../assets/icons/DOWNSTAIRS_B.png');
+  max-width: 350px;
+  margin-top: 20px
 }
-.bg4 {
-  background-image: url('../../assets/images/Home_ARIA04.jpg');
-}
-.bg5 {
-  background-image: url('../../assets/images/Home_ARIA05.jpg');
-}
-
 
 /* fullscreen setup */
 html, body {
@@ -41,7 +61,6 @@ html, body {
 body {
   margin:0;
   text-align:center;
-  border: 10px solid black;
   font-family: 'Montserrat-Regular', Arial;
 }
 #root {
@@ -50,9 +69,43 @@ body {
 .height100 {
   height:100%;
 }
+.page-wrap {
+  height:100vh;
+  overflow: hidden;
+  &.theme-B {
+    border: 10px solid black;
+  }
+  &.theme-W {
+    border: 10px solid white;
+  }
+}
+.social-media-btn {
+  width: 40px;
+  height: 40px;
+  &.instagram-btn {
+    padding: 8px !important;
+  }
+  &.facebook-btn {
+    padding: 8px 10px 8px 14px !important;
+  }
+}
 
-
+.main-container {
+  height: 50vh;
+  overflow-y: auto;
+  &.fade-bottom::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.7)90%,#fff);
+  }
+}
 .content-box {
+  position: relative;
   opacity:0.85;
   padding:5px 10px;
   background-color: #fff;
@@ -60,8 +113,55 @@ body {
   border: 2px solid #aba26e;
   margin:2px;
   cursor: pointer;
+  &.dark {
+    background-color: #000;
+    color:#fff;
+  }
   &:hover {
     background-color: #aba26e;
+    color:#fff;
+  }
+  &.content-box-no-hover {
+    cursor: default;
+  }
+  &.content-box-no-hover:hover {
+    background-color: #fff;
+    color: black;
+  }
+  &.content-box-no-hover.dark:hover {
+    background-color: #000;
+    color:#fff;
+  }
+  &.content-box-page {
+    border: none;
+    padding:60px;
+    height: 60vh;
+    overflow: auto;
+    .icon-logo {
+      max-width:170px;
+      max-height: 200px;
+      margin-top: 20px;
+    }
+    .page-title {
+      text-transform: uppercase;
+      font-size:1.2em;
+      letter-spacing: 0.8px;
+    }
+    .page-text {
+      font-size:1em;
+      padding-top:30px;
+      text-align: center;
+    }
+    @include breakpoint(small down) {
+      padding: 20px 10px;
+    }
+  }
+
+  &:last-child {
+    margin-right:0;
+  }
+  &:first-child {
+    margin-left:0;
   }
 
   &.cb-big {
@@ -85,8 +185,8 @@ body {
     height: 52px;
   }
   &.cb-small-cube {
-    width: 52px;
-    height: 52px;
+    width: 42px;
+    height: 42px;
     .center-icon {
       margin: 0 auto;
       margin-top:4px;
@@ -103,13 +203,18 @@ body {
     padding: 0;
     margin: 0;
     opacity: 1;
-    font-size: 3em;
+    font-size: 2.4em;
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     &.content-box-title-small {
-      font-size: 1.5em;
+      font-size: 1em;
+      margin-top: 2px;
+      @include breakpoint(small down) {
+        font-size: 0.8em;
+      }
     }
+
   }
 
   .content-box-subtitle {
@@ -123,33 +228,109 @@ body {
   }
 }
 
+.content-page-wrap {
+  padding-top:200px;
+  .action-btn-wrap {
+    position: relative;
+    .action-btn-inner {
+      position: absolute;
+      left:-1px;
+      right:58px;
+    }
+    .mail-btn {
+      position: absolute;
+      right: 0;
+      padding: 8px 5px;
+    }
+  }
+}
 .logo-head {
   position: absolute;
-  top:10px;
-  left:50%;
-  margin-left:-128px;
+  top: -12px;
+  left: 50%;
+  margin-left: -80px;
   z-index: 9999999;
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+    margin-left:-127px;
+  }
 }
+
+a {
+  width: inherit;
+  height: inherit;
+  color: $text-color;
+  &:hover, &:active {
+    color: $text-color;
+  }
+}
+.margin-top {
+  margin-top: 40px;
+}
+.no-margin-right {
+  margin-right:0;
+}
+.no-margin-left {
+  margin-left:0;
+}
+.no-padding-left {
+  padding-left: 0;
+}
+.no-padding-right {
+  padding-right: 0;
+}
+.small-padding-right {
+  padding-right:3px;
+}
+.small-padding-left {
+  padding-left:3px;
+}
+.lg-padding {
+  padding:50px;
+}
+.centered {
+  margin: 0 auto;
+}
+
+.content-box-btn{
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #aba26e;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transform: scale3d(0.7, 1, 1);
+    transform: scale3d(0.7, 1, 1);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  }
+  &:hover::before {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+}
+
 // icons
 .SVGIcon {
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-size: contain;
 
   /* fix webkit/blink poor rendering issues */
   transform: translate3d(0,0,0);
 }
 
-
-
-// font-family-monospace
-@font-face {
-  font-family: 'Montserrat-Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: url('Montserrat-Regular.eot');
-  src: url('Montserrat-Regular.ttf') format('truetype');
-}
 
 // Animation
 .animated-fast {

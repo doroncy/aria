@@ -1,13 +1,119 @@
-.upstairs-box {
+@import '../../../node_modules/foundation-sites/scss/foundation';
+
+.home_bg1 {
+  background-image: url('../../../assets/images/home/home_1.jpg');
+}
+.home_bg2 {
+  background-image: url('../../../assets/images/home/home_2.jpg');
+}
+.home_bg3 {
+  background-image: url('../../../assets/images/home/home_3.jpg');
+}
+.home_bg4 {
+  background-image: url('../../../assets/images/home/home_4.jpg');
+}
+.home_bg5 {
+  background-image: url('../../../assets/images/home/home_5.jpg');
+}
+
+.home-btns-wrap {
+  padding-top: 200px;
+
+  .home-btn {
+    max-width:400px;
+    height:121px;
+    margin:0 auto;
+
+    // @include breakpoint(small down) {
+    //   width:320px;
+    //   height:90px;
+    // }
+  }
+  .action-btn-wrap {
+    max-width:400px;
+    margin:0 auto;
+
+    .table-btn {
+      width: 312px;
+      height: 40px;
+    }
+
+    // @include breakpoint(small down) {
+    //   width:320px;
+    //   font-size:0.9em !important;
+    //   .table-btn {
+    //     width: 228px;
+    //     height: 42px;
+    //   }
+    //   .social-media-btn {
+    //     width: 42px;
+    //     height: 42px;
+    //   }
+    // }
+  }
+}
+.bottom-btns {
   position: absolute;
-  top: 30%;
-  left: 50%;
-  margin-left: -249px;
+  bottom:60px;
+  width:400px;
+  left:50%;
+  margin-left:-200px;
+
+  .bottom-btn {
+    height:42px;
+  }
+  .bottom-btn-big {
+    height:84px;
+  }
+  // @include breakpoint(small down) {
+  //   width:320px;
+  //   margin-left:-160px;
+  // }
+
+}
+
+.footer-wrap {
+  position: absolute;
+  bottom:20px;
+  left:20px;
+  right:20px;
+
+  .aria-copy {
+    text-align: left;
+    @include breakpoint(small down) {
+      text-align: center;
+    }
+  }
+  .done-by {
+    text-align: right;
+    @include breakpoint(small down) {
+      text-align: center;
+    }
+  }
+  .footer-text {
+    color:#fff;
+    font-size:10px;
+  }
 }
 
 .downstairs-box {
+  padding-top: 30px;
+}
+.overlay-toggle-btn {
+  width: 80px;
+  height: 80px;
   position: absolute;
-  top: 60%;
-  left: 50%;
-  margin-left: -249px;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  border: none;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 99999999;
+}
+
+.home-moments-link {
+  max-width: 120px;
+  margin: 0 auto;
 }
