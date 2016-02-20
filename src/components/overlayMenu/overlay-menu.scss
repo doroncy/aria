@@ -1,0 +1,79 @@
+.overlay-corner.open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+}
+.overlay-corner {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(50px) translateX(50px);
+    transform: translateY(50px) translateX(50px);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
+}
+.overlay {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0,0,0,0.9);
+    z-index: 999;
+}
+.overlay nav {
+    text-align: center;
+    position: absolute;;
+    top: 50%;
+    left: 50%;
+    height: 60%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+.overlay ul li {
+    display: block;
+    margin-bottom: 10px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      color: #aba26e;
+      border-bottom: 2px solid #aba26e;
+      margin-bottom: 8px;
+    }
+}
+.overlay ul li .menu-item-btn {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Light', Arial;
+    display: block;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.overlay-social-links {
+  height: 30px;
+  border: none !important;
+  .SVGIcon {
+    width:42px;
+    margin:15px;
+    display: inline-block;
+  }
+  .SVGIcon.icon-icon_SOUNDCLOUDE {
+    width:46px;
+  }
+}
+.menu-btn-address {
+  padding-top:20px;
+  cursor: default;
+}
