@@ -46,13 +46,15 @@ and take part at your Special moments.`
                   </div>
                   <div className="small-6 columns xs-padding-sides">
                     <div className="content-box table-btn dark">
-                      <div className="content-box-title content-box-title-small">Get a gift card</div>
+                      <a href="https://buyme.co.il/gift-card/364463#!/?display=money" target="_blank">
+                        <div className="content-box-title content-box-title-small">Get a gift card</div>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="content-box dark social-media-btn mail-btn">
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="mailto:orenheknin@gmail.com" target="_blank">
                   <div className="SVGIcon icon-icon_mail_G"></div>
                 </a>
               </div>

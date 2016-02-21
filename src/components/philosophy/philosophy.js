@@ -42,13 +42,13 @@ export default class Philosophy extends Component {
                     <div className="content-box table-btn">
                       <a href="https://buyme.co.il/gift-card/364463#!/?display=money" target="_blank">
                         <div className="content-box-title content-box-title-small">Get a gift card</div>
-                      </a>                      
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="content-box social-media-btn mail-btn">
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="mailto:orenheknin@gmail.com" target="_blank">
                   <div className="SVGIcon icon-icon_mail"></div>
                 </a>
               </div>
