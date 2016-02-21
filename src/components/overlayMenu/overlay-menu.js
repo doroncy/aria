@@ -54,11 +54,10 @@ export default class OverlayMenu extends Component {
                 <div className="SVGIcon icon-icon_SOUNDCLOUDE"></div>
               </a>
             </li>
-            <li>
-              <div className="menu-btn-address">66 Nachalat Binyamin st. Tel-Aviv</div>
-            </li>
           </ul>
+          <div className="menu-btn-address">66 Nachalat Binyamin st. Tel-Aviv</div>         
         </nav>
+
       </div>
     );
   }

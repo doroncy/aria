@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import style from './tripping.scss';
+import ClubGiftsBtns from '../page-clubs-gifts-btns/club-gifts-btns';
 
 export default class Team extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ and outdoor spaces.
     return(
       <div className={`animated fadeIn height100 background background-fade ${this.pageData.bg}`}>
         <div className="row content-page-wrap">
-          <div className="small-10 columns small-centered">
+          <div className="small-12 medium-10 columns small-centered">
             <div className="row">
               <div className="small-12 columns small-centered">
                 <div className="row content-box content-box-no-hover content-box-page">
@@ -32,10 +33,10 @@ and outdoor spaces.
                     <p className="page-text font-light">{this.pageData.text}</p>
                     <div className="margin-top">
                       <div className="row">
-                        <div className="small-8 columns font-SemiBold all-caps">
+                        <div className="small-12 large-8 columns font-SemiBold all-caps input-label">
                           <label className="text-left middle">Enter code to see more:</label>
                         </div>
-                        <div className="small-4 columns">
+                        <div className="small-12 large-4 columns">
                           <input type="text" className="tripping-code-input" />
                         </div>
                       </div>
@@ -44,29 +45,7 @@ and outdoor spaces.
                 </div>
               </div>
             </div>
-            <div className="action-btn-wrap">
-              <div className="action-btn-inner">
-                <div className="row">
-                  <div className="small-6 columns small-padding-right">
-                    <div className="content-box table-btn">
-                      <div className="content-box-title content-box-title-small">Join the Aria Moments club</div>
-                    </div>
-                  </div>
-                  <div className="small-6 columns xs-padding-sides">
-                    <div className="content-box table-btn">
-                      <a href="https://buyme.co.il/gift-card/364463#!/?display=money" target="_blank">
-                        <div className="content-box-title content-box-title-small">Get a gift card</div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="content-box social-media-btn mail-btn">
-                <a href="mailto:orenheknin@gmail.com" target="_blank">
-                  <div className="SVGIcon icon-icon_mail"></div>
-                </a>
-              </div>
-            </div>
+            <ClubGiftsBtns></ClubGiftsBtns>
           </div>
         </div>
       </div>

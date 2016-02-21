@@ -1,3 +1,5 @@
+@import '../../../node_modules/foundation-sites/scss/foundation';
+
 .overlay-corner.open {
     opacity: 1;
     visibility: visible;
@@ -25,12 +27,17 @@
 }
 .overlay nav {
     text-align: center;
-    position: absolute;;
-    top: 50%;
-    left: 50%;
-    height: 60%;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    transform: translateY(-50%) translateX(-50%);
+    @include breakpoint(small down) {
+      padding-top: 130px;
+    }
+    @include breakpoint(medium up) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 60%;
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%);
+    }
 }
 .overlay ul {
     list-style: none;
@@ -60,6 +67,9 @@
     display: block;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
+    @include breakpoint(small down) {
+      font-size: 1.3em;
+    }
 }
 .overlay-social-links {
   height: 30px;
@@ -75,5 +85,6 @@
 }
 .menu-btn-address {
   padding-top:20px;
+  color:#fff;
   cursor: default;
 }

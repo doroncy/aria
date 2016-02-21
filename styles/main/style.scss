@@ -135,7 +135,8 @@ body {
   &.content-box-page {
     border: none;
     padding:60px;
-    height: 60vh;
+    height: 55vh;
+    max-height: 55vh;
     overflow: auto;
     .icon-logo {
       max-width:170px;
@@ -229,7 +230,22 @@ body {
 }
 
 .content-page-wrap {
-  padding-top:200px;
+  padding-top:170px;
+  @include breakpoint(small down) {
+    padding-top:110px;
+    .action-btn-inner {
+      position: relative !important;
+    }
+  }
+  @include breakpoint(medium up) {
+    .moments-club-wrap {
+      padding-right:3px;
+    }
+    .gift-card-wrap {
+      padding-left: 0.12rem !important;
+      padding-right: 0.12rem !important;
+    }
+  }
   .action-btn-wrap {
     position: relative;
     .action-btn-inner {
@@ -250,8 +266,9 @@ body {
   left: 50%;
   margin-left: -80px;
   z-index: 9999999;
-  @media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
-    margin-left:-127px;
+  @include breakpoint(small down) {
+    margin-left: -55px;
+    width: 110px !important;
   }
 }
 
@@ -261,6 +278,12 @@ a {
   color: $text-color;
   &:hover, &:active {
     color: $text-color;
+  }
+}
+.color-gold {
+  color: $gold-color;
+  &:hover {
+    color:#fff;
   }
 }
 .margin-top {
