@@ -71,7 +71,7 @@ const App = React.createClass({
                 <div className="footer-text">Copyright 2016 ARIA. All Rights Reserved.</div>
               </div>
               <div className="small-12 columns medium-2 show-for-medium">
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="https://soundcloud.com/aria-bar" target="_blank">
                   <div className="SVGIcon icon-icon_SOUNDCLOUDE icon-icon_SOUNDCLOUDE-dims centered"></div>
                 </a>
               </div>

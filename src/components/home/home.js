@@ -42,15 +42,17 @@ export default class Home extends Component {
           </div>
           <div className="action-btn-wrap clearfix">
             <div className="content-box content-box-btn table-btn float-left">
-              <div className="content-box-title content-box-title-small">Reserve a table</div>
+              <a href="http://clickiframe.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%90%D7%A8%D7%99%D7%94-%D7%9E%D7%A1%D7%A2%D7%93%D7%94.aspx" target="_blank">
+                <div className="content-box-title content-box-title-small">Reserve a table</div>
+              </a>
             </div>
             <div className="content-box content-box-btn social-media-btn facebook-btn float-left">
-              <a href="https://www.facebook.com" target="_blank">
+              <a href="https://www.facebook.com/ariatlv" target="_blank">
                 <div className="SVGIcon icon-icon_FACEBOOK"></div>
               </a>
             </div>
             <div className="content-box content-box-btn social-media-btn instagram-btn float-left">
-              <a href="https://www.facebook.com" target="_blank">
+              <a href="https://www.instagram.com/ariatlv/" target="_blank">
                 <div className="SVGIcon icon-icon_INSTAGRAM"></div>
               </a>
             </div>
@@ -59,21 +61,23 @@ export default class Home extends Component {
 
         <div className="home-btns-wrap downstairs-box">
           <div className="content-box content-box-btn home-btn">
-            <Link to="/upstairs">
+            <Link to="/downstairs">
               <div className="SVGIcon downstairs-logo-b float-center"></div>
             </Link>
           </div>
           <div className="action-btn-wrap clearfix">
             <div className="content-box content-box-btn table-btn float-left">
-              <div className="content-box-title content-box-title-small">Reserve a table</div>
+              <a href="http://clickiframe.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%90%D7%A8%D7%99%D7%94-%D7%91%D7%A8.aspx" target="_blank">
+                <div className="content-box-title content-box-title-small">Reserve a table</div>
+              </a>
             </div>
             <div className="content-box content-box-btn social-media-btn facebook-btn float-left">
-              <a href="https://www.facebook.com" target="_blank">
+              <a href="https://www.facebook.com/ariabartlv" target="_blank">
                 <div className="SVGIcon icon-icon_FACEBOOK"></div>
               </a>
             </div>
             <div className="content-box content-box-btn social-media-btn instagram-btn float-left">
-              <a href="https://www.facebook.com" target="_blank">
+              <a href="https://www.instagram.com/ariatlv/" target="_blank">
                 <div className="SVGIcon icon-icon_INSTAGRAM"></div>
               </a>
             </div>
@@ -90,7 +94,7 @@ export default class Home extends Component {
             </div>
             <div className="small-6 columns no-padding-right small-padding-left">
               <div className="content-box content-box-btn bottom-btn no-margin-right">
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="https://buyme.co.il/gift-card/364463#!/?display=money" target="_blank">
                   <div className="content-box-title content-box-title-small">Get a gift card</div>
                 </a>
               </div>

@@ -1,3 +1,62 @@
-.red-bg {
-  background-color: red;
+//@import '../../styles/main/style.scss';
+
+.downstairs-bg {
+  background-image: url('./images/downstairs-main-bg.jpg');
+}
+
+.columns.xs-padding-sides{
+  padding-left: 0.12rem !important;
+  padding-right: 0.12rem !important;
+}
+
+.main-container {
+  border:none;
+  padding:20px;
+  &::hover {
+    cursor:poiner;
+    background: transperent;
+  }
+}
+.aria-up-size {
+  height: 120px;
+  width: 120px;
+}
+.gold-subtitle {
+  text-transform: uppercase;
+  color:#aba26e; //$gold-color;
+  margin-bottom: 30px;
+  margin-top:10px;
+  font-size:1.2em;
+  letter-spacing: 1px;
+}
+.upstairs-info-desc {
+  font-size: 1em;
+  text-align: center;
+}
+.tabs-component {
+  .action-btn-wrap {
+    position: relative;
+    .action-btn-inner {
+      position: absolute;
+      left:-1px;
+      right:87px;
+    }
+    .facebook-btn {
+      position: absolute;
+      right: 28px;
+    }
+    .instagram-btn {
+      position: absolute;
+      right: -14px;
+    }
+  }
+}
+
+.menuitem {
+  .menuitem-name {
+    height: 20px;
+  }
+  .menuitem-description {
+
+  }
 }

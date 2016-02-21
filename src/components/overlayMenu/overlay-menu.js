@@ -44,13 +44,13 @@ export default class OverlayMenu extends Component {
           <ul>
             {overlayMenuButtons}
             <li className="overlay-social-links">
-              <a href="https://www.facebook.com" target="_blank">
+              <a href="https://www.facebook.com/ariatlv" target="_blank">
                 <div className="SVGIcon icon-icon_FACEBOOK-W"></div>
               </a>
-              <a href="https://www.facebook.com" target="_blank">
+              <a href="https://www.instagram.com/ariatlv/" target="_blank">
                 <div className="SVGIcon icon-icon_INSTAGRAM-W"></div>
               </a>
-              <a href="https://www.facebook.com" target="_blank">
+              <a href="https://soundcloud.com/aria-bar" target="_blank">
                 <div className="SVGIcon icon-icon_SOUNDCLOUDE"></div>
               </a>
             </li>

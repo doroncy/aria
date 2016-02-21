@@ -43,7 +43,9 @@ is combined in an entertainment experience like you've never known before`
                   </div>
                   <div className="small-6 columns xs-padding-sides">
                     <div className="content-box table-btn">
-                      <div className="content-box-title content-box-title-small">Get a gift card</div>
+                      <a href="https://buyme.co.il/gift-card/364463#!/?display=money" target="_blank">
+                        <div className="content-box-title content-box-title-small">Get a gift card</div>
+                      </a>                      
                     </div>
                   </div>
                 </div>
