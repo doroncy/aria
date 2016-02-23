@@ -17,67 +17,46 @@
 }
 
 .home-btns-wrap {
-  padding-top: 200px;
+  padding: 200px 15px 0;
+  max-width: 400px;
+  margin: 0 auto;
+
+  @include breakpoint(small down) {
+    padding: 120px 15px 0;
+    .home-btn {
+      height:110px !important;
+      padding: 0 10px !important;
+    }
+  }
 
   .home-btn {
-    max-width:400px;
     height:121px;
-    margin:0 auto;
-
-    // @include breakpoint(small down) {
-    //   width:320px;
-    //   height:90px;
-    // }
-  }
-  .action-btn-wrap {
-    max-width:400px;
-    margin:0 auto;
-
-    .table-btn {
-      width: 312px;
-      height: 40px;
-    }
-
-    // @include breakpoint(small down) {
-    //   width:320px;
-    //   font-size:0.9em !important;
-    //   .table-btn {
-    //     width: 228px;
-    //     height: 42px;
-    //   }
-    //   .social-media-btn {
-    //     width: 42px;
-    //     height: 42px;
-    //   }
-    // }
   }
 }
 .bottom-btns {
-  position: absolute;
-  bottom:60px;
-  width:400px;
-  left:50%;
-  margin-left:-200px;
-
+  padding: 40px 15px 0;
+  max-width: 400px;
+  margin: 0 auto;
   .bottom-btn {
     height:42px;
   }
   .bottom-btn-big {
     height:84px;
   }
-  // @include breakpoint(small down) {
-  //   width:320px;
-  //   margin-left:-160px;
-  // }
-
+  @include breakpoint(small down) {
+    //padding: 100px 15px 0;
+  }
 }
 
 .footer-wrap {
-  position: absolute;
-  bottom:20px;
-  left:20px;
-  right:20px;
+  padding: 30px 20px 20px;
 
+  @include breakpoint(medium up) {
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+  }
   .aria-copy {
     text-align: left;
     @include breakpoint(small down) {

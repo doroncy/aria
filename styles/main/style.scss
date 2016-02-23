@@ -57,6 +57,7 @@ $gold-color: #aba26e;
 html, body {
   /* give this to all tags from html to .fullscreen */
   height:100%;
+  background-color: grey;
 }
 body {
   margin:0;
@@ -70,8 +71,9 @@ body {
   height:100%;
 }
 .page-wrap {
-  height:100vh;
-  overflow: hidden;
+  height: 100%;
+  // height:100vh;
+  // overflow: hidden;
   &.theme-B {
     border: 10px solid black;
   }
@@ -269,6 +271,21 @@ body {
   @include breakpoint(small down) {
     margin-left: -55px;
     width: 110px !important;
+  }
+}
+
+.action-btn-wrap-flex {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  .table-btn {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .social-media-btn {
+    -webkit-flex: 0 0 40px;
+    flex: 0 0 40px;
   }
 }
 
