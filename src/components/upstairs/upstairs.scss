@@ -26,10 +26,11 @@
   padding-left: 0.12rem !important;
   padding-right: 0.12rem !important;
 }
-
+.xl-padding {
+  padding: 30px 80px !important;
+}
 .main-container {
   border:none;
-  padding:20px;
   &::hover {
     cursor:poiner;
     background: transperent;

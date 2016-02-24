@@ -57,7 +57,8 @@ $gold-color: #aba26e;
 html, body {
   /* give this to all tags from html to .fullscreen */
   height:100%;
-  background-color: grey;
+  background-color: $gold-color;
+  font-size: 14px;
 }
 body {
   margin:0;
@@ -95,16 +96,15 @@ body {
 .main-container {
   height: 50vh;
   overflow-y: auto;
-  &.fade-bottom::after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    background: #fff;
-    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.7)90%,#fff);
-  }
+}
+.fade-bottom{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.8)90%,#fff);
 }
 .content-box {
   position: relative;

@@ -17,22 +17,40 @@ export default class Upstairs extends Component {
     super();
 
     this.state = {
-      currentTab: upstairsInfo
+      currentTab: upstairsInfo,
+      tabIndex: 0
     };
   }
 
-  changeTab(newTab) {
-    console.log('newTab', newTab);
+  componentDidMount() {
+    var mainElem = this.refs.contentBody;
+    var menuItemsKeys = _.keys(menuItems);
+    
+    let that = this;
+    mainElem.onscroll = function(ev) {
+      if ((mainElem.scrollTop + mainElem.clientHeight) >= mainElem.scrollHeight) {
+        let newIndex = _.indexOf(menuItemsKeys, that.state.tabIndex) ===  _.size(menuItemsKeys) - 1
+          ? menuItemsKeys[0]
+          : menuItemsKeys[_.indexOf(menuItemsKeys, that.state.tabIndex) + 1];
+
+        that.changeTab(menuItems[newIndex], newIndex);
+        mainElem.scrollTop = 0;
+      }
+    };
+  }
+
+  changeTab(newTab, index) {
     this.setState({
-      currentTab: newTab
+      currentTab: newTab,
+      tabIndex: index
     });
   }
 
   render() {
     let tabs = _.map(menuItems, (menuItem, index) => {
       return (
-        <div key={index} className="large-2 columns xs-padding-sides">
-          <div className="content-box content-box-btn" onClick={this.changeTab.bind(this,menuItem)}>
+        <div key={index} className="medium-2 columns xs-padding-sides">
+          <div className="content-box content-box-btn" onClick={this.changeTab.bind(this,menuItem, index)}>
             {menuItem.title}
           </div>
         </div>
@@ -57,14 +75,14 @@ export default class Upstairs extends Component {
           </li>
         );
       });
-      contentBody = (<ul className="no-bullet">{contentBody}</ul>);
+      contentBody = (<ul className="no-bullet" ref="contentList">{contentBody}</ul>);
     }
 
     return(
       <div className={`animated fadeIn height100 background background-fade ${this.state.currentTab.bg}`}>
         <div className="tabs-component">
           <div className="row">
-            <div className="small-9 columns small-centered">
+            <div className="mall-12 medium-10 columns small-centered">
               <div className="row">
                 <div className="small-12 columns small-centered xs-padding-sides">
                   <div className="content-box tabs-header" onClick={this.changeTab.bind(this,upstairsInfo)}>
@@ -72,14 +90,22 @@ export default class Upstairs extends Component {
                   </div>
                 </div>
               </div>
-              <div className="row">
+              <div className="row show-for-medium">
                 {tabs}
               </div>
+              <div className="row show-for-small-only">
+                <div className="small-12 columns xs-padding-sides">
+                  <div className="content-box content-box-btn" onClick={this.changeTab.bind(this,menuItems['entrees'], 'entrees')}>
+                    Menu
+                  </div>
+                </div>
+              </div>
               <div className="row">
-                <div className="small-12 columns small-centered xs-padding-sides">
-                  <div className="content-box content-box-no-hover main-container fade-bottom">
+                <div className="small-12 columns small-centered xs-padding-sides pos-relative">
+                  <div className="content-box content-box-no-hover main-container xl-padding" ref="contentBody">
                     {contentBody}
                   </div>
+                  <div className="fade-bottom"></div>
                 </div>
               </div>
               <div className="action-btn-wrap">
@@ -94,7 +120,7 @@ export default class Upstairs extends Component {
                       <div className="content-box table-btn">
                         <a href="http://clickiframe.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%90%D7%A8%D7%99%D7%94-%D7%9E%D7%A1%D7%A2%D7%93%D7%94.aspx" target="_blank">
                           <div className="content-box-title content-box-title-small">Reserve a table</div>
-                        </a>                                                      
+                        </a>
                       </div>
                     </div>
                   </div>
