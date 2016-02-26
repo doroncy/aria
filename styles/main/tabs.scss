@@ -1,3 +1,5 @@
+@import '../../node_modules/foundation-sites/scss/foundation';
+
 .tabs-component {
   padding-top:160px;
 
@@ -7,5 +9,9 @@
   .tab-btn {
     height:36px;
     font-size: 0.9em;
+  }
+
+  @include breakpoint(small down) {
+    padding-top:100px;
   }
 }

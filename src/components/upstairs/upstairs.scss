@@ -1,30 +1,19 @@
 //@import '../../styles/main/style.scss';
 
-.upstairs-bg {
-  background-image: url('../../../assets/images/upstairs/upstairs-bg.jpg');
-}
-.upstairs-wine-bg {
-  background-image: url('../../../assets/images/upstairs/upstairs-wine.jpg');
-}
-.upstairs-main-bg {
-  background-image: url('../../../assets/images/upstairs/upstairs-main.jpg');
-}
-.upstairs-entrees-bg {
-  background-image: url('../../../assets/images/upstairs/upstairs-entrees.jpg');
-}
-.upstairs-cocktails-bg {
-  background-image: url('../../../assets/images/upstairs/upstairs-cocktails.jpg');
-}
-.upstairs-alcohol-bg {
-  background-image: url('../../../assets/images/upstairs/upstairs-alcohol.jpg');
-}
-.upstairs-desserts-bg {
-  background-image: url('../../../assets/images/upstairs/upstairs-desserts.jpg');
+.upstairs-menu-title {
+  background-image: url('./images/upstairs_for_menu.png');
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 8px;
 }
 
 .columns.xs-padding-sides{
-  padding-left: 0.12rem !important;
-  padding-right: 0.12rem !important;
+  &:not(:first-child) {
+    padding-left: 0.12rem !important;
+  }
+  &:not(:last-child) {
+    padding-right: 0.12rem !important;
+  }
 }
 .xl-padding {
   padding: 30px 80px !important;
@@ -53,6 +42,19 @@
   text-align: center;
 }
 .tabs-component {
+  .content-body-wrap {
+    transition: all 0.3s;
+    opacity: 1;
+    max-height:900px;
+  }
+
+  &.gallery {
+    opacity: 0.6;
+    .content-body-wrap {
+      opacity: 0;
+      max-height: 0;
+    }
+  }
   .action-btn-wrap {
     position: relative;
     .action-btn-inner {
@@ -71,11 +73,82 @@
   }
 }
 
-.menuitem {
-  .menuitem-name {
-    height: 20px;
-  }
-  .menuitem-description {
+.menu-title {
+  font-size:16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
 
+.gallery-icons {
+  .icon-arrow_left {
+    cursor: pointer;
+    opacity: 0.7;
+    position: absolute;
+    left:30px;
+    top:50%;
+    height: 70px;
+    width:35px;
+    margin-top: -35px;
+    &:hover {
+      opacity: 1;
+    }
   }
+  .icon-arrow_right {
+    cursor: pointer;
+    opacity: 0.7;
+    position: absolute;
+    right:30px;
+    top:50%;
+    height: 70px;
+    width:35px;
+    margin-top: -35px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+
+}
+.upstairs-bg {
+  background-image: url('./images/upstairs-bg.jpg');
+}
+.upstairs-wine-bg {
+  background-image: url('./images/upstairs-wine.jpg');
+}
+.upstairs-main-bg {
+  background-image: url('./images/upstairs-main.jpg');
+}
+.upstairs-entrees-bg {
+  background-image: url('./images/upstairs-entrees.jpg');
+}
+.upstairs-cocktails-bg {
+  background-image: url('./images/upstairs-cocktails.jpg');
+}
+.upstairs-alcohol-bg {
+  background-image: url('./images/upstairs-alcohol.jpg');
+}
+.upstairs-desserts-bg {
+  background-image: url('./images/upstairs-desserts.jpg');
+}
+.upstairs-gallery-1 {
+  background-image: url('./images/Gallery_UP01.jpg');
+}
+.upstairs-gallery-2 {
+  background-image: url('./images/Gallery_UP02.jpg');
+}
+.upstairs-gallery-3 {
+  background-image: url('./images/Gallery_UP03.jpg');
+}
+.upstairs-gallery-4 {
+  background-image: url('./images/Gallery_UP04.jpg');
+}
+.upstairs-gallery-5 {
+  background-image: url('./images/Gallery_UP05.jpg');
+}
+.upstairs-gallery-6 {
+  background-image: url('./images/Gallery_UP06.jpg');
+}
+.upstairs-gallery-7 {
+  background-image: url('./images/Gallery_UP07.jpg');
 }
