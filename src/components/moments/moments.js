@@ -9,13 +9,7 @@ export default class Philosophy extends Component {
     this.pageData = {
       bg: 'moments-bg-1',
       title: 'Aria moments club',
-      text: `ARIA MOMENTS Club is a social circle.
-We invite you to join us in a circle, and enjoy a variety
-of exclusive benefits, unique only to club members. Each member of a club or get a personalized card Affording compound Aria discounts, invitations to
-closed events, Premium parties and treats on special days
-Like a birthday or anniversary.
-We will be happy to have you join our circle
-and take part at your Special moments.`
+      text: `ARIA MOMENTS is our social club. We invite you to join us and enjoy exclusive benefits that are created uniquely for our club members. Each member received a personal VIP card that includes special offers, booking priority, invitation to closed events and premium parties, and other benefits in your special days like anniversaries and birthdays. We would be thrilled to have you as a member in our club and share your special moments.`
     }
   }
 
@@ -37,7 +31,7 @@ and take part at your Special moments.`
                 </div>
               </div>
             </div>
-            <ClubGiftsBtns theme="dark"></ClubGiftsBtns>            
+            <ClubGiftsBtns theme="dark"></ClubGiftsBtns>
           </div>
         </div>
       </div>

@@ -19,6 +19,7 @@ import Moments from './components/moments/moments';
 import Team from './components/team/team';
 import Tripping from './components/tripping/tripping';
 import Music from './components/music/music';
+import Events from './components/events/events';
 
 
 let lastLocationPathname = '/'
@@ -83,7 +84,10 @@ const App = React.createClass({
                     </a>
                   </div>
                   <div className="small-12 columns medium-5 done-by no-padding-right">
-                    <div className="footer-text">Designed by STUDIO Y&O | Dev by Doron Cyngiser</div>
+                    <div className="footer-text">
+                      <a className="footer-text" href="http://studio-y-o.com/" target="_blank">Designed by STUDIO Y&O</a> |
+                      <a className="footer-text" href="https://github.com/doroncy" target="_blank"> Dev by Doron Cyngiser</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -108,6 +112,7 @@ render((
       <Route path="team" component={Team} />
       <Route path="tripping" component={Tripping} />
       <Route path="music" component={Music} />
+      <Route path="events" component={Events} />      
     </Route>
   </Router>
 ), document.getElementById('root'));

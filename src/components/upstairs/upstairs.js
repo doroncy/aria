@@ -8,7 +8,7 @@ import menuItems from './menu';
 
 const upstairsInfo = {
   title: 'The restaurant',
-  description: 'blah lbah blalajsa sdjflksd jflksdjflksd jflksd jflksdj flk',
+  description: 'Aria is a contemporary Chef Bistro offering a fresh and innovative menu created by Chef Guy Gamzu, one of the promising young chefs of Tel Aviv. Chef Gamzu created a diverse seasonal menu, meticulously conjured from prime raw materials.',
   bg: 'upstairs-bg',
   items: []
 }
@@ -89,7 +89,7 @@ export default class Upstairs extends Component {
     let galleryModeClass = '';
     let gallerySelected = '';
     let galleryArrows = '';
-    console.log(this.state.currentTab);
+        
     if (this.state.currentTab === upstairsInfo) {
       contentBody = (
         <div>

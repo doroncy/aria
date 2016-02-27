@@ -9,7 +9,7 @@ export default class Philosophy extends Component {
     this.pageData = {
       bg: 'philosophy-bg-1',
       title: 'The Aria Philosophy',
-      text: `The food, music, cocktails, wine menu, unique location and scrupulous service is combined in an entertainment experience like you've never known before The food, music, cocktails, wine menu, unique location and scrupulous serviceis combined in an entertainment experience like you've never known before`
+      text: `ARIA is Tel Aviv, Tel Aviv is ARIA. ARIA is what you think of when you envision Tel Aviv. Housed in a two-story historic building, ARIA is a union of a contemporary chef restaurant and a lounge bar. The ARIA experience ranges from a high-quality, meticulously-prepared dinner, to lively mingling into the midnight hours. The food, the music, the cocktails, the wine, the unique location, and the meticulous service, all work together to create a never before seen experience.`
     }
   }
 

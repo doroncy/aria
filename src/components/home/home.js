@@ -24,8 +24,7 @@ export default class Home extends Component {
     }.bind(this), 5000);
   }
 
-  componentWillUnmount() {
-    console.log('UNMOUNT!!');
+  componentWillUnmount() {    
     clearInterval(bgCarouselInterval);
   }
 

@@ -9,10 +9,7 @@ export default class Team extends Component {
     this.pageData = {
       bg: 'team-bg-1',
       title: 'THE ARIA TEAM',
-      text: `The food, music, cocktails, wine menu, unique location and scrupulous service
-is combined in an entertainment experience like you've never known before
-The food, music, cocktails, wine menu, unique location and scrupulous service
-is combined in an entertainment experience like you've never known before`
+      text: `Join our team at ARIA and enjoy a professional, warm family atmosphere with great opportunities to grow and develop with us in our future ARIA projects.`
     }
   }
 

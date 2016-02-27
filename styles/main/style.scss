@@ -72,14 +72,16 @@ body {
   height:100%;
 }
 .page-wrap {
-  height: 100%;
-  // height:100vh;
-  // overflow: hidden;
+  height:100vh;
+  
   &.theme-B {
     border: 10px solid black;
   }
   &.theme-W {
     border: 10px solid white;
+  }
+  @include breakpoint(medium up) {
+    overflow: hidden;
   }
 }
 .social-media-btn {

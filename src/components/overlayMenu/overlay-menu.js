@@ -6,6 +6,10 @@ export default class OverlayMenu extends Component {
   constructor(props) {
     super();
 
+    this.state = {
+      contactPageVisible: false
+    };
+
     this.menuBtns = [
       {title: 'The aria philosophy' , link:'/philosophy'},
       {title: 'Aria Upstairs' , link:'/upstairs'},
@@ -14,32 +18,59 @@ export default class OverlayMenu extends Component {
       {title: 'Aria Music' , link:'/music'},
       {title: 'Events' , link:'/events'},
       {title: 'The Aria Team' , link:'/team'},
-    ]
+      {title: 'Contact', link:'contact'}
+    ];
 
     this.navigateTo = this.navigateTo.bind(this);
   }
 
   navigateTo(newState) {
     this.props.toggleMenu();
-    browserHistory.push(`${newState}`);
+    this.setState({
+      contactPageVisible: false
+    });    
+    if (newState === 'contact') {
+      this.setState({
+        contactPageVisible: true
+      });
+    } else {
+      browserHistory.push(`${newState}`);
+    }
   }
 
   render() {
-    let openClass= !!this.props.menuVisible ? 'open' : '';
-    let className = `overlay overlay-corner ${openClass}`;
-
-    let overlayMenuButtons = this.menuBtns.map((item, index) => {
-        return (
-          <li key={index} onClick={this.navigateTo.bind(this, item.link)}>
-            <div className="menu-item-btn">
-              {item.title}
+    let openClass = '';
+    let contentHtml = '';
+    if (!!this.state.contactPageVisible && !this.props.menuVisible) {
+      openClass = 'contact-page'
+      contentHtml = (
+        <div className="row">
+          <div className="small-12 columns small-centered contact-page-body">
+            <div className="contact-page-title font-ExBold">Contact us!</div>
+            <div className="contact-page-text font-Regular">
+              <p>66 Nachalat Binyamin St., Tel Aviv</p>
+              <p>03-529-60-54</p>
+              <div className="contact-mail-wrap">
+                <a href="mailto:orenheknin@gmail.com" target="_blank">
+                  <div className="SVGIcon icon-Email_icon_for_contact icon-Email_icon_for_contact-dims"></div>
+                </a>
+              </div>
             </div>
-          </li>
-        );
-    });
-
-    return (
-      <div className={className}>
+          </div>
+        </div>
+      );
+    } else {
+      openClass= !!this.props.menuVisible ? 'open' : '';
+      let overlayMenuButtons = this.menuBtns.map((item, index) => {
+          return (
+            <li key={index} onClick={this.navigateTo.bind(this, item.link)}>
+              <div className="menu-item-btn">
+                {item.title}
+              </div>
+            </li>
+          );
+      });
+      contentHtml = (
         <nav>
           <ul>
             {overlayMenuButtons}
@@ -55,9 +86,15 @@ export default class OverlayMenu extends Component {
               </a>
             </li>
           </ul>
-          <div className="menu-btn-address">66 Nachalat Binyamin st. Tel-Aviv</div>         
+          <div className="menu-btn-address">66 Nachalat Binyamin st. Tel-Aviv</div>
         </nav>
+      );
+    }
+    let className = `overlay overlay-corner ${openClass}`;
 
+    return (
+      <div className={className}>
+        {contentHtml}
       </div>
     );
   }

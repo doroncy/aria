@@ -9,11 +9,7 @@ export default class Team extends Component {
     this.pageData = {
       bg: 'tripping-bg-1',
       title: 'ARIA Tripping',
-      text: `A series of premium events sponsored by ARIA, bringing Ibiza to Tel Aviv!
-ARIA is going on a journey of events beyond its boundaries, some of which are small and take place
-in the private atmosphere of Aria, and some are exclusive large-scale events that take place in large hangars
-and outdoor spaces.
-`
+      text: `ARIA TRIPPING is a series of premium events sponsored by ARIA, some of which are small and take place in the private atmosphere of ARIA, and some are exclusive large-scale events that take place in large hangars and outdoor spaces. Taking care of the production of these events, from concept to details, ARIA is working together with international brands in Ibiza House music scene and in other locations, to create unique and exciting events under its name, for the people who embody the very spirit of the ARIA brand, here in Tel Aviv.`
     }
   }
 
