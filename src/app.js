@@ -20,6 +20,7 @@ import Team from './components/team/team';
 import Tripping from './components/tripping/tripping';
 import Music from './components/music/music';
 import Events from './components/events/events';
+import Loading from './components/loading/loading';
 
 
 let lastLocationPathname = '/'
@@ -51,6 +52,13 @@ const App = React.createClass({
       ? 'B'
       : 'W';
 
+    let menuBtn = '';
+    if (this.props.location.pathname !== '/loading') {
+      menuBtn = (
+        <button type="button" className={`overlay-toggle-btn SVGIcon icon-TRIANGLE_corner_${themeColor}`} onClick={this.toggleMenu}>Close</button>
+      );
+    }
+
     return (
       <div className={`page-wrap theme-${themeColor}`}>
         <ReactCSSTransitionGroup
@@ -63,7 +71,7 @@ const App = React.createClass({
             <Link to="/home">
               <div className={`logo-head SVGIcon icon-Logo_head_${themeColor} icon-Logo_head-dims`}></div>
             </Link>
-            <button type="button" className={`overlay-toggle-btn SVGIcon icon-TRIANGLE_corner_${themeColor}`} onClick={this.toggleMenu}>Close</button>
+            {menuBtn}
             <OverlayMenu menuVisible={this.state.menuVisible} toggleMenu={this.toggleMenu}></OverlayMenu>
             {React.cloneElement(this.props.children, {
               key: this.props.location.pathname
@@ -78,6 +86,7 @@ render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
+      <Route path="loading" component={Loading} />
       <Route path="home" component={Home} />
       <Route path="upstairs" component={Upstairs} />
       <Route path="downstairs" component={Downstairs} />

@@ -107,7 +107,9 @@ export default class Downstairs extends Component {
         );
       });
       verticalTabs = (
-        <ul className="no-bullet">{verticalTabs}</ul>
+        <div className="vertical-tabs">
+          <ul className="no-bullet">{verticalTabs}</ul>
+        </div>
       );
       verticalTabsTitleClass = verticalTabsTitleClass + ' vertical-menu-title';
     }
@@ -181,9 +183,7 @@ export default class Downstairs extends Component {
                   <div className={verticalTabsTitleClass} onClick={this.toggleMenu}>
                     Menu
                   </div>
-                  <div className="vertical-tabs">
-                    {verticalTabs}
-                  </div>
+                  {verticalTabs}
                 </div>
               </div>
 
