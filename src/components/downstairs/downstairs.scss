@@ -4,7 +4,7 @@
   background-image: url('./images/downstairs_for_menu.png');
   max-width: 200px;
   margin: 0 auto;
-  margin-top: 8px;
+  margin-top: 12px;
   padding-top:10px;
 }
 
@@ -80,6 +80,10 @@
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
+.menu-subtitle {
+  font-size:18px;
+  text-transform: capitalize;
+}
 
 .gallery-icons {
   .icon-arrow_left {
@@ -115,22 +119,22 @@
   background-image: url('./images/downstairs-bg.jpg');
 }
 .downstairs-wine-bg {
-  background-image: url('./images/downstairs-wine.jpg');
+  background-image: url('../upstairs/images/upstairs-wine.jpg');
 }
 .downstairs-main-bg {
-  background-image: url('./images/downstairs-main.jpg');
+  background-image: url('../upstairs/images/upstairs-main.jpg');
 }
 .downstairs-entrees-bg {
-  background-image: url('./images/downstairs-entrees.jpg');
+  background-image: url('../upstairs/images/upstairs-entrees.jpg');
 }
 .downstairs-cocktails-bg {
-  background-image: url('./images/downstairs-cocktails.jpg');
+  background-image: url('../upstairs/images/upstairs-cocktails.jpg');
 }
 .downstairs-alcohol-bg {
-  background-image: url('./images/downstairs-alcohol.jpg');
+  background-image: url('../upstairs/images/upstairs-alcohol.jpg');
 }
 .downstairs-desserts-bg {
-  background-image: url('./images/downstairs-desserts.jpg');
+  background-image: url('../upstairs/images/upstairs-desserts.jpg');
 }
 .downstairs-gallery-1 {
   background-image: url('./images/gallery_down01.jpg');

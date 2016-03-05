@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 export default class ClubGiftsBtns extends Component {
   constructor(props) {
@@ -23,7 +24,9 @@ export default class ClubGiftsBtns extends Component {
           <div className="row">
             <div className="small-12 medium-6 columns moments-club-wrap">
               <div className={`content-box table-btn ${themeClassName}`}>
-                <div className={`content-box-title content-box-title-small ${btnColorClassName}`}>Join the Aria Moments club</div>
+                <Link to="/moments">
+                  <div className={`content-box-title content-box-title-small ${btnColorClassName}`}>Join the Aria Moments club</div>
+                </Link>
               </div>
             </div>
             <div className="small-12 medium-6 columns gift-card-wrap">

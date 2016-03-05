@@ -40,7 +40,7 @@ const Menu = {
     ]
   },
   deserts: {
-    title: 'Deserts',
+    title: 'Desserts',
     bg: 'upstairs-desserts-bg',
     items: [
       {name: 'NEMESIS', description: "Moist Chocolate cake, oat meal crumble, milk chocolate ganache, marshmallow fluff and vanilla ice cream", price: "48"},
@@ -85,14 +85,7 @@ const Menu = {
   },
   wine: {
     title: 'Wine Cellar',
-    bg: 'upstairs-wine-bg',
-    items: [
-      {name: 'LIMA BEAN SOUP1', description: 'Stewed butter beans with eguptian onion and black truffles'},
-      {name: 'LIMA BEAN SOUP2', description: 'Stewed butter beans with eguptian onion and black truffles'},
-      {name: 'LIMA BEAN SOUP3', description: 'Stewed butter beans with eguptian onion and black truffles'},
-      {name: 'LIMA BEAN SOUP4', description: 'Stewed butter beans with eguptian onion and black truffles'},
-      {name: 'LIMA BEAN SOUP5', description: 'Stewed butter beans with eguptian onion and black truffles'}
-    ]
+    bg: 'upstairs-wine-bg'
   }
 }
 

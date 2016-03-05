@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import style from './tripping.scss';
 import ClubGiftsBtns from '../page-clubs-gifts-btns/club-gifts-btns';
+import Footer from '../footer/footer';
 
 export default class Team extends Component {
   constructor(props) {
@@ -44,6 +45,7 @@ export default class Team extends Component {
             <ClubGiftsBtns></ClubGiftsBtns>
           </div>
         </div>
+        <Footer></Footer>
       </div>
     );
   }

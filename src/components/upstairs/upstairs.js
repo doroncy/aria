@@ -5,6 +5,8 @@ import tabsStyle from '../../../styles/main/tabs.scss';
 import globalStyle from '../../../styles/main/style.scss';
 import upstairsStyle from './upstairs.scss';
 import menuItems from './menu';
+import Wines from './wines';
+import Footer from '../footer/footer';
 
 const upstairsInfo = {
   title: 'The restaurant',
@@ -27,10 +29,12 @@ export default class Upstairs extends Component {
     this.state = {
       currentTab: upstairsInfo,
       tabIndex: 0,
-      galleryIndex: 1
+      galleryIndex: 1,
+      showMenuTabs: false
     };
 
     this.nextImage = this.nextImage.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   componentDidMount() {
@@ -53,7 +57,8 @@ export default class Upstairs extends Component {
   changeTab(newTab, index) {
     this.setState({
       currentTab: newTab,
-      tabIndex: index
+      tabIndex: index,
+      showMenuTabs: false
     });
   }
 
@@ -73,11 +78,17 @@ export default class Upstairs extends Component {
     });
   }
 
+  toggleMenu() {
+    this.setState({
+      showMenuTabs: !this.state.showMenuTabs
+    });
+  }
+
   render() {
     let tabs = _.map(menuItems, (menuItem, index) => {
       let isTabSelected = this.state.tabIndex === index ? "selected" : "";
       return (
-        <div key={index} className="medium-2 columns xs-padding-sides">
+        <div key={index} className="large-2 columns xs-padding-sides">
           <div className={`content-box content-box-btn ${isTabSelected}`} onClick={this.changeTab.bind(this,menuItem, index)}>
             {menuItem.title}
           </div>
@@ -85,11 +96,30 @@ export default class Upstairs extends Component {
       );
     });
 
+    let verticalTabs = '';
+    let verticalTabsTitleClass = 'content-box content-box-btn';
+    if (this.state.showMenuTabs) {
+      verticalTabs = _.map(menuItems, (menuItem, index) => {
+        return (
+          <li key={index} className="vertical-menu-item content-box content-box-btn"
+            onClick={this.changeTab.bind(this,menuItem, index)}>
+            {menuItem.title}
+          </li>
+        );
+      });
+      verticalTabs = (
+        <div className="vertical-tabs">
+          <ul className="no-bullet">{verticalTabs}</ul>
+        </div>
+      );
+      verticalTabsTitleClass = verticalTabsTitleClass + ' vertical-menu-title';
+    }
+
     let contentBody;
     let galleryModeClass = '';
     let gallerySelected = '';
     let galleryArrows = '';
-        
+
     if (this.state.currentTab === upstairsInfo) {
       contentBody = (
         <div>
@@ -107,17 +137,26 @@ export default class Upstairs extends Component {
           <div className="SVGIcon icon-arrow_right" onClick={this.nextImage.bind(this)}></div>
         </div>
       )
+    } else if (this.state.currentTab.title === 'Wine Cellar') {
+      contentBody = <Wines></Wines>;
     } else {
       contentBody = this.state.currentTab.items.map((item, index) => {
+        let price = !_.isEmpty(item.price)
+          ? <span><br/>- {item.price} -</span>
+        : '';
+
         return (
           <li className="menuitem" key={item.name}>
             <div className="menuitem-name font-SemiBold">{item.name}</div>
-            <p className="menuitem-description font-light">{item.description}</p>
+            <p className="menuitem-description font-light">
+              {item.description}
+              {price}
+            </p>
           </li>
         );
       });
       contentBody = (
-        <div>
+        <div className="pad-bottom-lg">
           <div className="menu-title font-ExBold">{this.state.currentTab.title}</div>
           <ul className="no-bullet" ref="contentList">{contentBody}</ul>
         </div>
@@ -125,7 +164,7 @@ export default class Upstairs extends Component {
     }
 
     return(
-      <div className={`pos-relative animated fadeIn height100 background background-fade ${this.state.currentTab.bg}`}>
+      <div className={`animated fadeIn height100 background background-fade ${this.state.currentTab.bg}`}>
         {galleryArrows}
         <div className={`tabs-component ${galleryModeClass}`}>
           <div className="row">
@@ -137,16 +176,19 @@ export default class Upstairs extends Component {
                   </div>
                 </div>
               </div>
-              <div className="row show-for-medium">
+
+              <div className="row show-for-large">
                 {tabs}
               </div>
-              <div className="row show-for-small-only">
-                <div className="small-12 columns">
-                  <div className="content-box content-box-btn" onClick={this.changeTab.bind(this,menuItems['entrees'], 'entrees')}>
+              <div className="row hide-for-large">
+                <div className="small-12 columns pos-relative">
+                  <div className={verticalTabsTitleClass} onClick={this.toggleMenu}>
                     Menu
                   </div>
+                  {verticalTabs}
                 </div>
               </div>
+
               <div className="row content-body-wrap">
                 <div className="small-12 columns small-centered pos-relative">
                   <div className="content-box content-box-no-hover main-container" ref="contentBody">
@@ -179,7 +221,7 @@ export default class Upstairs extends Component {
             </div>
           </div>
         </div>
-
+        <Footer></Footer>
       </div>
     );
   }

@@ -37,13 +37,13 @@ const App = React.createClass({
   render() {
     let animName = 'moveDown';
     if (this.props.location.pathname === '/upstairs') {
-      animName = 'moveDown';
+      animName = 'moveUp';
     } else if (this.props.location.pathname === '/downstairs') {
-      animName = 'moveUp';
-    } else if (lastLocationPathname === '/upstairs') {
-      animName = 'moveUp';
-    } else if (lastLocationPathname === '/downstairs') {
       animName = 'moveDown';
+    } else if (lastLocationPathname === '/upstairs') {
+      animName = 'moveDown';
+    } else if (lastLocationPathname === '/downstairs') {
+      animName = 'moveUp';
     }
     lastLocationPathname = this.props.location.pathname;
 
@@ -53,49 +53,23 @@ const App = React.createClass({
 
     return (
       <div className={`page-wrap theme-${themeColor}`}>
-      <ReactCSSTransitionGroup
-          component="div"
-          className="anim-wrap"
-          transitionName={animName}
-          transitionEnterTimeout={500}
-          transitionLeaveTimeout={500}
-        >
-          <div className={`logo-head SVGIcon icon-Logo_head_${themeColor} icon-Logo_head-dims`}></div>
-          <button type="button" className={`overlay-toggle-btn SVGIcon icon-TRIANGLE_corner_${themeColor}`} onClick={this.toggleMenu}>Close</button>
-          <OverlayMenu menuVisible={this.state.menuVisible} toggleMenu={this.toggleMenu}></OverlayMenu>
-          {React.cloneElement(this.props.children, {
-            key: this.props.location.pathname
-          })}
-          <div className="footer-wrap">
-            <div className="row">
-              <div className="small-12 medium-10 columns small-centered">
-                <div className="row no-margin-left no-margin-right">
-                  <div className="small-12 columns medium-2 show-for-small-only">
-                    <a href="https://soundcloud.com/aria-bar" target="_blank">
-                      <div className="SVGIcon icon-icon_SOUNDCLOUDE icon-icon_SOUNDCLOUDE-dims centered"></div>
-                    </a>
-                  </div>
-                  <div className="small-12 columns medium-5 aria-copy no-padding-left">
-                    <div className="footer-text">Copyright 2016 ARIA. All Rights Reserved.</div>
-                  </div>
-                  <div className="small-12 columns medium-2 show-for-medium">
-                    <a href="https://soundcloud.com/aria-bar" target="_blank">
-                      <div className="SVGIcon icon-icon_SOUNDCLOUDE icon-icon_SOUNDCLOUDE-dims centered"></div>
-                    </a>
-                  </div>
-                  <div className="small-12 columns medium-5 done-by no-padding-right">
-                    <div className="footer-text">
-                      <a className="footer-text" href="http://studio-y-o.com/" target="_blank">Designed by STUDIO Y&O</a> |
-                      <a className="footer-text" href="https://github.com/doroncy" target="_blank"> Dev by Doron Cyngiser</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </ReactCSSTransitionGroup>
+        <ReactCSSTransitionGroup
+            component="div"
+            className="anim-wrap"
+            transitionName={animName}
+            transitionEnterTimeout={600}
+            transitionLeaveTimeout={600}
+          >
+            <Link to="/home">
+              <div className={`logo-head SVGIcon icon-Logo_head_${themeColor} icon-Logo_head-dims`}></div>
+            </Link>
+            <button type="button" className={`overlay-toggle-btn SVGIcon icon-TRIANGLE_corner_${themeColor}`} onClick={this.toggleMenu}>Close</button>
+            <OverlayMenu menuVisible={this.state.menuVisible} toggleMenu={this.toggleMenu}></OverlayMenu>
+            {React.cloneElement(this.props.children, {
+              key: this.props.location.pathname
+            })}
+        </ReactCSSTransitionGroup>
         </div>
-
     );
   }
 });
@@ -112,7 +86,7 @@ render((
       <Route path="team" component={Team} />
       <Route path="tripping" component={Tripping} />
       <Route path="music" component={Music} />
-      <Route path="events" component={Events} />      
+      <Route path="events" component={Events} />
     </Route>
   </Router>
 ), document.getElementById('root'));

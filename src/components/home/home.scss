@@ -17,15 +17,21 @@
 }
 
 .home-btns-wrap {
-  padding: 200px 15px 0;
+  padding: 180px 15px 0;
   max-width: 400px;
   margin: 0 auto;
 
   @include breakpoint(small down) {
     padding: 120px 15px 0;
     .home-btn {
-      height:110px !important;
+      height:82px !important;
       padding: 0 10px !important;
+      .upstairs-logo-b {
+        max-width: 150px !important;
+      }
+      .downstairs-logo-b {
+        max-width: 200px !important;
+      }
     }
   }
 
@@ -37,6 +43,7 @@
   padding: 40px 15px 0;
   max-width: 400px;
   margin: 0 auto;
+  min-height: 140px;
   .bottom-btn {
     height:42px;
   }
@@ -44,34 +51,12 @@
     height:84px;
   }
   @include breakpoint(small down) {
-    //padding: 100px 15px 0;
-  }
-}
-
-.footer-wrap {
-  padding: 30px 20px 20px;
-
-  @include breakpoint(medium up) {
-    position: absolute;
-    bottom:0;
-    left:0;
-    right:0;
-  }
-  .aria-copy {
-    text-align: left;
-    @include breakpoint(small down) {
-      text-align: center;
+    padding: 30px 15px 0;
+    min-height: 110px;
+    .bottom-btn {
+      font-size:0.8em;
+      padding-top: 8px;
     }
-  }
-  .done-by {
-    text-align: right;
-    @include breakpoint(small down) {
-      text-align: center;
-    }
-  }  
-  .footer-text {
-    color:#fff;
-    font-size:10px;
   }
 }
 

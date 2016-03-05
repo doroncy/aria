@@ -45,7 +45,7 @@
   .content-body-wrap {
     transition: all 0.3s;
     opacity: 1;
-    max-height:900px;
+    max-height:45vh;
   }
 
   &.gallery {
@@ -78,6 +78,10 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 10px;
+}
+.menu-subtitle {
+  font-size:18px;
+  text-transform: capitalize;
 }
 
 .gallery-icons {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import style from './philosophy.scss';
 import ClubGiftsBtns from '../page-clubs-gifts-btns/club-gifts-btns';
+import Footer from '../footer/footer';
 
 export default class Philosophy extends Component {
   constructor(props) {
@@ -34,6 +35,7 @@ export default class Philosophy extends Component {
             <ClubGiftsBtns></ClubGiftsBtns>
           </div>
         </div>
+        <Footer></Footer>
       </div>
     );
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import style from './music.scss';
 import ClubGiftsBtns from '../page-clubs-gifts-btns/club-gifts-btns';
+import Footer from '../footer/footer';
 
 export default class Team extends Component {
   constructor(props) {
@@ -22,7 +23,9 @@ export default class Team extends Component {
               <div className="small-12 columns small-centered">
                 <div className="row content-box content-box-no-hover content-box-page">
                   <div className="small-12 medium-5 columns height100 show-for-medium">
-                    <div className="SVGIcon icon-logo icon-logo_listen_for_music music-icon"></div>
+                    <a href="https://soundcloud.com/aria-bar" target="_blank">
+                      <div className="SVGIcon icon-logo icon-logo_listen_for_music music-icon"></div>
+                    </a>
                   </div>
                   <div className="small-12 medium-7 columns">
                     <div className="page-title font-ExBold">{this.pageData.title}</div>
@@ -34,6 +37,7 @@ export default class Team extends Component {
             <ClubGiftsBtns></ClubGiftsBtns>
           </div>
         </div>
+        <Footer></Footer>
       </div>
     );
   }
