@@ -64,7 +64,7 @@ export default class Team extends Component {
         <div className="row content-page-wrap">
           <div className="small-12 medium-10 columns small-centered">
             <div className="row">
-              <div className="small-2 columns">
+              <div className="small-3 medium-2 columns">
                 <div className={`content-box content-box-btn ${isJobsSelectedClass}`} onClick={this.showJobs}>
                   Jobs
                 </div>

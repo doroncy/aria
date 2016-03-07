@@ -1,4 +1,4 @@
-//@import '../../styles/main/style.scss';
+@import '../../../node_modules/foundation-sites/scss/foundation';
 
 .upstairs-menu-title {
   background-image: url('./images/upstairs_for_menu.png');
@@ -45,7 +45,9 @@
   .content-body-wrap {
     transition: all 0.3s;
     opacity: 1;
-    max-height:45vh;
+    @include breakpoint(medium up) {
+      max-height:54vh;
+    }    
   }
 
   &.gallery {

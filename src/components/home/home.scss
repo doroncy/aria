@@ -35,8 +35,29 @@
     }
   }
 
-  .home-btn {
-    height:121px;
+  @include breakpoint(medium down) {
+    .home-btn {
+      height:100px;
+      .upstairs-logo-b {
+        max-width: 190px !important;
+      }
+      .downstairs-logo-b {
+        max-width: 230px !important;
+        margin-top:25px;
+      }
+    }
+  }
+
+  @include breakpoint(large) {
+    .home-btn {
+      height:110px;
+    }
+    .upstairs-logo-b {
+      max-width: 200px !important;
+    }
+    .downstairs-logo-b {
+      max-width: 240px !important;
+    }
   }
 }
 .bottom-btns {

@@ -196,7 +196,7 @@ export default class Downstairs extends Component {
                 </div>
               </div>
               <div className="action-btn-wrap-flex">
-                <div className={`content-box content-box-btn table-btn ${gallerySelected}`} onClick={this.changeTab.bind(this,galleryInfo)}>
+                <div className={`show-for-medium content-box content-box-btn table-btn ${gallerySelected}`} onClick={this.changeTab.bind(this,galleryInfo)}>
                   <div className="content-box-title content-box-title-small">Gallery</div>
                 </div>
                 <div className="content-box content-box-btn table-btn">
@@ -205,7 +205,7 @@ export default class Downstairs extends Component {
                   </a>
                 </div>
                 <div className="content-box content-box-btn social-media-btn facebook-btn">
-                  <a href="https://www.facebook.com/ariatlv" target="_blank">
+                  <a href="https://www.facebook.com/ariabartlv" target="_blank">
                     <div className="SVGIcon icon-icon_FACEBOOK"></div>
                   </a>
                 </div>

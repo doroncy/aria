@@ -198,11 +198,11 @@ export default class Upstairs extends Component {
                 </div>
               </div>
               <div className="action-btn-wrap-flex">
-                <div className={`content-box content-box-btn table-btn ${gallerySelected}`} onClick={this.changeTab.bind(this,galleryInfo)}>
+                <div className={`show-for-medium content-box content-box-btn table-btn ${gallerySelected}`} onClick={this.changeTab.bind(this,galleryInfo)}>
                   <div className="content-box-title content-box-title-small">Gallery</div>
                 </div>
                 <div className="content-box content-box-btn table-btn">
-                  <a href="http://clickiframe.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%90%D7%A8%D7%99%D7%94-%D7%91%D7%A8.aspx" target="_blank">
+                  <a href="http://clickiframe.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%90%D7%A8%D7%99%D7%94-%D7%9E%D7%A1%D7%A2%D7%93%D7%94.aspx" target="_blank">
                     <div className="content-box-title content-box-title-small">Reserve a table</div>
                   </a>
                 </div>

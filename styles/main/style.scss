@@ -64,6 +64,7 @@ body {
   margin:0;
   text-align:center;
   font-family: 'Montserrat-Regular', Arial;
+  overflow-x: hidden;
   &:after {
     content: url('../../src/components/home/images/home_1.jpg') url('../../src/components/home/images/home_2.jpg') url('../../src/components/home/images/home_3.jpg')
     url('../../src/components/home/images/home_4.jpg') url('../../src/components/home/images/home_5.jpg') url('../../src/components/downstairs/images/downstairs-bg.jpg')
@@ -74,8 +75,9 @@ body {
     url('../../src/components/upstairs/images/Gallery_UP01.jpg') url('../../src/components/upstairs/images/Gallery_UP02.jpg') url('../../src/components/upstairs/images/Gallery_UP03.jpg') url('../../src/components/upstairs/images/Gallery_UP04.jpg')
     url('../../src/components/upstairs/images/Gallery_UP05.jpg') url('../../src/components/upstairs/images/Gallery_UP06.jpg') url('../../src/components/upstairs/images/Gallery_UP07.jpg')
     url('../../src/components/downstairs/images/gallery_down01.jpg') url('../../src/components/downstairs/images/gallery_down02.jpg') url('../../src/components/downstairs/images/gallery_down03.jpg')
-    url('../../src/components/downstairs/images/gallery_down04.jpg') url('../../src/components/downstairs/images/gallery_down05.jpg');
-    display: none;
+    url('../../src/components/downstairs/images/gallery_down04.jpg') url('../../src/components/downstairs/images/gallery_down05.jpg');  
+    position: absolute;
+    right: 1000000px;
   }
 }
 #root {
