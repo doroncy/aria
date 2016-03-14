@@ -157,14 +157,15 @@ body {
     cursor: default;
   }
   &.content-box-no-hover:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.6);
     color: #000 !important;
     .content-box-title {
       color:#000 !important;
     }
   }
   &.content-box-no-hover.dark:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
+    color:#fff !important;
     .content-box-title {
       color:#fff !important;
     }
