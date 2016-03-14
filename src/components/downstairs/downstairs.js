@@ -9,7 +9,7 @@ import Wines from '../upstairs/wines';
 import Footer from '../footer/footer';
 
 const downstairsInfo = {
-  title: 'The restaurant',
+  title: 'The Lounge Bar',
   description: `Aria's “downstairs” ground floor lounge offers a rich cocktail bar alongside dishes from the chef’s kitchen. The new and advanced sound system provides the perfect setting with the DJ is located at the center of the circular lounge space. The guests sitting at the bar enjoy a unique experience that starts with dinner and drinks accompanied by live performances of the best local and international DJs, followed by a full-blown party into the midnight hours.`,
   bg: 'downstairs-bg',
   items: []
@@ -122,8 +122,7 @@ export default class Downstairs extends Component {
     if (this.state.currentTab === downstairsInfo) {
       contentBody = (
         <div>
-          <div className="SVGIcon icon-ARIA_DOWN aria-up-size small-centered"></div>
-          <div className="gold-subtitle font-ExBold">The Restaurant</div>
+          <div className="gold-subtitle font-ExBold">{downstairsInfo.title}</div>
           <div className="downstairs-info-desc font-light">{downstairsInfo.description}</div>
         </div>
       );
@@ -174,7 +173,6 @@ export default class Downstairs extends Component {
                   </div>
                 </div>
               </div>
-
               <div className="row show-for-large">
                 {tabs}
               </div>

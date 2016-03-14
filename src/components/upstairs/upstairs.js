@@ -122,8 +122,7 @@ export default class Upstairs extends Component {
 
     if (this.state.currentTab === upstairsInfo) {
       contentBody = (
-        <div>
-          <div className="SVGIcon icon-ARIA_UP aria-up-size small-centered"></div>
+        <div>        
           <div className="gold-subtitle font-ExBold">The Restaurant</div>
           <div className="upstairs-info-desc font-light">{upstairsInfo.description}</div>
         </div>
@@ -176,7 +175,6 @@ export default class Upstairs extends Component {
                   </div>
                 </div>
               </div>
-
               <div className="row show-for-large">
                 {tabs}
               </div>

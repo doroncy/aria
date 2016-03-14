@@ -3,12 +3,15 @@ import style from './team.scss';
 import ClubGiftsBtns from '../page-clubs-gifts-btns/club-gifts-btns';
 import Footer from '../footer/footer';
 
+let bgCarouselInterval;
+
 export default class Team extends Component {
   constructor(props) {
     super();
 
     this.state = {
-      isJobsSelected: false
+      isJobsSelected: false,
+      currentBgIndex: 1
     };
 
     this.pageData = {
@@ -18,6 +21,22 @@ export default class Team extends Component {
     }
 
     this.showJobs = this.showJobs.bind(this);
+  }
+
+  componentDidMount() {
+    bgCarouselInterval = setInterval(()=> {
+      let newBgIndex = this.state.currentBgIndex === 5
+        ? 1
+        : this.state.currentBgIndex + 1;
+
+      this.setState({
+        currentBgIndex: newBgIndex
+      });
+    }.bind(this), 5000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(bgCarouselInterval);
   }
 
   showJobs() {
@@ -60,11 +79,11 @@ export default class Team extends Component {
     }
 
     return(
-      <div className={`animated fadeIn height100 background background-fade ${this.pageData.bg}`}>
+      <div className={`animated fadeIn height100 background background-fade team_bg${this.state.currentBgIndex}`}>
         <div className="row content-page-wrap">
           <div className="small-12 medium-10 columns small-centered">
             <div className="row">
-              <div className="small-3 medium-2 columns">
+              <div className="small-4 medium-3 columns">
                 <div className={`content-box content-box-btn ${isJobsSelectedClass}`} onClick={this.showJobs}>
                   Jobs
                 </div>

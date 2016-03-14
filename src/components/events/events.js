@@ -3,9 +3,15 @@ import style from './events.scss';
 import ClubGiftsBtns from '../page-clubs-gifts-btns/club-gifts-btns';
 import Footer from '../footer/footer';
 
+let bgCarouselInterval;
+
 export default class Events extends Component {
   constructor(props) {
     super();
+
+    this.state = {
+      currentBgIndex: 1
+    };
 
     this.pageData = {
       bg: 'events-bg-1',
@@ -14,9 +20,25 @@ export default class Events extends Component {
     }
   }
 
+  componentDidMount() {
+    bgCarouselInterval = setInterval(()=> {
+      let newBgIndex = this.state.currentBgIndex === 4
+        ? 1
+        : this.state.currentBgIndex + 1;
+
+      this.setState({
+        currentBgIndex: newBgIndex
+      });
+    }.bind(this), 5000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(bgCarouselInterval);
+  }
+
   render() {
     return(
-      <div className={`animated fadeIn height100 background background-fade ${this.pageData.bg}`}>
+      <div className={`animated fadeIn height100 background background-fade events_bg${this.state.currentBgIndex}`}>
         <div className="row content-page-wrap">
           <div className="small-12 medium-10 columns small-centered">
             <div className="row">

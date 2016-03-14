@@ -1,7 +1,7 @@
 @import '../../../node_modules/foundation-sites/scss/foundation';
 
 .overlay-corner.open {
-    opacity: 1;
+    opacity: 0.8;
     visibility: visible;
     -webkit-transform: translateY(0%);
     transform: translateY(0%);
@@ -27,7 +27,7 @@
     &.contact-page {
       background: #aba26e;
       background-color: #aba26e;
-      opacity: 0.96;
+      opacity: 0.8;
       visibility: visible;
       -webkit-transform: translateY(0%);
       transform: translateY(0%);
@@ -99,16 +99,6 @@
   cursor: default;
 }
 
-// .contact-page {
-//   background-color: #aba26e;
-//   opacity: 0.96;
-//   position: fixed !important;
-//   top: 10px;
-//   bottom: 10px;
-//   left: 10px;
-//   right: 10px;
-//   z-index: 999;
-// }
 .contact-page-text {
   font-size: 28px;
   color: #000;

@@ -65,8 +65,8 @@ const App = React.createClass({
             component="div"
             className="anim-wrap"
             transitionName={animName}
-            transitionEnterTimeout={600}
-            transitionLeaveTimeout={600}
+            transitionEnterTimeout={1000}
+            transitionLeaveTimeout={1000}
           >
             <Link to="/home">
               <div className={`logo-head SVGIcon icon-Logo_head_${themeColor} icon-Logo_head-dims`}></div>

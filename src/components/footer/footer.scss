@@ -1,0 +1,28 @@
+@import '../../../node_modules/foundation-sites/scss/foundation';
+
+.footer-wrap {
+  padding: 30px 20px 20px;
+
+  @include breakpoint(medium up) {
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+  }
+  .aria-copy {
+    text-align: left;
+    @include breakpoint(small down) {
+      text-align: center;
+    }
+  }
+  .done-by {
+    text-align: right;
+    @include breakpoint(small down) {
+      text-align: center;
+    }
+  }
+  .footer-text {
+    color:#fff;
+    font-size:10px;
+  }
+}
