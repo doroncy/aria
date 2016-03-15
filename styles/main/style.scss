@@ -35,6 +35,8 @@ $gold-color: #aba26e;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   &.background-fade {
     transition: all 0.5s;
   }

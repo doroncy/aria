@@ -29,14 +29,7 @@
   height: 120px;
   width: 120px;
 }
-.gold-subtitle {
-  text-transform: uppercase;
-  color:#aba26e; //$gold-color;
-  margin-bottom: 30px;
-  margin-top:10px;
-  font-size:1.2em;
-  letter-spacing: 1px;
-}
+
 .upstairs-info-desc {
   font-size: 1em;
   text-align: center;
@@ -47,7 +40,7 @@
     opacity: 1;
     @include breakpoint(medium up) {
       max-height:54vh;
-    }    
+    }
   }
 
   &.gallery {
