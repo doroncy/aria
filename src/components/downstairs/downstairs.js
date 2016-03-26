@@ -7,6 +7,15 @@ import downstairsStyle from './downstairs.scss';
 import menuItems from './menu';
 import Wines from '../upstairs/wines';
 import Footer from '../footer/footer';
+import Gallery from '../gallery/gallery';
+
+import galery1 from './images/gallery_down01.jpg';
+import galery2 from './images/gallery_down02.jpg';
+import galery3 from './images/gallery_down03.jpg';
+import galery4 from './images/gallery_down04.jpg';
+import galery5 from './images/gallery_down05.jpg';
+
+const galleryImages = [galery1, galery2, galery3, galery4, galery5];
 
 const downstairsInfo = {
   title: 'The Lounge Bar',
@@ -32,8 +41,8 @@ export default class Downstairs extends Component {
       galleryIndex: 1
     };
 
-    this.nextImage = this.nextImage.bind(this);
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.bgImageChange = this.bgImageChange.bind(this);
   }
 
   componentDidMount() {
@@ -61,25 +70,16 @@ export default class Downstairs extends Component {
     });
   }
 
-  prevImage() {
-    let newGalleryIndex = this.state.galleryIndex === 1 ? 5 : this.state.galleryIndex - 1;
-    galleryInfo.bg = `downstairs-gallery-${newGalleryIndex}`;
-    this.setState({
-      galleryIndex: newGalleryIndex
-    });
-  }
-
-  nextImage() {
-    let newGalleryIndex = this.state.galleryIndex === 5 ? 1 : this.state.galleryIndex + 1;
-    galleryInfo.bg = `downstairs-gallery-${newGalleryIndex}`;
-    this.setState({
-      galleryIndex: newGalleryIndex
-    });
-  }
-
   toggleMenu() {
     this.setState({
       showMenuTabs: !this.state.showMenuTabs
+    });
+  }
+
+  bgImageChange(index) {
+    galleryInfo.bg = `downstairs-gallery-${index}`;
+    this.setState({
+      currentTab: galleryInfo
     });
   }
 
@@ -114,10 +114,10 @@ export default class Downstairs extends Component {
       verticalTabsTitleClass = verticalTabsTitleClass + ' vertical-menu-title';
     }
 
-    let contentBody;
+    let contentBody = '';
     let galleryModeClass = '';
     let gallerySelected = '';
-    let galleryArrows = '';
+    let gallery = '';
 
     if (this.state.currentTab === downstairsInfo) {
       contentBody = (
@@ -127,14 +127,9 @@ export default class Downstairs extends Component {
         </div>
       );
     } else if (this.state.currentTab === galleryInfo) {
-      galleryModeClass = 'gallery'
-      gallerySelected = 'selected'
-      galleryArrows = (
-        <div className="gallery-icons">
-          <div className="SVGIcon icon-arrow_left" onClick={this.prevImage.bind(this)}></div>
-          <div className="SVGIcon icon-arrow_right" onClick={this.nextImage.bind(this)}></div>
-        </div>
-      )
+      galleryModeClass = 'gallery';
+      gallerySelected = 'selected';
+      gallery = <Gallery galleryImages={galleryImages} onImageChange={this.bgImageChange}></Gallery>
     } else if (this.state.currentTab.title === 'Wine Cellar') {
       contentBody = <Wines></Wines>;
     } else {
@@ -162,7 +157,6 @@ export default class Downstairs extends Component {
 
     return(
       <div className={`animated fadeIn height100 background background-fade ${this.state.currentTab.bg}`}>
-        {galleryArrows}
         <div className={`tabs-component ${galleryModeClass}`}>
           <div className="row">
             <div className="mall-12 medium-10 columns small-centered">
@@ -213,10 +207,10 @@ export default class Downstairs extends Component {
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
+        {gallery}
         <Footer></Footer>
       </div>
     );

@@ -83,36 +83,7 @@
   text-transform: capitalize;
 }
 
-.gallery-icons {
-  .icon-arrow_left {
-    cursor: pointer;
-    opacity: 0.7;
-    position: absolute;
-    left:30px;
-    top:50%;
-    height: 70px;
-    width:35px;
-    margin-top: -35px;
-    &:hover {
-      opacity: 1;
-    }
-  }
-  .icon-arrow_right {
-    cursor: pointer;
-    opacity: 0.7;
-    position: absolute;
-    right:30px;
-    top:50%;
-    height: 70px;
-    width:35px;
-    margin-top: -35px;
-    &:hover {
-      opacity: 1;
-    }
-  }
 
-
-}
 .downstairs-bg {
   background-image: url('./images/downstairs-bg.jpg');
 }
