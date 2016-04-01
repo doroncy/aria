@@ -24,9 +24,9 @@ export default class ClubGiftsBtns extends Component {
           <div className="row">
             <div className="small-12 medium-6 columns moments-club-wrap">
               <div className={`content-box table-btn ${themeClassName}`}>
-                <Link to="/moments">
+                <a href="http://valuecard.co.il/aria/tofes_web.asp" target="_blank">
                   <div className={`content-box-title content-box-title-small ${btnColorClassName}`}>Join the Aria Moments club</div>
-                </Link>
+                </a>
               </div>
             </div>
             <div className="small-12 medium-6 columns gift-card-wrap">

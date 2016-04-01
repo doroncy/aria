@@ -87,9 +87,9 @@ export default class Home extends Component {
           <div className="bottom-btns">
               <div className="small-6 columns no-padding-left small-padding-right">
                 <div className="content-box content-box-btn bottom-btn-big">
-                  <Link to="/moments">
+                  <a href="http://valuecard.co.il/aria/tofes_web.asp" target="_blank">
                     <div className="SVGIcon home-moments-link icon-ARIA_MOMENTS_LOGO_for_home center-icon"></div>
-                  </Link>
+                  </a>                  
                 </div>
               </div>
               <div className="small-6 columns no-padding-right small-padding-left">

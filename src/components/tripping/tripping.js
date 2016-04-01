@@ -17,6 +17,11 @@ export default class Team extends Component {
   render() {
     return(
       <div className={`animated fadeIn height100 background background-fade ${this.pageData.bg}`}>
+        <div className="tripping-video">
+          <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/-0dWQ9eaZjk?autoplay=1&rel=0&controls=0&showinfo=0&replay=1" frameBorder="0" allowFullScreen>
+          </iframe>
+        </div>
         <div className="row content-page-wrap">
           <div className="small-12 medium-10 columns small-centered">
             <div className="row">
@@ -28,16 +33,15 @@ export default class Team extends Component {
                   <div className="small-12 medium-7 columns">
                     <div className="page-title font-ExBold">{this.pageData.title}</div>
                     <p className="page-text font-light">{this.pageData.text}</p>
-                    <div className="margin-top">
                       <div className="row">
-                        <div className="small-12 large-8 columns font-SemiBold all-caps input-label">
-                          <label className="text-left middle">Enter code to see more:</label>
-                        </div>
-                        <div className="small-12 large-4 columns">
-                          <input type="text" className="tripping-code-input" />
+                        <div className="small-12 large-6 small-centered columns">
+                          <div className="content-box dark more-details">
+                            <a href="mailto:orenheknin@gmail.com" target="_blank">
+                              Contact us for more details
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>

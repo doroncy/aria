@@ -120,7 +120,8 @@ body {
   padding: 10px 20px 30px !important;
 
   @include breakpoint(medium up) {
-    height: 46vh;
+    height: 45vh;
+    max-height: 850px;
     overflow-y: auto;
     padding: 20px 80px 40px !important;
   }
