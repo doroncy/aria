@@ -30,7 +30,7 @@ export default class Team extends Component {
     let contentBoxFadeClass = !this.state.contentBoxVisible ? 'fadeOut' :'';
 
     let contentBox = (
-      <div className={`row content-page-wrap animated-fast fadeIn ${contentBoxFadeClass}`}>
+      <div className={`row tripiing-content-box content-page-wrap animated-fast fadeIn ${contentBoxFadeClass}`}>
         <div className="small-12 medium-10 columns small-centered">
           <div className="row pos-relative">
             <div className="SVGIcon icon-logo icon-x_button" onClick={this.toggleContentVisible}></div>
