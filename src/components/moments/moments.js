@@ -32,7 +32,7 @@ export default class Philosophy extends Component {
                 </div>
               </div>
             </div>
-            <ClubGiftsBtns theme="dark"></ClubGiftsBtns>
+            <ClubGiftsBtns theme="dark" joinMoments="true"></ClubGiftsBtns>
           </div>
         </div>
         <Footer></Footer>

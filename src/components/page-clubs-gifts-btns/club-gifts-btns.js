@@ -18,15 +18,25 @@ export default class ClubGiftsBtns extends Component {
       mailIconClass = 'icon-icon_mail_G';
     }
 
+    let joinMomentsBtn = this.props.joinMoments === 'true'
+      ? (
+        <a href="http://valuecard.co.il/aria/tofes_web.asp" target="_blank">
+          <div className={`content-box-title content-box-title-small ${btnColorClassName}`}>Join the Aria Moments club</div>
+        </a>
+      )
+      : (
+        <Link to="/moments">
+          <div className={`content-box-title content-box-title-small ${btnColorClassName}`}>Join the Aria Moments club</div>
+        </Link>
+      );
+
     return(
       <div className="action-btn-wrap">
         <div className="action-btn-inner">
           <div className="row">
             <div className="small-12 medium-6 columns moments-club-wrap">
               <div className={`content-box table-btn ${themeClassName}`}>
-                <a href="http://valuecard.co.il/aria/tofes_web.asp" target="_blank">
-                  <div className={`content-box-title content-box-title-small ${btnColorClassName}`}>Join the Aria Moments club</div>
-                </a>
+                {joinMomentsBtn}
               </div>
             </div>
             <div className="small-12 medium-6 columns gift-card-wrap">

@@ -16,6 +16,7 @@ export default class OverlayMenu extends Component {
       {title: 'Aria Downstairs' , link:'/downstairs'},
       {title: 'Aria Tripping' , link:'/tripping'},
       {title: 'Aria Music' , link:'/music'},
+      {title: 'Aria Moments' , link:'/moments'},
       {title: 'Events' , link:'/events'},
       {title: 'The Aria Team' , link:'/team'},
       {title: 'Contact', link:'contact'}
@@ -28,17 +29,23 @@ export default class OverlayMenu extends Component {
     this.props.toggleMenu();
     this.setState({
       contactPageVisible: false
-    });    
+    });
     if (newState === 'contact') {
       this.setState({
         contactPageVisible: true
       });
     } else {
+      this.setState({
+        contactPageVisible: false
+      });
       browserHistory.push(`${newState}`);
     }
   }
 
   render() {
+    if (!this.props.overlayVisible) {
+        this.state.contactPageVisible = false;
+    }
     let openClass = '';
     let contentHtml = '';
     if (!!this.state.contactPageVisible && !this.props.menuVisible) {
@@ -49,7 +56,9 @@ export default class OverlayMenu extends Component {
             <div className="contact-page-title font-ExBold">Contact us!</div>
             <div className="contact-page-text font-Regular">
               <p>66 Nachalat Binyamin St., Tel Aviv</p>
-              <p>03-529-60-54</p>
+              <div>
+                <a href="tel:972-3529-6054">03-529-60-54</a>
+              </div>
               <div className="contact-mail-wrap">
                 <a href="mailto:orenheknin@gmail.com" target="_blank">
                   <div className="SVGIcon icon-Email_icon_for_contact icon-Email_icon_for_contact-dims"></div>

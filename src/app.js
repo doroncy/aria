@@ -2,7 +2,7 @@ import React from 'react';
 import {render} from 'react-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { browserHistory, Router, Route, IndexRoute, Link } from 'react-router';
-import { createHistory } from 'history'
+import { createHistory } from 'history';
 import OverlayMenu from './components/OverlayMenu/overlay-menu.js';
 
 // Import global styles
@@ -22,16 +22,23 @@ import Music from './components/music/music';
 import Events from './components/events/events';
 import Loading from './components/loading/loading';
 
-
 let lastLocationPathname = '/'
 const App = React.createClass({
   getInitialState: function() {
-    return {menuVisible: false};
+    return {menuVisible: false, overlayVisible: false};
   },
 
   toggleMenu() {
     this.setState({
-      menuVisible: !this.state.menuVisible
+      menuVisible: !this.state.menuVisible,
+      overlayVisible: true
+    });
+  },
+
+  closeOverlay() {
+    this.setState({
+      menuVisible: false,
+      overlayVisible: false
     });
   },
 
@@ -55,7 +62,8 @@ const App = React.createClass({
     let menuBtn = '';
     if (this.props.location.pathname !== '/loading') {
       menuBtn = (
-        <button type="button" className={`overlay-toggle-btn SVGIcon icon-TRIANGLE_corner_${themeColor}`} onClick={this.toggleMenu}>Close</button>
+         <button type="button" className={`overlay-toggle-btn SVGIcon icon-TRIANGLE_corner_${themeColor}`} onClick={this.toggleMenu}>
+         </button>
       );
     }
 
@@ -68,11 +76,11 @@ const App = React.createClass({
             transitionEnterTimeout={1000}
             transitionLeaveTimeout={1000}
           >
-            <Link to="/home">
+            <Link to="/home" onClick={this.closeOverlay}>
               <div className={`logo-head SVGIcon icon-Logo_head_${themeColor} icon-Logo_head-dims`}></div>
             </Link>
             {menuBtn}
-            <OverlayMenu menuVisible={this.state.menuVisible} toggleMenu={this.toggleMenu}></OverlayMenu>
+            <OverlayMenu menuVisible={this.state.menuVisible} toggleMenu={this.toggleMenu} overlayVisible={this.state.overlayVisible}></OverlayMenu>
             {React.cloneElement(this.props.children, {
               key: this.props.location.pathname
             })}

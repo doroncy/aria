@@ -22,18 +22,11 @@ $gold-color: #aba26e;
   text-transform: uppercase;
 }
 
-/* background setup */
-.background-1 {
-    background-repeat:no-repeat;
-    /* custom background-position */
-    background-position:50% 50%;
-    /* ie8- graceful degradation */
-    background-position:50% 50%\9 !important;
-}
-
 .background {
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   position: relative;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -78,9 +71,12 @@ body {
     url('../../src/components/upstairs/images/upstairs-alcohol.jpg') url('../../src/components/upstairs/images/upstairs-cocktails.jpg') url('../../src/components/upstairs/images/upstairs-main.jpg')
     url('../../src/components/upstairs/images/upstairs-desserts.jpg') url('../../src/components/upstairs/images/upstairs-entrees.jpg') url('../../src/components/upstairs/images/upstairs-wine.jpg')
     url('../../src/components/upstairs/images/Gallery_UP01.jpg') url('../../src/components/upstairs/images/Gallery_UP02.jpg') url('../../src/components/upstairs/images/Gallery_UP03.jpg') url('../../src/components/upstairs/images/Gallery_UP04.jpg')
-    url('../../src/components/upstairs/images/Gallery_UP05.jpg') url('../../src/components/upstairs/images/Gallery_UP06.jpg') url('../../src/components/upstairs/images/Gallery_UP07.jpg')
+    url('../../src/components/upstairs/images/Gallery_UP05.jpg') url('../../src/components/upstairs/images/Gallery_UP06.jpg') url('../../src/components/upstairs/images/Gallery_UP07.jpg') url('../../src/components/upstairs/images/Gallery_UP08.jpg')
+    url('../../src/components/upstairs/images/Gallery_UP09.jpg') url('../../src/components/upstairs/images/Gallery_UP10.jpg') url('../../src/components/upstairs/images/Gallery_UP11.jpg') url('../../src/components/upstairs/images/Gallery_UP12.jpg')
     url('../../src/components/downstairs/images/gallery_down01.jpg') url('../../src/components/downstairs/images/gallery_down02.jpg') url('../../src/components/downstairs/images/gallery_down03.jpg')
-    url('../../src/components/downstairs/images/gallery_down04.jpg') url('../../src/components/downstairs/images/gallery_down05.jpg');
+    url('../../src/components/downstairs/images/gallery_down04.jpg') url('../../src/components/downstairs/images/gallery_down05.jpg') url('../../src/components/downstairs/images/gallery_down06.jpg')
+    url('../../src/components/downstairs/images/gallery_down07.jpg') url('../../src/components/downstairs/images/gallery_down08.jpg') url('../../src/components/downstairs/images/gallery_down09.jpg')
+    url('../../src/components/downstairs/images/gallery_down10.jpg') url('../../src/components/downstairs/images/gallery_down11.jpg');
     position: absolute;
     right: 1000000px;
     display: none;

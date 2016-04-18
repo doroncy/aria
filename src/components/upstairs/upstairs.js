@@ -16,8 +16,13 @@ import galery4 from './images/Gallery_UP04.jpg';
 import galery5 from './images/Gallery_UP05.jpg';
 import galery6 from './images/Gallery_UP06.jpg';
 import galery7 from './images/Gallery_UP07.jpg';
+import galery8 from './images/Gallery_UP08.jpg';
+import galery9 from './images/Gallery_UP09.jpg';
+import galery10 from './images/Gallery_UP10.jpg';
+import galery11 from './images/Gallery_UP11.jpg';
+import galery12 from './images/Gallery_UP12.jpg';
 
-const galleryImages = [galery1, galery2, galery3, galery4, galery5, galery6, galery7];
+const galleryImages = [galery1, galery2, galery3, galery4, galery5, galery6, galery7, galery8, galery9, galery10, galery11, galery12];
 
 const upstairsInfo = {
   title: 'The restaurant',
@@ -45,6 +50,7 @@ export default class Upstairs extends Component {
     };
 
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.toogleGallery = this.toogleGallery.bind(this);
     this.bgImageChange = this.bgImageChange.bind(this);
   }
 
@@ -83,6 +89,14 @@ export default class Upstairs extends Component {
   toggleMenu() {
     this.setState({
       showMenuTabs: !this.state.showMenuTabs
+    });
+  }
+
+  toogleGallery() {
+    this.setState({
+      currentTab: this.state.currentTab === galleryInfo
+        ? upstairsInfo
+        : galleryInfo
     });
   }
 
@@ -191,6 +205,9 @@ export default class Upstairs extends Component {
                   </div>
                   <div className="fade-bottom"></div>
                 </div>
+              </div>
+              <div className={`hide-for-medium content-box content-box-btn table-btn ${gallerySelected}`} onClick={this.toogleGallery}>
+                <div className="content-box-title content-box-title-small">Gallery</div>
               </div>
               <div className="action-btn-wrap-flex">
                 <div className={`show-for-medium content-box content-box-btn table-btn ${gallerySelected}`} onClick={this.changeTab.bind(this,galleryInfo)}>
