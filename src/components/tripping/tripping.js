@@ -45,7 +45,7 @@ export default class Team extends Component {
                     <div className="row">
                       <div className="small-12 large-6 small-centered columns">
                         <div className="content-box dark more-details">
-                          <a href="mailto:orenheknin@gmail.com" target="_blank">
+                          <a href="http://ariatripping.com/" target="_blank">
                             Contact us for more details
                           </a>
                         </div>
