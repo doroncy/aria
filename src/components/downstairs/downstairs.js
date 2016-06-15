@@ -9,19 +9,9 @@ import Wines from '../upstairs/wines';
 import Footer from '../footer/footer';
 import Gallery from '../gallery/gallery';
 
-import galery1 from './images/gallery_down01.jpg';
-import galery2 from './images/gallery_down02.jpg';
-import galery3 from './images/gallery_down03.jpg';
-import galery4 from './images/gallery_down04.jpg';
-import galery5 from './images/gallery_down05.jpg';
-import galery6 from './images/gallery_down06.jpg';
-import galery7 from './images/gallery_down07.jpg';
-import galery8 from './images/gallery_down08.jpg';
-import galery9 from './images/gallery_down09.jpg';
-import galery10 from './images/gallery_down10.jpg';
-import galery11 from './images/gallery_down11.jpg';
-
-const galleryImages = [galery1, galery2, galery3, galery4, galery5, galery6, galery7, galery8, galery9, galery10, galery11];
+const galleryImages = _(_.range(1,12))
+  .map((index)=> require(`./images/gallery_down${index}.jpg`))
+  .value();
 
 const downstairsInfo = {
   title: 'The Lounge Bar',

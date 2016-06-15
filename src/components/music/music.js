@@ -2,28 +2,10 @@ import React, { Component } from 'react';
 import style from './music.scss';
 import ClubGiftsBtns from '../page-clubs-gifts-btns/club-gifts-btns';
 import Footer from '../footer/footer';
-import galery1 from './images/gallery_1.jpg';
-import galery2 from './images/gallery_2.jpg';
-import galery3 from './images/gallery_3.jpg';
-import galery4 from './images/gallery_4.jpg';
-import galery5 from './images/gallery_5.jpg';
-import galery6 from './images/gallery_6.jpg';
-import galery7 from './images/gallery_7.jpg';
-import galery8 from './images/gallery_8.jpg';
-import galery9 from './images/gallery_9.jpg';
-import galery10 from './images/gallery_10.jpg';
-import galery11 from './images/gallery_11.jpg';
-import galery12 from './images/gallery_12.jpg';
-import galery13 from './images/gallery_13.jpg';
-import galery14 from './images/gallery_14.jpg';
-import galery15 from './images/gallery_15.jpg';
-import galery16 from './images/gallery_16.jpg';
-import galery17 from './images/gallery_17.jpg';
-import galery18 from './images/gallery_18.jpg';
-import galery19 from './images/gallery_19.jpg';
-import galery20 from './images/gallery_20.jpg';
 
-const gallery = [galery1, galery2, galery3, galery4, galery5, galery6, galery7, galery8, galery9, galery10, galery11, galery12, galery13, galery14, galery15, galery16, galery17, galery18, galery19, galery11];
+const gallery = _(_.range(30,0,-1))
+  .map((index)=> require(`./images/gallery_${index}.jpg`))
+  .value();
 
 export default class Team extends Component {
   constructor(props) {

@@ -17,6 +17,9 @@ $gold-color: #aba26e;
 .font-SemiBold {
   font-family: 'Montserrat-SemiBold', Arial;
 }
+.font-heb {
+  font-family: 'OEMeodedSansPro-Regular', Arial;
+}
 
 .all-caps {
   text-transform: uppercase;
@@ -68,14 +71,14 @@ body {
     url('../../src/components/team/images/team-bg-3.jpg') url('../../src/components/team/images/team-bg-4.jpg') url('../../src/components/team/images/team-bg-5.jpg')
     url('../../src/components/moments/bg_moments.jpg') url('../../src/components/music/images/music-bg-1.jpg') url('../../src/components/philosophy/philosophy_1.jpg')
     url('../../src/components/tripping/tripping-bg-1.jpg') url('../../src/components/upstairs/images/upstairs-bg.jpg')
-    url('../../src/components/upstairs/images/upstairs-alcohol.jpg') url('../../src/components/upstairs/images/upstairs-cocktails.jpg') url('../../src/components/upstairs/images/upstairs-main.jpg')
+    url('../../src/components/upstairs/images/upstairs-tom.jpg') url('../../src/components/upstairs/images/upstairs-cocktails.jpg') url('../../src/components/upstairs/images/upstairs-main.jpg')
     url('../../src/components/upstairs/images/upstairs-desserts.jpg') url('../../src/components/upstairs/images/upstairs-entrees.jpg') url('../../src/components/upstairs/images/upstairs-wine.jpg')
-    url('../../src/components/upstairs/images/Gallery_UP01.jpg') url('../../src/components/upstairs/images/Gallery_UP02.jpg') url('../../src/components/upstairs/images/Gallery_UP03.jpg') url('../../src/components/upstairs/images/Gallery_UP04.jpg')
-    url('../../src/components/upstairs/images/Gallery_UP05.jpg') url('../../src/components/upstairs/images/Gallery_UP06.jpg') url('../../src/components/upstairs/images/Gallery_UP07.jpg') url('../../src/components/upstairs/images/Gallery_UP08.jpg')
-    url('../../src/components/upstairs/images/Gallery_UP09.jpg') url('../../src/components/upstairs/images/Gallery_UP10.jpg') url('../../src/components/upstairs/images/Gallery_UP11.jpg') url('../../src/components/upstairs/images/Gallery_UP12.jpg')
-    url('../../src/components/downstairs/images/gallery_down01.jpg') url('../../src/components/downstairs/images/gallery_down02.jpg') url('../../src/components/downstairs/images/gallery_down03.jpg')
-    url('../../src/components/downstairs/images/gallery_down04.jpg') url('../../src/components/downstairs/images/gallery_down05.jpg') url('../../src/components/downstairs/images/gallery_down06.jpg')
-    url('../../src/components/downstairs/images/gallery_down07.jpg') url('../../src/components/downstairs/images/gallery_down08.jpg') url('../../src/components/downstairs/images/gallery_down09.jpg')
+    url('../../src/components/upstairs/images/Gallery_UP1.jpg') url('../../src/components/upstairs/images/Gallery_UP2.jpg') url('../../src/components/upstairs/images/Gallery_UP3.jpg') url('../../src/components/upstairs/images/Gallery_UP4.jpg')
+    url('../../src/components/upstairs/images/Gallery_UP5.jpg') url('../../src/components/upstairs/images/Gallery_UP6.jpg') url('../../src/components/upstairs/images/Gallery_UP7.jpg') url('../../src/components/upstairs/images/Gallery_UP8.jpg')
+    url('../../src/components/upstairs/images/Gallery_UP9.jpg') url('../../src/components/upstairs/images/Gallery_UP10.jpg') url('../../src/components/upstairs/images/Gallery_UP11.jpg') url('../../src/components/upstairs/images/Gallery_UP12.jpg')
+    url('../../src/components/downstairs/images/gallery_down1.jpg') url('../../src/components/downstairs/images/gallery_down2.jpg') url('../../src/components/downstairs/images/gallery_down3.jpg')
+    url('../../src/components/downstairs/images/gallery_down4.jpg') url('../../src/components/downstairs/images/gallery_down5.jpg') url('../../src/components/downstairs/images/gallery_down6.jpg')
+    url('../../src/components/downstairs/images/gallery_down7.jpg') url('../../src/components/downstairs/images/gallery_down8.jpg') url('../../src/components/downstairs/images/gallery_down9.jpg')
     url('../../src/components/downstairs/images/gallery_down10.jpg') url('../../src/components/downstairs/images/gallery_down11.jpg');
     position: absolute;
     right: 1000000px;
@@ -597,4 +600,7 @@ a {
     background-color: rgba(0, 0, 0, .8);
     margin: 0 !important;
   }
+}
+.menuitem-description {
+  margin-bottom: 15px;
 }

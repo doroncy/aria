@@ -9,20 +9,9 @@ import Wines from './wines';
 import Footer from '../footer/footer';
 import Gallery from '../gallery/gallery';
 
-import galery1 from './images/Gallery_UP01.jpg';
-import galery2 from './images/Gallery_UP02.jpg';
-import galery3 from './images/Gallery_UP03.jpg';
-import galery4 from './images/Gallery_UP04.jpg';
-import galery5 from './images/Gallery_UP05.jpg';
-import galery6 from './images/Gallery_UP06.jpg';
-import galery7 from './images/Gallery_UP07.jpg';
-import galery8 from './images/Gallery_UP08.jpg';
-import galery9 from './images/Gallery_UP09.jpg';
-import galery10 from './images/Gallery_UP10.jpg';
-import galery11 from './images/Gallery_UP11.jpg';
-import galery12 from './images/Gallery_UP12.jpg';
-
-const galleryImages = [galery1, galery2, galery3, galery4, galery5, galery6, galery7, galery8, galery9, galery10, galery11, galery12];
+const galleryImages = _(_.range(1,13))
+  .map((index)=> require(`./images/Gallery_UP${index}.jpg`))
+  .value();
 
 const upstairsInfo = {
   title: 'The restaurant',
@@ -149,7 +138,7 @@ export default class Upstairs extends Component {
       gallerySelected = 'selected'
       gallery = <Gallery galleryImages={galleryImages} onImageChange={this.bgImageChange}></Gallery>
     } else if (this.state.currentTab.title === 'Wine Cellar') {
-      contentBody = <Wines></Wines>;
+      contentBody = <Wines items={menuItems.wine.items}></Wines>;
     } else {
       contentBody = this.state.currentTab.items.map((item, index) => {
         let price = !_.isEmpty(item.price)

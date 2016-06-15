@@ -46,7 +46,7 @@ export default class Team extends Component {
                       <div className="small-12 large-6 small-centered columns">
                         <div className="content-box dark more-details">
                           <a href="http://ariatripping.com/" target="_blank">
-                            Contact us for more details
+                            more details
                           </a>
                         </div>
                       </div>
