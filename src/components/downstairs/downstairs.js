@@ -4,7 +4,8 @@ import _ from 'lodash';
 import tabsStyle from '../../../styles/main/tabs.scss';
 import globalStyle from '../../../styles/main/style.scss';
 import downstairsStyle from './downstairs.scss';
-import menuItems from './menu';
+import menuItemsEn from './menu';
+import menuItemsHeb from './menu-heb';
 import Wines from '../upstairs/wines';
 import Footer from '../footer/footer';
 import Gallery from '../gallery/gallery';
@@ -34,17 +35,19 @@ export default class Downstairs extends Component {
     this.state = {
       currentTab: downstairsInfo,
       tabIndex: 0,
-      galleryIndex: 1
+      galleryIndex: 1,
+      language: 'en'
     };
 
     this.toggleMenu = this.toggleMenu.bind(this);
     this.toogleGallery = this.toogleGallery.bind(this);
     this.bgImageChange = this.bgImageChange.bind(this);
+    this.toogleLanguage = this.toogleLanguage.bind(this);
   }
 
   componentDidMount() {
     var mainElem = this.refs.contentBody;
-    var menuItemsKeys = _.keys(menuItems);
+    var menuItemsKeys = _.keys(menuItemsEn);
 
     let that = this;
     mainElem.onscroll = function(ev) {
@@ -53,6 +56,8 @@ export default class Downstairs extends Component {
           ? menuItemsKeys[0]
           : menuItemsKeys[_.indexOf(menuItemsKeys, that.state.tabIndex) + 1];
 
+        let menuItems = that.state.language === 'en'
+          ? menuItemsEn : menuItemsHeb;
         that.changeTab(menuItems[newIndex], newIndex);
         mainElem.scrollTop = 0;
       }
@@ -88,7 +93,35 @@ export default class Downstairs extends Component {
     });
   }
 
+  toogleLanguage() {
+    let language = this.state.language === 'en' ? 'heb' : 'en';
+    let currentTab;
+    if (this.state.currentTab === downstairsInfo) {
+      currentTab = this.state.currentTab;
+    } else {
+      currentTab =  language === 'en'
+        ? menuItemsEn[this.state.tabIndex]
+        : menuItemsHeb[this.state.tabIndex];
+    }
+
+    this.setState({
+      language,
+      currentTab
+    });
+  }
+
   render() {
+    let menuItems, toggleLanguageBtn, hebLangClass;
+    if (this.state.language === 'en') {
+      menuItems = menuItemsEn;
+      hebLangClass = '';
+      toggleLanguageBtn = <div className="content-box-title font-heb heb-lang-btn">עברית</div>;
+    } else {
+      menuItems = menuItemsHeb;
+      hebLangClass = "font-heb";
+      toggleLanguageBtn = <div className="content-box-title content-box-title-small">English</div>;
+    }
+
     let tabs = _.map(menuItems, (menuItem, index) => {
       let isTabSelected = this.state.tabIndex === index ? "selected" : "";
       return (
@@ -136,16 +169,16 @@ export default class Downstairs extends Component {
       gallerySelected = 'selected';
       gallery = <Gallery galleryImages={galleryImages} onImageChange={this.bgImageChange}></Gallery>
     } else if (this.state.currentTab.title === 'Wine Cellar') {
-      contentBody = <Wines></Wines>;
+      contentBody = <Wines items={menuItems.wine.items} hebLangClass={hebLangClass}></Wines>;
     } else {
       contentBody = this.state.currentTab.items.map((item, index) => {
         let price = !_.isEmpty(item.price)
-          ? <span><br/>- {item.price} -</span>
+          ? <span className={hebLangClass}><br/>- {item.price} -</span>
         : '';
         return (
           <li className="menuitem" key={item.name}>
-            <div className="menuitem-name font-SemiBold">{item.name}</div>
-            <p className="menuitem-description font-light">
+            <div className={`menuitem-name font-SemiBold ${hebLangClass}`}>{item.name}</div>
+            <p className={`menuitem-description font-light ${hebLangClass}`}>
               {item.description}
               {price}
             </p>
@@ -203,6 +236,9 @@ export default class Downstairs extends Component {
                   <a href="http://clickiframe.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%90%D7%A8%D7%99%D7%94-%D7%91%D7%A8.aspx" target="_blank">
                     <div className="content-box-title content-box-title-small">Reserve a table</div>
                   </a>
+                </div>
+                <div className="content-box content-box-btn table-btn lang-btn" onClick={this.toogleLanguage}>
+                  {toggleLanguageBtn}
                 </div>
                 <div className="content-box content-box-btn social-media-btn facebook-btn">
                   <a href="https://www.facebook.com/ariabartlv" target="_blank">

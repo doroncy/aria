@@ -90,167 +90,176 @@ const Menu = {
     title: 'Wine Cellar',
     bg: 'upstairs-wine-bg',
     items: {
-      glass: [
-        {
-          title: "Sparkling",
-          items: [
-            "Cordon Negro, Freixenet, Brut Cava, Panades, Spain",
-            "Moët & Chandon, Brut Impérial N.V, Champagne, France 200 ml"
-          ]
-        },
-        {
-          title: "White",
-          items: [
-            "Rosé, Barbera, Adama, Tavor Winyard, Israel '15",
-            "Grüner Veltliner, Ecker, Wagram, Austria '14",
-            "Gewürztraminer, Josef Drathen, Germany '14",
-            "Chardonnay, Tzuba, Juden Hills, Israel '15",
-            "Riesling “Jean Baptiste” Kabinett, Gunderloch, Rheihessen, Germany '14",
-            "Petit Chablis, J. Moreau & Fils, Bourgogne, France '14"
-          ]
-        },
-        {
-          title: "Red",
-          items: [
-            "Côtes Du Ventoux, Louis Bernard, Rhône Valley, France '12",
-            "Merlot, Tzuba, Judean Hills, Israel '11",
-            "Pinot Noir, Jean Bouchard, Bourgogne, France '13",
-            "Chardonnay, Tzuba, Juden Hills, Israel '15",
-            "Rioja, Reserve, Muga, Spain '12",
-            "Cabernet Sauvignon, Chateau Golan, Golan Heights, Israel '12"
-          ]
-        }
-      ],
-      halfBottle: [
-        {
-          title: "Sparkling",
-          items: [
-            "Moët & Chandon, Brut Impérial N.V, Champagne, France"
-          ]
-        },
-        {
-          title: "White",
-          items: [
-            "Soave, Cesari, Veneto, Italy '14",
-            "Sancerre Les Baronne, Henri Bourgeois, Loire Valley, France '14"
-          ]
-        },
-        {
-          title: "Red",
-          items: [
-            "Château Cissac, Haut Medoc, Bordeaux, France '12",
-            `Cabernet Sauvignon Reserve, "Levanon" vineyard, Recanati, Upper Galilee, Israel '12, 500 ml`,
-            "Amarone, Cesari, Veneto, Italy '10"
-          ]
-        }
-      ],
-      bottle: [
-        {
-          title: "Whites",
-          countries: [
-            {
-              name: "Israel",
-              items: [
-                `Rosé, Barbera, Adama, Tavor Winyard, Israel '15`,
-                `Chardonnay, Tzuba, Juden Hills, '15`,
-                `Zohar, Adama, Tavor Winyard, '15`,
-                `Viognier, Ortal, Upper Galilee '13`,
-                `Lahat Lavan, Gush Etzion '13`,
-                `Chardonnay, Clos De Gat, Judean Hills '13`,
-                `Sauvignon Blanc, Château Golan, Golan Heights '14`,
-                `Chardonnay C, Castel, Judean Hills '14`,
-                `Sycra Chardonnay, Clos De Gat, Judean Hills '09`,
-              ]
-            },
-            {
-              name: "Germany",
-              items: [
-                `Gewürztraminer, Josef Drathen, Germany '14`,
-                `Riesling "Jean Baptiste" Kabinett, Gunderloch, Rheihessen, Germany '14`,
-                `Gewürztraminer, Schafer Fröhlich, Nahe '12`,
-                `Riesling Trocken, Donnhoff, Nahe '12`,
-                `Riesling, Von Der Fels, Keller, Rheinhessen '13`
-              ]
-            },
-            {
-              name: "Austria",
-              items: [
-                `Grüner Veltliner, Ecker, Wagram, Austria '14`
-              ]
-            },
-            {
-              name: "Italy",
-              items: [
-                `Masianco, Masi, Veneto '14`
-              ]
-            },
-            {
-              name: "France",
-              items: [
-                `Tavel Rosé, Château D’aqueria, Rhone Valley '13`,
-                `Bourgogne Chardonnay, Jean Bouchard, Bourgogne '13`,
-                `Petit Chablis, J. Moreau & Fils, Bourgogne '14`,
-                `Pouilly-Fumé Jeunes Vignes, Henri Bourgeois, Loire Valley '14`,
-                `Pinot Blanc, Reserve, Weinbach, Alsace '12`,
-                `Sancerre, J. Moreau & Fils, Loire Valley '13`,
-                `Chablis, Vaillons, Premier Cru, William Fevre, Bourgogne '13`,
-                `Puligny Montrachet, Olivier Leflaive, Bourgogne '11`,
-                `Chablis, Valmur, Grand Cru, J. Moreau & Fils, Bourgogne '11`
-              ]
-            }
-          ]
-        },
-        {
-          title: "Reds",
-          countries: [
-            {
-              name: "Israel",
-              items: [
-                `Merlot, Tzuba, Judean Hills '11`,
-                `Ra'am, Adama II, Tavor Winyard '12`,
-                `Secret, Trio, Judean Hills '11`,
-                `Cabernet Sauvignon, Château Golan, Golan Heights '13`,
-                `Ayalon Valley, Clos De Gat, Judean Hills '10`,
-                `Eliad, Château Golan, Golan Heights '13`,
-                `Grand Vin, Castel, Judean Hills '13`,
-                `Sycra Syrah, Clos De Gat, Judean Hills '11`
-              ]
-            },
-            {
-              name: "Italy",
-              items: [
-                `Chianti Superiore, Banfi, Tuscany '12`,
-                `Ripasso Mara, Cesari, Veneto ’13`,
-                `Campofiorin, Masi, Veneto ’11`,
-                `Barbera D’alba, Pio Cesare, Piedmont '13`,
-                `Tenuta Di Castiglioni, Frescobaldi, Tuscany '10`,
-                `Barbaresco, Produttori, Piedmont '10`,
-                `Sito Moresco, Gaja, Piedmont '13`,
-                `Amarone, Costasera, Della Valpolicella classico, Masi '11`,
-                `Brunello Di Montalcino, Castelgiocondo, Frescobaldi, Tuscany '10`
-              ]
-            },
-            {
-              name: "France",
-              items: [
-                `Côtes Du Ventoux, Louis Bernard, Rhône Valley, France '12`,
-                `Pinot Noir, Jean Bouchard, Bourgogne '13`,
-                `Tuffe, Château Du Hureau, Saumur Champigny, Loire Valley '11`,
-                `Syrah ’Signe’ Rouge, Cave Yves Cuilleron, Rhone Valley '12`,
-                `Beaune De Château, Premier Cru, Bouchard, Bourgogne '11`,
-                `Châteauneuf Du Pape, Louis Bernard, Rhone Valley '13`,
-                `Nuit Saint George, Louis Jadot, Bourgogne '07`
-              ]
-            },
-            {
-              name: "Spain",
-              items: [
-                `Rioja, Reserve, Muga, Spain '12`
-              ]
-            }
-          ]
-        }
-      ]
+      glass: {
+        title: 'By the Glass',
+        items:[
+          {
+            title: "Sparkling",
+            items: [
+              "Cordon Negro, Freixenet, Brut Cava, Panades, Spain",
+              "Moët & Chandon, Brut Impérial N.V, Champagne, France 200 ml"
+            ]
+          },
+          {
+            title: "White",
+            items: [
+              "Rosé, Barbera, Adama, Tavor Winyard, Israel '15",
+              "Grüner Veltliner, Ecker, Wagram, Austria '14",
+              "Gewürztraminer, Josef Drathen, Germany '14",
+              "Chardonnay, Tzuba, Juden Hills, Israel '15",
+              "Riesling “Jean Baptiste” Kabinett, Gunderloch, Rheihessen, Germany '14",
+              "Petit Chablis, J. Moreau & Fils, Bourgogne, France '14"
+            ]
+          },
+          {
+            title: "Red",
+            items: [
+              "Côtes Du Ventoux, Louis Bernard, Rhône Valley, France '12",
+              "Merlot, Tzuba, Judean Hills, Israel '11",
+              "Pinot Noir, Jean Bouchard, Bourgogne, France '13",
+              "Chardonnay, Tzuba, Juden Hills, Israel '15",
+              "Rioja, Reserve, Muga, Spain '12",
+              "Cabernet Sauvignon, Chateau Golan, Golan Heights, Israel '12"
+            ]
+          }
+        ]
+      },
+      halfBottle: {
+        title: 'Half a bottle',
+        items: [
+          {
+            title: "Sparkling",
+            items: [
+              "Moët & Chandon, Brut Impérial N.V, Champagne, France"
+            ]
+          },
+          {
+            title: "White",
+            items: [
+              "Soave, Cesari, Veneto, Italy '14",
+              "Sancerre Les Baronne, Henri Bourgeois, Loire Valley, France '14"
+            ]
+          },
+          {
+            title: "Red",
+            items: [
+              "Château Cissac, Haut Medoc, Bordeaux, France '12",
+              `Cabernet Sauvignon Reserve, "Levanon" vineyard, Recanati, Upper Galilee, Israel '12, 500 ml`,
+              "Amarone, Cesari, Veneto, Italy '10"
+            ]
+          }
+        ]
+      },
+      bottle: {
+        title: 'By the Bottle',
+        items:[
+          {
+            title: "Whites",
+            countries: [
+              {
+                name: "Israel",
+                items: [
+                  `Rosé, Barbera, Adama, Tavor Winyard, Israel '15`,
+                  `Chardonnay, Tzuba, Juden Hills, '15`,
+                  `Zohar, Adama, Tavor Winyard, '15`,
+                  `Viognier, Ortal, Upper Galilee '13`,
+                  `Lahat Lavan, Gush Etzion '13`,
+                  `Chardonnay, Clos De Gat, Judean Hills '13`,
+                  `Sauvignon Blanc, Château Golan, Golan Heights '14`,
+                  `Chardonnay C, Castel, Judean Hills '14`,
+                  `Sycra Chardonnay, Clos De Gat, Judean Hills '09`,
+                ]
+              },
+              {
+                name: "Germany",
+                items: [
+                  `Gewürztraminer, Josef Drathen, Germany '14`,
+                  `Riesling "Jean Baptiste" Kabinett, Gunderloch, Rheihessen, Germany '14`,
+                  `Gewürztraminer, Schafer Fröhlich, Nahe '12`,
+                  `Riesling Trocken, Donnhoff, Nahe '12`,
+                  `Riesling, Von Der Fels, Keller, Rheinhessen '13`
+                ]
+              },
+              {
+                name: "Austria",
+                items: [
+                  `Grüner Veltliner, Ecker, Wagram, Austria '14`
+                ]
+              },
+              {
+                name: "Italy",
+                items: [
+                  `Masianco, Masi, Veneto '14`
+                ]
+              },
+              {
+                name: "France",
+                items: [
+                  `Tavel Rosé, Château D’aqueria, Rhone Valley '13`,
+                  `Bourgogne Chardonnay, Jean Bouchard, Bourgogne '13`,
+                  `Petit Chablis, J. Moreau & Fils, Bourgogne '14`,
+                  `Pouilly-Fumé Jeunes Vignes, Henri Bourgeois, Loire Valley '14`,
+                  `Pinot Blanc, Reserve, Weinbach, Alsace '12`,
+                  `Sancerre, J. Moreau & Fils, Loire Valley '13`,
+                  `Chablis, Vaillons, Premier Cru, William Fevre, Bourgogne '13`,
+                  `Puligny Montrachet, Olivier Leflaive, Bourgogne '11`,
+                  `Chablis, Valmur, Grand Cru, J. Moreau & Fils, Bourgogne '11`
+                ]
+              }
+            ]
+          },
+          {
+            title: "Reds",
+            countries: [
+              {
+                name: "Israel",
+                items: [
+                  `Merlot, Tzuba, Judean Hills '11`,
+                  `Ra'am, Adama II, Tavor Winyard '12`,
+                  `Secret, Trio, Judean Hills '11`,
+                  `Cabernet Sauvignon, Château Golan, Golan Heights '13`,
+                  `Ayalon Valley, Clos De Gat, Judean Hills '10`,
+                  `Eliad, Château Golan, Golan Heights '13`,
+                  `Grand Vin, Castel, Judean Hills '13`,
+                  `Sycra Syrah, Clos De Gat, Judean Hills '11`
+                ]
+              },
+              {
+                name: "Italy",
+                items: [
+                  `Chianti Superiore, Banfi, Tuscany '12`,
+                  `Ripasso Mara, Cesari, Veneto ’13`,
+                  `Campofiorin, Masi, Veneto ’11`,
+                  `Barbera D’alba, Pio Cesare, Piedmont '13`,
+                  `Tenuta Di Castiglioni, Frescobaldi, Tuscany '10`,
+                  `Barbaresco, Produttori, Piedmont '10`,
+                  `Sito Moresco, Gaja, Piedmont '13`,
+                  `Amarone, Costasera, Della Valpolicella classico, Masi '11`,
+                  `Brunello Di Montalcino, Castelgiocondo, Frescobaldi, Tuscany '10`
+                ]
+              },
+              {
+                name: "France",
+                items: [
+                  `Côtes Du Ventoux, Louis Bernard, Rhône Valley, France '12`,
+                  `Pinot Noir, Jean Bouchard, Bourgogne '13`,
+                  `Tuffe, Château Du Hureau, Saumur Champigny, Loire Valley '11`,
+                  `Syrah ’Signe’ Rouge, Cave Yves Cuilleron, Rhone Valley '12`,
+                  `Beaune De Château, Premier Cru, Bouchard, Bourgogne '11`,
+                  `Châteauneuf Du Pape, Louis Bernard, Rhone Valley '13`,
+                  `Nuit Saint George, Louis Jadot, Bourgogne '07`
+                ]
+              },
+              {
+                name: "Spain",
+                items: [
+                  `Rioja, Reserve, Muga, Spain '12`
+                ]
+              }
+            ]
+          }
+        ]
+      }      
     }
   }
 }

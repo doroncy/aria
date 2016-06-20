@@ -15,6 +15,7 @@ $gold-color: #aba26e;
   font-family: 'Montserrat-ExBold', Arial;
 }
 .font-SemiBold {
+  font-weight: bold;
   font-family: 'Montserrat-SemiBold', Arial;
 }
 .font-heb {
@@ -322,6 +323,8 @@ body {
   .table-btn {
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
+    padding: 0!important;
+    line-height: 34px;
   }
   .social-media-btn {
     -webkit-flex: 0 0 40px;
