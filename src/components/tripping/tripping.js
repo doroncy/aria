@@ -67,8 +67,9 @@ export default class Team extends Component {
     return(
       <div className={`animated fadeIn height100 background background-fade ${this.pageData.bg}`}>
         <div className="tripping-video">
-          <iframe width="100%" height="100%" allowFullScreen
-            src="https://www.youtube.com/embed/bl8Qp0xVCyM?autoplay=1&list=PLr8daI8vQd_0ZIVK7kgLJQ4vvfjllydem&rel=0&controls=0&showinfo=0&replay=1&loop=1" frameBorder="0" allowFullScreen>
+          <iframe width="100%" height="100%"
+            allowFullScreen="true"
+            src="https://www.youtube.com/embed/bl8Qp0xVCyM?autoplay=1&list=PLr8daI8vQd_0ZIVK7kgLJQ4vvfjllydem&rel=0&controls=0&showinfo=0&replay=1&loop=1" frameBorder="0">
           </iframe>
           {videoToggle}
         </div>

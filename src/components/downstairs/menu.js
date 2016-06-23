@@ -207,6 +207,12 @@ const Menu = {
                   `Puligny Montrachet, Olivier Leflaive, Bourgogne '11`,
                   `Chablis, Valmur, Grand Cru, J. Moreau & Fils, Bourgogne '11`
                 ]
+              },
+              {
+                name: "New Zealand",
+                items: [
+                  `Sauvignon blanc, Cloudy bay, New Zealand 14'`
+                ]
               }
             ]
           },
