@@ -7,14 +7,14 @@ const Menu = {
       {name: "CEVICHE", description: "Finely chopped sea fish in Mediterranean spices, with quinoa puff and white peach sorbet", price: "59"},
       {name: "GREEK SASHIMI", description: "Sliced sea fish with tzatziki, crushed tomato, shallots and Spanish mint", price: "65"},
       {name: "RED TUNA", description: "Red tuna sashimi with vinaigrette of oranges, sesame oil and red chili", price: "68"},
-      {name: "SALMON TATAKI", description: "Single­sided seared salmon on tamarind and lemon­grass vinaigrette, on top", price: "58"},
+      {name: "SALMON TATAKI", description: "Single­sided seared salmon on tamarind and lemon­grass vinaigrette, on top", price: "59"},
       {name: "CALAMARI", description: "Calamari salad with spicy chili paste, tomatoes, mint and coriander on sheep yogurt", price: "58"},
       {name: 'COQUILLES SAINT JACQUES', description: "Seared a La Plancha in brown butter, served on white almonds cream with blue crabs bisque", price: "65"},
       {name: "ENDIVE SALAD", description: "Salad of purple and white endives, shallots and arugula, with cherry vinaigrette, roast almonds and gorgonzola cheese", price: "48"},
       {name: "FETOUSH SALAD", description: "Meggie tomatoes, miniature cucumbers and hot Roquette leaves, seasoned with Egyptian dukkah and sumac, served with “Hameiri” cheese", price: "49"},
       {name: "JUMBO ASPARAGUS", description: "Glazed in parmesan butter, served on sweetish corn cream with shaved parmesan on top", price: "59"},
       {name: "CHEESE AND SPINACH CAPPELLETTI", description: "Dumplings filled with four types of cheese and wild spinach, glazed in sage butter", price: "59"},
-      {name: "BEEF TATAKI", description: "Thinly sliced rump burned on one side, with 'far east' vinaigrette caramelized peanuts and jerusalem artichoke chips", price: "58"},
+      {name: "BEEF TATAKI", description: "Thinly sliced rump burned on one side, with 'far east' vinaigrette caramelized peanuts and jerusalem artichoke chips", price: "59"},
       {name: "BUTCHER'S SALAD", description: "Pan seared Onglet steak with dry sherry vinaigrette, Cashews and aromatic leaves", price: "55"},
       {name: "VEAL SWEETBREADS", description: "Sweetbreads on chestnut and white leek cream, with grated parmesan and reduced port wine sauce", price: "72"},
       {name: "FOIE GRAS", description: "Ravioli with Foie Gras and glazed rum in homemade Rosetta and Persian raisins", price: "65"}
@@ -83,7 +83,9 @@ const Menu = {
       {name: "CHEESE AND SPINACH CAPPELLETTI", description: "Dumplings filled with four types of cheese and wild spinach, glazed in sage butter"},
       {name: "SHORT RIB CAPPELLETTI", description: "Dumplings filled with short rib 4 hours slow­cooked with root vegetables, served with puree"},
       {name: 'HANGER STEAK', description: "Served on Jerusalem artichoke cream and burnt leek, in red wine sauce"},
-      {name: 'MEAGRE FILLET', description: "In light soy sauce, tiger tomatoes, lemon thyme and bok choy"}
+      {name: 'MEAGRE FILLET', description: "In light soy sauce, tiger tomatoes, lemon thyme and bok choy"},
+      {name: 'NEMESIS', description: "Moist Chocolate cake, oat meal crumble, milk chocolate ganache, marshmallow fluff and vanilla ice cream"},
+      {name: "COCONUT MILLE FEUILLE", description: "Thousand Layers separated with coconut mousse, Banana toffee carmelized banana and coconut sorbet"},
     ]
   },
   wine: {
@@ -153,6 +155,23 @@ const Menu = {
       bottle: {
         title: 'By the Bottle',
         items:[
+          {
+            title: "Sparkling",
+            countries: [
+              {
+                name: "",
+                items: [
+                  `Cordon Negro, Brut Cava, Freixenet, Penedes, Spain`,
+                  `Domaine Huet, Petillant Brut, Vouvray, Loire Valley France '09`,
+                  `Moët & Chandon, Brut Impéria N.V, Champagne, France`,
+                  `Moët & Chandon, Nectar Impérial N.V, Champagne, France`,
+                  `Jeanmaire, Brut Cuvée N.V, Champagne, France`,
+                  `Moët & Chandon, Rosé Impérial N.V, Champagne, France`,
+                  `Dom Pérignon, Vintage 2004, Champagne, France`
+                ]
+              }
+            ]
+          },
           {
             title: "Whites",
             countries: [

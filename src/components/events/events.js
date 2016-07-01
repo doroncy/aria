@@ -50,6 +50,12 @@ export default class Events extends Component {
                   <div className="small-12 medium-7 columns">
                     <div className="page-title font-ExBold">{this.pageData.title}</div>
                     <p className="page-text font-light">{this.pageData.text}</p>
+                      <div className="contcat-us-btn-wrap">
+                        <a href="mailto:tuti.kalman@gmail.com" target="_blank"
+                          className="content-box content-box-btn selected">
+                          Contact
+                        </a>
+                      </div>
                   </div>
                 </div>
               </div>
