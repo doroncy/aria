@@ -22,7 +22,7 @@ export default class Home extends Component {
       this.setState({
         currentBgIndex: newBgIndex
       });
-    }.bind(this), 5000);
+    }, 5000);
   }
 
   componentWillUnmount() {
@@ -87,7 +87,7 @@ export default class Home extends Component {
           <div className="bottom-btns">
               <div className="small-6 columns no-padding-left small-padding-right">
                 <div className="content-box content-box-btn bottom-btn-big">
-                  <Link to="/moments">                  
+                  <Link to="/moments">
                     <div className="SVGIcon home-moments-link icon-ARIA_MOMENTS_LOGO_for_home center-icon"></div>
                   </Link>
                 </div>

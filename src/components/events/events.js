@@ -29,7 +29,7 @@ export default class Events extends Component {
       this.setState({
         currentBgIndex: newBgIndex
       });
-    }.bind(this), 5000);
+    }, 5000);
   }
 
   componentWillUnmount() {
