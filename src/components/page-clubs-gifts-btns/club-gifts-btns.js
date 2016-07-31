@@ -49,7 +49,7 @@ export default class ClubGiftsBtns extends Component {
           </div>
         </div>
         <div className={`content-box social-media-btn mail-btn show-for-medium ${themeClassName}`}>
-          <a href="mailto:orenheknin@gmail.com" target="_blank">
+          <a href="mailto:orenheknin@gmail.com;tuti.kalman@gmail.com?subject=ARIA%20WEBSITE" target="_blank">
             <div className={`SVGIcon ${mailIconClass}`}></div>
           </a>
         </div>

@@ -62,7 +62,7 @@ export default class Team extends Component {
             Please contact us <br/> for more information.
           </p>
           <div className="contcat-us-btn-wrap">
-            <a href="mailto:orenheknin@gmail.com" target="_blank"
+            <a href="mailto:orenheknin@gmail.com;tuti.kalman@gmail.com?subject=ARIA%20WEBSITE" target="_blank"
               className="content-box content-box-btn selected">
               Contact
             </a>
