@@ -5,6 +5,8 @@ import { browserHistory, Router, Route, IndexRoute, Link } from 'react-router';
 import { createHistory } from 'history';
 import OverlayMenu from './components/OverlayMenu/overlay-menu.js';
 
+import '../index.html';
+
 // Import global styles
 import foundation from '../styles/foundation/foundation.scss'
 import style from '../styles/main/style.scss'
