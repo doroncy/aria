@@ -86,8 +86,9 @@ const Menu = {
       {name: "SHORT RIB CAPPELLETTI", description: "Dumplings filled with short rib 4 hours slow­cooked with root vegetables, served with puree"},
       {name: 'HANGER STEAK', description: "Served on Jerusalem artichoke cream and burnt leek, in red wine sauce"},
       {name: 'MEAGRE FILLET', description: "In light soy sauce, tiger tomatoes, lemon thyme and bok choy"},
+      {name: 'DESSERTS', description: ""},
       {name: 'NEMESIS', description: "Moist Chocolate cake, oat meal crumble, milk chocolate ganache, marshmallow fluff and vanilla ice cream"},
-      {name: "COCONUT MILLE FEUILLE", description: "Thousand Layers separated with coconut mousse, Banana toffee carmelized banana and coconut sorbet"},
+      {name: "COCONUT MILLE FEUILLE", description: "Thousand Layers separated with coconut mousse, Banana toffee carmelized banana and coconut sorbet"}
     ]
   },
   wine: {
@@ -171,7 +172,7 @@ const Menu = {
                   `Moët & Chandon, Rosé Impérial N.V, Champagne, France`,
                   `Dom Pérignon, Vintage 2004, Champagne, France`
                 ]
-              }                        
+              }
             ]
           },
           {
