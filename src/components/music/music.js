@@ -21,21 +21,21 @@ export default class Team extends Component {
       text: `Good food becomes a compete experience when combined with music. For us, preparing for the dinner service at ARIA is like preparing to go on stage; carefully organizing the kitchen and the interior, hand-picking the staff and designing the soundtrack. Your dinner can start with an easy swing-jazz and finish with dancing to new disco and deep house. Every evening, in its lounge bar floor,Aria hosted performances by local and foreign DJs, such as: Dan Ghenacia, Michel Cleis, Cesar Merveille, Diago Craus, Shonky, Gabriel Ananda, Matthew Lima, Dave seaman,Anthony papa, Nick Warren, Oliver dollar, Guy Gerber, Chaim and others.`
     }
 
-    this.showGallery = this.showGallery.bind(this);
+    this.toggleGallery = this.toggleGallery.bind(this);
   }
 
-  showGallery() {
+  toggleGallery() {
     this.setState({
-      showGallery: true
+      showGallery: !this.state.showGallery
     });
   }
 
   render() {
-    let isGallerySelectedClass = '';
+    let toggleGalleryBtnLabel = 'Gallery';
     let content = '';
 
     if (!!this.state.showGallery) {
-      isGallerySelectedClass = 'selected';
+      toggleGalleryBtnLabel = 'Music';
       content = (
         <div className="row">
           <div className="small-12 columns small-centered">
@@ -81,8 +81,8 @@ export default class Team extends Component {
           <div className="small-12 medium-10 columns small-centered">
             <div className="row">
               <div className="small-4 medium-3 columns">
-                <div className={`content-box content-box-btn ${isGallerySelectedClass}`} onClick={this.showGallery}>
-                  Gallery
+                <div className="content-box content-box-btn" onClick={this.toggleGallery}>
+                  {toggleGalleryBtnLabel}
                 </div>
               </div>
             </div>

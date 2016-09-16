@@ -20,7 +20,7 @@ export default class Team extends Component {
       text: `Join our team at ARIA and enjoy a professional, warm family atmosphere with great opportunities to grow and develop with us in our future ARIA projects.`
     }
 
-    this.showJobs = this.showJobs.bind(this);
+    this.toggleJobs = this.toggleJobs.bind(this);
   }
 
   componentDidMount() {
@@ -39,10 +39,14 @@ export default class Team extends Component {
     clearInterval(bgCarouselInterval);
   }
 
-  showJobs() {
+  toggleJobs() {
     this.setState({
-      isJobsSelected: true
+      isJobsSelected: !this.state.isJobsSelected
     });
+  }
+
+  getToggleJobsBtnLabel() {
+    return this.state.isJobsSelected ? 'Team' : 'Jobs';
   }
 
   render() {
@@ -84,8 +88,8 @@ export default class Team extends Component {
           <div className="small-12 medium-10 columns small-centered">
             <div className="row">
               <div className="small-4 medium-3 columns">
-                <div className={`content-box content-box-btn ${isJobsSelectedClass}`} onClick={this.showJobs}>
-                  Jobs
+                <div className="content-box content-box-btn" onClick={this.toggleJobs}>
+                  {this.getToggleJobsBtnLabel.bind(this)()}
                 </div>
               </div>
             </div>
