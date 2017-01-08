@@ -13,8 +13,7 @@ export default class OverlayMenu extends Component {
     this.menuBtns = [
       {title: 'The aria philosophy' , link:'/philosophy'},
       {title: 'Aria Upstairs' , link:'/upstairs'},
-      {title: 'Aria Downstairs' , link:'/downstairs'},
-      {title: 'Aria Tripping' , link:'/tripping'},
+      {title: 'Aria Downstairs' , link:'/downstairs'},    
       {title: 'Aria Music' , link:'/music'},
       {title: 'Aria Moments' , link:'/moments'},
       {title: 'Events' , link:'/events'},

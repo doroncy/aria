@@ -19,7 +19,6 @@ import Home from './components/home/home';
 import Philosophy from './components/philosophy/philosophy';
 import Moments from './components/moments/moments';
 import Team from './components/team/team';
-import Tripping from './components/tripping/tripping';
 import Music from './components/music/music';
 import Events from './components/events/events';
 import Loading from './components/loading/loading';
@@ -102,8 +101,7 @@ render((
       <Route path="downstairs" component={Downstairs} />
       <Route path="philosophy" component={Philosophy} />
       <Route path="moments" component={Moments} />
-      <Route path="team" component={Team} />
-      <Route path="tripping" component={Tripping} />
+      <Route path="team" component={Team} />    
       <Route path="music" component={Music} />
       <Route path="events" component={Events} />
     </Route>
