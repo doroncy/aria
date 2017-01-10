@@ -43,7 +43,7 @@ const Menu = {
       {name: "SIRLOIN", description: "250gr Sirloin steak from the Golan Heights, seared in cast-iron skillet, with garden pea cream, porcini mushroom stock, and ratte potato puree", price: "142"},
       {name: "BEEF FILLET", description: "250gr Marbleized beef filet with onion and charred potatoes", price: "159"},
       {name: "HANGER STEAK", description: "Over Jerusalem artichoke and charred leek cream, in red wine sauce", price: "122"},
-      {name: "LAMB CHOPS", description: "Pan seared lamb chops with lamb jus, green vegetables, potato and mustard seed puree", price: "152"},
+      {name: "LAMB CHOPS", description: "Pan seared lamb chops with lamb jus, green vegetables, potato and mustard seed puree", price: "152"}
     ],
     veganItems: [
       {name: 'FETTUCCINE GREENS', description: `Vegan Fettuccine with "Aria style" green curry, bok choy, broccomini and spring onions`, price: "68"},
