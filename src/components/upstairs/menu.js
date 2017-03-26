@@ -76,8 +76,8 @@ const Menu = {
       {name: "SESAME STREET", description: `A Once in a lifetime experience, that goes against the grain. A combination of Citron and Orange Ketel 1 Vodka, housemade creamy Limoncello, vanilla honey and tahini!! Daring, tart, sweet and viscous. Bert and Ernie wouldn’t dare, do you?`, price:"54"},
       {name: "BEE’S KNEES", description: `A new twist on a classic, that tastes like jam and butter toast, only without the toast. Appleton Rum with a browned butter wash, shaken with honey, orange juice and lime. A refreshing cocktail, with light notes of sweetness and citrus.`, price:"48"},
       {name: "ARIA SOUR #4", description: `Our revamped and beloved signature cocktail. Hennessy V.S, Orange Caracao, Amaro Montenegro, lemon juice, maple syrup and egg white, well shaken. A Classic Sour, that’s powerful and complex in an unforgettable way.`, price:"48"},
-      {name: "BUBBLE BURRY", description: `A cleaver, boozy cocktail with dark chocolate, coffee and light vanilla flavors. Zacapa 23 Rum, Bulleit Bourbon, Cynar, a touch of vanilla and chocolate bitters. Creating a wintery cocktail, with amazing bittersweet, boozy flavors. An experience for all your senses.`, price:"66"},
-      {name: "BLACK PEARL", description: `A sweet, light and refreshing aperitif, perfect for any celebration. Tanqueray Gin, Moet and Chandon Champagne, “Aria Style” wild berry compote, lemon, vanilla and egg white.`, price:"62"},
+      {name: "BUBBLE BURRY", description: `A sweet, light and refreshing aperitif, perfect for any celebration. Tanqueray Gin, Moet and Chandon Champagne, “Aria Style” wild berry compote, lemon, vanilla and egg white.`, price:"66"},
+      {name: "BLACK PEARL", description: `A cleaver, boozy cocktail with dark chocolate, coffee and light vanilla flavors. Zacapa 23 Rum, Bulleit Bourbon, Cynar, a touch of vanilla and chocolate bitters. Creating a wintery cocktail, with amazing bittersweet, boozy flavors. An experience for all your senses.`, price:"62"},
       {name: "WHITE NEGRONI", description: `A twist on the all time classic. Gin, Dry French Vermouth, Aperol, Maraschino, Peychaud bitters and a little dry white wine. All this mixed together creates a gentle yet boozy cocktail, with amazing balance of bitter, sweet and citrus flavors.`, price:"47"},
       {name: "TROPICAL SMOKE", description: `For the daring amongst you. Mezcal, fresh lime, mango and Habanero tincture. Thus, a cocktail with smokey, spicy and tropical flavors was created. A must try.`, price:"52"}
     ]
@@ -86,19 +86,7 @@ const Menu = {
     title: 'TASTE OF MIND',
     bg: 'upstairs-alcohol-bg',
     items: [
-      {name: "GREEK SASHIMI", description: "Sliced sea fish with tzatziki, crushed tomato, shallots and Spanish mint"},
-      {name: "SALMON TATAKI", description: "Single­sided seared salmon on tamarind and lemon­grass vinaigrette, on top"},
-      {name: "CEVICHE", description: "Finely chopped sea fish in Mediterranean spices, with quinoa puff and white peach sorbet" },
-      {name: 'COQUILLES SAINT JACQUES', description: "Seared a La Plancha in brown butter, served on white almonds cream with blue crabs bisque"},
-      {name: "ENDIVE SALAD", description: "Salad of purple and white endives, shallots and arugula, with cherry vinaigrette, roast almonds and gorgonzola cheese"},
-      {name: "JUMBO ASPARAGUS", description: "Glazed in parmesan butter, served on sweetish corn cream with shaved parmesan on top"},
-      {name: "CHEESE AND SPINACH CAPPELLETTI", description: "Dumplings filled with four types of cheese and wild spinach, glazed in sage butter"},
-      {name: "SHORT RIB CAPPELLETTI", description: "Dumplings filled with short rib 4 hours slow­cooked with root vegetables, served with puree"},
-      {name: 'HANGER STEAK', description: "Served on Jerusalem artichoke cream and burnt leek, in red wine sauce"},
-      {name: 'MEAGRE FILLET', description: "In light soy sauce, tiger tomatoes, lemon thyme and bok choy"},
-      {name: 'DESSERTS', description: ""},
-      {name: 'NEMESIS', description: "Moist Chocolate cake, oat meal crumble, milk chocolate ganache, marshmallow fluff and vanilla ice cream"},
-      {name: "COCONUT MILLE FEUILLE", description: "Thousand Layers separated with coconut mousse, Banana toffee carmelized banana and coconut sorbet"},
+      {name: "", description: "Coming soon"}
     ]
   },
   wine: {
