@@ -20,7 +20,7 @@ const Menu = {
       {name: "BUTCHER'S SALAD", description: `Pan seared hanger steak with a dry cherry vinaigrette, cashews, red onion and aromatic leaves`, price: "58"},
       {name: "FOIE GRAS STEAK", description: `Pan seared Foie Gras over winter chestnut cream, young leeks, aromatic pumpkin jam, and wine stock`, price: "88"},
       {name: "LAMB BRIK", description: `Filo cigars, filled with lamb meat and Ras-el-hanout`, price: "58"},
-      {name: "FISH AND CHIPS", description: ``, price: "72"}
+      {name: "FISH AND CHIPS", description: `- 72 -`}
     ],
     veganItems: [
       {name: "TOMATO TARTAR", description: "Diced tomatoes with oregano, olive oil, lemon juice, quinoa puffs, and garlic bread", price: "38"},
