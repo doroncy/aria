@@ -4,7 +4,7 @@ import footerStyle from './footer.scss';
 
 export default class Footer extends Component {
   constructor(props) {
-    super();
+    super();    
   }
 
   render() {

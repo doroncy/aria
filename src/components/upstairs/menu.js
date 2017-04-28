@@ -17,7 +17,6 @@ const Menu = {
       {name: "MUSHROOM RISOTTO", description: `Arborio risotto, with assorted mushrooms and stock, topped with blackened Parmesan tuille`, price: "68"},
       {name: "CHEESE AND SPINACH CAPPELLETTI", description: `Dumplings stuffed with four types of cheese and wild spinach, and a sage butter glaze`, price: "59"},
       {name: "BEEF CARPACIO", description: `Thinly sliced Top Rump with horseradish aioli, spicy mustard, pickled cappers and shallots, and crispy onion`, price: "59"},
-      {name: "BUTCHER'S SALAD", description: `Pan seared hanger steak with a dry cherry vinaigrette, cashews, red onion and aromatic leaves`, price: "58"},
       {name: "FOIE GRAS STEAK", description: `Pan seared Foie Gras over winter chestnut cream, young leeks, aromatic pumpkin jam, and wine stock`, price: "88"}
     ],
     veganItems: [
@@ -34,13 +33,13 @@ const Menu = {
     title: 'main',
     bg: 'upstairs-main-bg',
     items: [
-      {name: "SEA MEAGRE", description: "In light soy butter, tiger tomatoes, lemon thyme and bok choy", price: "132ֿ/76"},
+      {name: "SEA MEAGRE", description: "In light soy butter, tiger tomatoes, lemon thyme and bok choy. (Full portion / Half portion)", price: "132ֿ/76"},
       {name: 'SEA BASS', description: 'Oven Roasted with “Aria style” green curry, Thai black-eyed peas, brokkomini and rice puffs', price: "128"},
       {name: "LEEK AND MASCRAPONE DUMPLINGS", description: "Choux pastry dumplings filled with leek and mascarpone fondue, glazed in lemon butter", price: "88"},
-      {name: "SHORT RIB CAPPELLETTI", description: "Dumplings filled with braised short rib, root vegetables, and red wine served with silky potato puree", price: "98/59"},
-      {name: "SIRLOIN", description: "250gr Sirloin steak from the Golan Heights, seared in cast-iron skillet, with garden pea cream, porcini mushroom stock, and ratte potato puree", price: "142/84"},
+      {name: "SHORT RIB CAPPELLETTI", description: "Dumplings filled with braised short rib, root vegetables, and red wine served with silky potato puree. (Full portion / Half portion)", price: "98/59"},
+      {name: "SIRLOIN", description: "250gr Sirloin steak from the Golan Heights, seared in cast-iron skillet, with garden pea cream, porcini mushroom stock, and ratte potato puree. (Full portion / Half portion). (Full portion / Half portion)", price: "142/84"},
       {name: "BEEF FILLET", description: "250gr Marbleized beef filet with onion and charred potatoes", price: "159"},
-      {name: "HANGER STEAK", description: "Over Jerusalem artichoke and charred leek cream, in red wine sauce", price: "122/71"},
+      {name: "HANGER STEAK", description: "Over Jerusalem artichoke and charred leek cream, in red wine sauce. (Full portion / Half portion)", price: "122/71"},
       {name: "LAMB CHOPS", description: "Pan seared lamb chops with lamb jus, green vegetables, potato and mustard seed puree", price: "152"}
     ],
     veganItems: [
@@ -56,7 +55,7 @@ const Menu = {
       {name: 'NEMESIS', description: "Moist Chocolate cake, oatmeal crumble, milk chocolate ganache marshmallow fluff and vanilla ice cream", price: "48"},
       {name: 'BAMBA SEMIFREDDO', description: "Semi-frozen peanut butter mousse, served with chocolate fudge, chocolate caramel ganache, caramel tuile, cacao beans, NY style candied peanuts and white chocolate mousse", price: "45"},
       {name: "PASSIONFRUIT AND WHITE CHOCOLATE", description: "Passion fruit puree with white chocolate mousse, served over hazelnut crunch, and passion fruit sorbet", price:"48"},
-      {name: "COCONUT MILLE FEUILLE", description: "Thousand Layers separated with coconut mousse, Banana toffee caramelized banana and coconut sorbet", price: "48"},
+      {name: "HAZEL LAYERS", description: "Hazelnut cream and cocoa tuile, with salted caramel and brown butter ice cream", price: "48"},
       {name: 'RED FRUITS SOUP', description: "Sweet red fruits soup with oatmeal crumble and vanilla ice cream", price: "48"},
       {name: 'HENNESSY ESPRESSO', description: "Refreshing Hennessy cocktail with espresso and Lemon Zest", price: "36"},
       {name: 'SELECTION OF SORBETS', description: "Choice of three Sorbets", price: "38"}
@@ -67,16 +66,16 @@ const Menu = {
     bg: 'upstairs-cocktails-bg',
     items: [
       {name: 'SPEEDY GONZALEZ', description: `A new version, with a Mexican twist, to the famous Moscow Mule. Aged Tequila, Mezcal, Agave syrup, with Lime, Cucumbers, Mint and Ginger beer. Making this a fun, complex and tantalizing cocktail. You’ll want to order another faster then Speedy Gonzales.`, price:"54"},
-      {name: 'LADY IN RED', description: `A light, floral cocktail. Tanqueray Gin, housemade lavender & hibiscus syrup, for a touch of sweetness, with tartness of fresh lemon and floral notes from roses and lilies. This cocktail will have you licking your lips.`, price:"44"},
+      {name: 'LADY IN RED', description: `A light, floral cocktail. Tanqueray Gin, housemade lavender & hibiscus syrup, for a touch of sweetness, with tartness of fresh lemon and floral notes from roses and lilies. This cocktail will have you licking your lips.`, price:"46"},
       {name: 'FRUIT GARDEN', description: `Sweet and spiced Caribbean cocktail. Based on White Rum with peaches, passion fruit, Elderflower syrup, fresh limejuice and Angostura bitters. Sweet, fruity and fun, just like we like them.`, price:"56"},
-      {name: "PLAGUE WATER COLLINS", description: `An ode to the creator of Gin the Doctor and Scientist Franciscus Sylvius. Legend has it, that he came up with Genever to fight one of the epidemics that hit Europe, but instead of medicine he created one of our favorite spirits. Tanqueray Gin infused with lemongrass and lemon verbena, fresh limejuice, mint, tonic and a dash of pepper. A citrusy, light cocktail, that will make you want another.`, price:"46"},
+      {name: "PLAGUE WATER COLLINS", description: `An ode to the creator of Gin the Doctor and Scientist Franciscus Sylvius. Legend has it, that he came up with Genever to fight one of the epidemics that hit Europe, but instead of medicine he created one of our favorite spirits. Tanqueray Gin infused with lemongrass and lemon verbena, fresh limejuice, mint, tonic and a dash of pepper. A citrusy, light cocktail, that will make you want another.`, price:"48"},
       {name: 'KALISPERA', description: `The Greek word for good evening, and like it’s name the right way to open an evening. Ouzo, Amaretto Disaronno, housemade almond liqueur, Creole bitters, orange and purple basil. A sweet cocktail, with almonds and anise flavors.`, price:"52"},
       {name: "SESAME STREET", description: `A Once in a lifetime experience, that goes against the grain. A combination of Citron and Orange Ketel 1 Vodka, housemade creamy Limoncello, vanilla honey and tahini!! Daring, tart, sweet and viscous. Bert and Ernie wouldn’t dare, do you?`, price:"54"},
       {name: "BEE’S KNEES", description: `A new twist on a classic, that tastes like jam and butter toast, only without the toast. Appleton Rum with a browned butter wash, shaken with honey, orange juice and lime. A refreshing cocktail, with light notes of sweetness and citrus.`, price:"48"},
-      {name: "ARIA SOUR #4", description: `Our revamped and beloved signature cocktail. Hennessy V.S, Orange Caracao, Amaro Montenegro, lemon juice, maple syrup and egg white, well shaken. A Classic Sour, that’s powerful and complex in an unforgettable way.`, price:"48"},
+      {name: "ARIA SOUR #4", description: `Our revamped and beloved signature cocktail. Hennessy V.S, Orange Caracao, Amaro Montenegro, lemon juice, maple syrup and egg white, well shaken. A Classic Sour, that’s powerful and complex in an unforgettable way.`, price:"49"},
       {name: "BUBBLE BERRY", description: `A sweet, light and refreshing aperitif, perfect for any celebration. Tanqueray Gin, Moet and Chandon Champagne, “Aria Style” wild berry compote, lemon, vanilla and egg white.`, price:"66"},
       {name: "BLACK PEARL", description: `A cleaver, boozy cocktail with dark chocolate, coffee and light vanilla flavors. Zacapa 23 Rum, Bulleit Bourbon, Cynar, a touch of vanilla and chocolate bitters. Creating a wintery cocktail, with amazing bittersweet, boozy flavors. An experience for all your senses.`, price:"62"},
-      {name: "WHITE NEGRONI", description: `A twist on the all time classic. Gin, Dry French Vermouth, Aperol, Maraschino, Peychaud bitters and a little dry white wine. All this mixed together creates a gentle yet boozy cocktail, with amazing balance of bitter, sweet and citrus flavors.`, price:"47"},
+      {name: "WHITE NEGRONI", description: `A twist on the all time classic. Gin, Dry French Vermouth, Aperol, Maraschino, Peychaud bitters and a little dry white wine. All this mixed together creates a gentle yet boozy cocktail, with amazing balance of bitter, sweet and citrus flavors.`, price:"48"},
       {name: "TROPICAL SMOKE", description: `For the daring amongst you. Mezcal, fresh lime, mango and Habanero tincture. Thus, a cocktail with smokey, spicy and tropical flavors was created. A must try.`, price:"52"}
     ]
   },
@@ -228,10 +227,10 @@ const Menu = {
               {
                 name: "France",
                 items: [
-                  `Tavel Rosé, Château D’aqueria, Rhone Valley`,
+                  `Tavel Rosé, Château D’aqueria, Rhone Valley '13`,
                   `Bourgogne Chardonnay, Jean Bouchard, Bourgogne '13`,
                   `Petit Chablis, J. Moreau & Fils, Bourgogne '14`,
-                  `Pouilly-Fumé Jeunes Vignes, Henri Bourgeois, Loire Valley`,
+                  `Pouilly-Fumé Jeunes Vignes, Henri Bourgeois, Loire Valley '14`,
                   `Riesling, Schlumberger, Alsace '12`,
                   `Sancerre, J. Moreau & Fils, Loire Valley '14`,
                   `Chablis, Vaillons, Premier cru, J. moreau & fils, Bourgogne '14`,

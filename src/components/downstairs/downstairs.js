@@ -186,7 +186,7 @@ export default class Downstairs extends Component {
         );
       });
       contentBody = (
-        <div className="pad-bottom-lg">
+        <div className="pad-bottom-xlg">
           <div className="menu-title font-ExBold">{this.state.currentTab.title}</div>
           <ul className="no-bullet" ref="contentList">{contentBody}</ul>
         </div>

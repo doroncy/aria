@@ -60,7 +60,7 @@ export default class Team extends Component {
           <div className="page-title font-ExBold">Come work with us!</div>
           <p className="page-text font-Regular">
             We are looking for<br/>
-            Bartenders / Cooks / Floor Manager
+            Waiters / waitresses, hosts And events manager
           </p>
           <p className="page-text font-light">
             Please contact us <br/> for more information.
