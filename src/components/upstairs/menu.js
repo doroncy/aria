@@ -83,6 +83,7 @@ const Menu = {
     title: 'TASTE OF MIND',
     bg: 'upstairs-alcohol-bg',
     items: [
+      {name: "", description: "Tasting meal is served from Saturday to Wednesday and by reservation only"},
       {name: "OUR TASTING MENU", description: "A Choice Of Seven. Serves two | 158 NIS Per person"},
       {name: "RED TUNA", description: "Red tuna sashimi with an orange vinaigrette, sesame oil and chili"},
       {name: "SALMON TATAKI", description: "Single-sided seared salmon with tamarind and lemon-grass vinaigrette, with caramelized cashews on top"},
