@@ -13,7 +13,7 @@ export default class OverlayMenu extends Component {
     this.menuBtns = [
       {title: 'The aria philosophy' , link:'/philosophy'},
       {title: 'Aria Upstairs' , link:'/upstairs'},
-      {title: 'Aria Downstairs' , link:'/downstairs'},    
+      {title: 'Aria Downstairs' , link:'/downstairs'},
       {title: 'Aria Music' , link:'/music'},
       {title: 'Aria Moments' , link:'/moments'},
       {title: 'Events' , link:'/events'},
@@ -59,7 +59,7 @@ export default class OverlayMenu extends Component {
                 <a href="tel:972-3529-6054">03-529-60-54</a>
               </div>
               <div className="contact-mail-wrap">
-                <a href="mailto:orenheknin@gmail.com;tuti.kalman@gmail.com?subject=ARIA%20WEBSITE" target="_blank">
+                <a href="mailto:tuti.kalman@gmail.com?subject=ARIA%20WEBSITE" target="_blank">
                   <div className="SVGIcon icon-Email_icon_for_contact icon-Email_icon_for_contact-dims"></div>
                 </a>
               </div>
