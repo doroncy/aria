@@ -51,7 +51,7 @@ export default class Events extends Component {
                     <div className="page-title font-ExBold">{this.pageData.title}</div>
                     <p className="page-text font-light">{this.pageData.text}</p>
                       <div className="contcat-us-btn-wrap">
-                        <a href="mailto:tuti.kalman@gmail.com?subject=ARIA%20WEBSITE" target="_blank"
+                        <a href="mailto:tuti.kalman@gmail.com,ariatlv@gmail.com?subject=ARIA%20WEBSITE" target="_blank"
                           className="content-box content-box-btn selected">
                           Contact
                         </a>

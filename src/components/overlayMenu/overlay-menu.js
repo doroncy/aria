@@ -59,7 +59,7 @@ export default class OverlayMenu extends Component {
                 <a href="tel:972-3529-6054">03-529-60-54</a>
               </div>
               <div className="contact-mail-wrap">
-                <a href="mailto:tuti.kalman@gmail.com?subject=ARIA%20WEBSITE" target="_blank">
+                <a href="mailto:tuti.kalman@gmail.com,ariatlv@gmail.com?subject=ARIA%20WEBSITE">
                   <div className="SVGIcon icon-Email_icon_for_contact icon-Email_icon_for_contact-dims"></div>
                 </a>
               </div>
