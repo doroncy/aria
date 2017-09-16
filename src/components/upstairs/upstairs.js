@@ -37,7 +37,7 @@ export default class Upstairs extends Component {
       tabIndex: 0,
       galleryIndex: 1,
       showMenuTabs: false,
-      language: 'en'
+      language: 'heb'
     };
 
     this.toggleMenu = this.toggleMenu.bind(this);
@@ -176,12 +176,13 @@ export default class Upstairs extends Component {
       contentBody = this.state.currentTab.items.map((item, index) => {
         let price = !_.isEmpty(item.price)
           ? <span className={hebLangClass}><br/>- {item.price} -</span>
-        : '';
+          : '';
+        let noPadding = item.noPad ? 'no-margin' : '';
 
         return (
           <li className="menuitem" key={item.name}>
             <div className={`menuitem-name font-SemiBold ${hebLangClass}`}>{item.name}</div>
-            <p className={`menuitem-description font-light ${hebLangClass}`}>
+            <p className={`menuitem-description font-light ${hebLangClass} ${noPadding}`}>
               {item.description}
               {price}
             </p>
