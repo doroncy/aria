@@ -71,6 +71,17 @@
     }
   }
 }
+.tab-menu {
+  display: inline-block;
+  width: 170px;
+  padding: 0 2px;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
 
 .menu-title {
   font-size:16px;

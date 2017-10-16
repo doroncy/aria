@@ -35,24 +35,6 @@ const Menu = {
       {name: "CHEESE AND SPINACH CAPPELLETTI", description: `Dumplings stuffed with four types of cheese and wild spinach, and a sage butter glaze Vegetarian`, price: "59"}
     ]
   },
-  main: {
-    title: 'main',
-    bg: 'upstairs-main-bg',
-    items: [
-      {name: "SEA MEAGRE", description: `200 grams full portion / 100 grams half portion In light soy butter, tiger tomatoes, lemon thyme and bok choy * Same sides for both portions`, price: "132ֿ/76"},
-      {name: 'SEA BASS', description: `Oven Roasted with “Aria style” green curry, Thai black-eyed peas, brokkomini and rice puffs`, price: "128"},
-      {name: "SWEET POTATO TORTELLINI", description: `Brown butter glazed dough dumplings, over pecorino sauce & crispy sage`, price: "88"},
-      {name: "SHORT RIB CAPPELLETTI", description: `7 dumplings full portion / 4 dumplings half portion Dumplings filled with braised short rib, root vegetables, and red wine served with silky potato puree * Same sides for both portions`, price: "98/59"},
-      {name: "SIRLOIN", description: `(250 grams full portion / 125 grams half portion) Sirloin steak from the Golan heights, seared on a cast iron skillet, over lima bean & sweet beet chimichurri * Same sides for both portions`, price: "142/84"},
-      {name: "BEEF FILLET", description: "250gr Marbleized beef filet with onion and charred potatoes", price: "159"},
-      {name: "HANGER STEAK", description: `(200 grams full portion / 100 grams half portion) Over Jerusalem artichoke and charred leek cream, in red wine sauce * Same sides for both portions`, price: "122/71"},
-      {name: "LAMB T-BONE", description: `Three pieces of pan seared lamb saddle on the bone, grilled vegetable & Lebanese pomegranate vinaigrette`, price: "154"}
-    ],
-    veganItems: [
-      {name: 'FETTUCCINE GREENS', description: `Vegan Fettuccine with “Aria style” green curry, bok choy, broccomini and spring onions Vegetarian / Vegan`, price: "68"},
-      {name: "SWEET POTATO TORTELLINI", description: `Brown butter glazed dough dumplings, over pecorino sauce & crispy sage Vegetarian`, price: "88"}
-    ]
-  },
   deserts: {
     title: 'Desserts',
     bg: 'upstairs-desserts-bg',
