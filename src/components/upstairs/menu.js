@@ -89,8 +89,8 @@ const Menu = {
     title: 'TASTE OF MIND',
     bg: 'upstairs-alcohol-bg',
     items: [      
-      {name: "OUR TASTING MENU", description: "A Choice Of Seven. Serves two | 158 NIS Per person"},
-      {name: "", description: "Tasting meal is served from Saturday to Wednesday and by reservation only"},
+      {name: "OUR TASTING MENU", description: "A Choice Of Seven. Serves two | 158 NIS Per person", noPad: true},
+      {name: "", description: "Tasting meal is served from Saturday to Wednesday and by reservation only", noPad: true},
       {name: "", description: "CHOOSE A DESSERT FOR TWO FROM OUR DESSERTS MENU"},
       {name: "SEA FISH CRUDO", description: "Slices of sea fish, with leek, scallion & radish salad in a maple & light soy vinaigrette"},
       {name: "SALMON TATAKI", description: "Single-sided seared salmon with tamarind and lemon-grass vinaigrette, with caramelized cashews on top"},

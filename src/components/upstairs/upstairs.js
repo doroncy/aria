@@ -180,7 +180,7 @@ export default class Upstairs extends Component {
         let noPadding = item.noPad ? 'no-margin' : '';
 
         return (
-          <li className="menuitem" key={item.name}>
+          <li className="menuitem" key={item.name+index}>
             <div className={`menuitem-name font-SemiBold ${hebLangClass}`}>{item.name}</div>
             <p className={`menuitem-description font-light ${hebLangClass} ${noPadding}`}>
               {item.description}
