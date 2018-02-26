@@ -4,8 +4,11 @@
   padding: 30px 20px 20px;
   pointer-events: none;
 
+  @media (max-height: 700px) {
+    position: static !important;
+  }
   @include breakpoint(medium up) {
-    position: absolute;;
+    position: absolute;
     bottom:0;
     left:0;
     right:0;
