@@ -111,15 +111,25 @@ export default class Downstairs extends Component {
   }
 
   render() {
-    let menuItems, toggleLanguageBtn, hebLangClass;
+    let menuItems, toggleLanguageBtn, hebLangClass, reserveTable;
     if (this.state.language === 'en') {
       menuItems = menuItemsEn;
       hebLangClass = '';
-      toggleLanguageBtn = <div className="content-box-title font-heb heb-lang-btn">עברית</div>;
+      toggleLanguageBtn = <div className="content-box-title font-heb heb-lang-btn">עברית</div>;      
+      reserveTable = (
+        <a href="http://eng.clickatable.co.il/clickatable/Restaurant-%D7%90%D7%A8%D7%99%D7%94-%D7%91%D7%A8.aspx" target="_blank">
+          <div className="content-box-title content-box-title-small">Reserve a table</div>
+        </a>
+      );
     } else {
       menuItems = menuItemsHeb;
       hebLangClass = "font-heb";
       toggleLanguageBtn = <div className="content-box-title content-box-title-small">English</div>;
+      reserveTable = (
+        <a href="http://clickiframe.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%90%D7%A8%D7%99%D7%94-%D7%91%D7%A8.aspx" target="_blank">
+          <div className="content-box-title content-box-title-small">Reserve a table</div>
+        </a>
+      );
     }
 
     let tabs = _.map(menuItems, (menuItem, index) => {
@@ -234,9 +244,7 @@ export default class Downstairs extends Component {
                   <div className="content-box-title content-box-title-small">Gallery</div>
                 </div>
                 <div className="content-box content-box-btn table-btn">
-                  <a href="http://clickiframe.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%90%D7%A8%D7%99%D7%94-%D7%91%D7%A8.aspx" target="_blank">
-                    <div className="content-box-title content-box-title-small">Reserve a table</div>
-                  </a>
+                  {reserveTable}
                 </div>
                 <div className="content-box content-box-btn table-btn lang-btn" onClick={this.toogleLanguage}>
                   {toggleLanguageBtn}
