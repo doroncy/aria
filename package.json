@@ -1,6 +1,6 @@
 {
   "name": "ariatlv",
-  "version": "3.2.1",
+  "version": "4.0.1",
   "description": "",
   "main": "src/app.js",
   "scripts": {
@@ -39,5 +39,7 @@
     "webpack": "^1.12.8",
     "webpack-dev-server": "^1.12.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-modal": "^3.5.1"
+  }
 }

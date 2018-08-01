@@ -5,13 +5,13 @@ import Footer from '../footer/footer';
 
 export default class Philosophy extends Component {
   constructor(props) {
-    super();
+    super();    
 
     this.pageData = {
       bg: 'moments-bg-1',
       title: 'Aria moments club',
       text: `ARIA MOMENTS is our social club. We invite you to join us and enjoy exclusive benefits that are created uniquely for our club members. Each member received a personal VIP card that includes special offers, booking priority, invitation to closed events and premium parties, and other benefits in your special days like anniversaries and birthdays. We would be thrilled to have you as a member in our club and share your special moments.`
-    }
+    };    
   }
 
   render() {
@@ -35,7 +35,7 @@ export default class Philosophy extends Component {
             <ClubGiftsBtns theme="dark" joinMoments="true"></ClubGiftsBtns>
           </div>
         </div>
-        <Footer></Footer>
+        <Footer></Footer>        
       </div>
     );
   }
