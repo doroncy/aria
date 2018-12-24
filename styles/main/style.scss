@@ -66,22 +66,26 @@ body {
   font-family: 'Montserrat-Regular', Arial;
   overflow-x: hidden;
   &:after {
-    content: url('../../src/components/home/images/home_1.jpg') url('../../src/components/home/images/home_2.jpg') url('../../src/components/home/images/home_3.jpg')
-    url('../../src/components/home/images/home_4.jpg') url('../../src/components/home/images/home_5.jpg') url('../../src/components/downstairs/images/downstairs-bg.jpg')
+    content: url('../../src/components/home/images/Home_ARIA01.jpg') url('../../src/components/home/images/Home_ARIA02.jpg') url('../../src/components/home/images/Home_ARIA03.jpg')
+    url('../../src/components/home/images/Home_ARIA04.jpg') url('../../src/components/home/images/Home_ARIA05.jpg') url('../../src/components/home/images/Home_ARIA06.jpg') 
+    url('../../src/components/home/images/Home_ARIA07.jpg') url('../../src/components/home/images/Home_ARIA08.jpg') url('../../src/components/home/images/Home_ARIA09.jpg') 
+    url('../../src/components/home/images/Home_ARIA10.jpg') url('../../src/components/downstairs/images/Main_Down.jpg') url('../../src/components/downstairs/images/MAIN_Pic_down.jpg')
     url('../../src/components/events/images/events-bg-1.jpg') url('../../src/components/events/images/events-bg-2.jpg') url('../../src/components/events/images/events-bg-3.jpg')
-    url('../../src/components/events/images/events-bg-4.jpg') url('../../src/components/team/images/team-bg-1.jpg') url('../../src/components/team/images/team-bg-2.jpg')
-    url('../../src/components/team/images/team-bg-3.jpg') url('../../src/components/team/images/team-bg-4.jpg') url('../../src/components/team/images/team-bg-5.jpg')
+    url('../../src/components/events/images/events-bg-4.jpg') url('../../src/components/team/images/Team1.jpg') url('../../src/components/team/images/Team2.jpg')
+    url('../../src/components/team/images/Team3.jpg') url('../../src/components/team/images/Team4.jpg') url('../../src/components/team/images/Team5.jpg') url('../../src/components/team/images/Team6.jpg') url('../../src/components/team/images/Team7.jpg')
     url('../../src/components/moments/bg_moments.jpg') url('../../src/components/music/images/music-bg-1.jpg') url('../../src/components/philosophy/philosophy_1.jpg')
-    url('../../src/components/tripping/tripping-bg-1.jpg') url('../../src/components/upstairs/images/upstairs-bg.jpg')
-    url('../../src/components/upstairs/images/upstairs-tom.jpg') url('../../src/components/upstairs/images/upstairs-cocktails.jpg') url('../../src/components/upstairs/images/upstairs-main.jpg')
-    url('../../src/components/upstairs/images/upstairs-desserts.jpg') url('../../src/components/upstairs/images/upstairs-entrees.jpg') url('../../src/components/upstairs/images/upstairs-wine.jpg')
-    url('../../src/components/upstairs/images/Gallery_UP1.jpg') url('../../src/components/upstairs/images/Gallery_UP2.jpg') url('../../src/components/upstairs/images/Gallery_UP3.jpg') url('../../src/components/upstairs/images/Gallery_UP4.jpg')
-    url('../../src/components/upstairs/images/Gallery_UP5.jpg') url('../../src/components/upstairs/images/Gallery_UP6.jpg') url('../../src/components/upstairs/images/Gallery_UP7.jpg') url('../../src/components/upstairs/images/Gallery_UP8.jpg')
-    url('../../src/components/upstairs/images/Gallery_UP9.jpg') url('../../src/components/upstairs/images/Gallery_UP10.jpg') url('../../src/components/upstairs/images/Gallery_UP11.jpg') url('../../src/components/upstairs/images/Gallery_UP12.jpg')
-    url('../../src/components/downstairs/images/gallery_down1.jpg') url('../../src/components/downstairs/images/gallery_down2.jpg') url('../../src/components/downstairs/images/gallery_down3.jpg')
-    url('../../src/components/downstairs/images/gallery_down4.jpg') url('../../src/components/downstairs/images/gallery_down5.jpg') url('../../src/components/downstairs/images/gallery_down6.jpg')
-    url('../../src/components/downstairs/images/gallery_down7.jpg') url('../../src/components/downstairs/images/gallery_down8.jpg') url('../../src/components/downstairs/images/gallery_down9.jpg')
-    url('../../src/components/downstairs/images/gallery_down10.jpg') url('../../src/components/downstairs/images/gallery_down11.jpg');
+    url('../../src/components/tripping/tripping-bg-1.jpg') url('../../src/components/upstairs/images/Main_course.jpg')
+    url('../../src/components/upstairs/images/Taste_of_Mind_PIC.jpg') url('../../src/components/downstairs/images/Cocktails_Down.jpg') url('../../src/components/upstairs/images/entrees.jpg')
+    url('../../src/components/upstairs/images/Dessert.jpg') url('../../src/components/downstairs/images/Entrees_Down.jpg') url('../../src/components/downstairs/images/Wine_Down.jpg') url('../../src/components/downstairs/images/Dessert-Down.jpg')
+    url('../../src/components/upstairs/images/Wine.jpg') url('../../src/components/upstairs/images/Cocktails.jpg') url('../../src/components/upstairs/images/Wine.jpg')
+    url('../../src/components/upstairs/images/Gallery_Up_1.jpg') url('../../src/components/upstairs/images/Gallery_Up_2.jpg') url('../../src/components/upstairs/images/Gallery_Up_3.jpg') url('../../src/components/upstairs/images/Gallery_Up_4.jpg')
+    url('../../src/components/upstairs/images/Gallery_Up_5.jpg') url('../../src/components/upstairs/images/Gallery_Up_6.jpg') url('../../src/components/upstairs/images/Gallery_Up_7.jpg') url('../../src/components/upstairs/images/Gallery_Up_8.jpg')
+    url('../../src/components/upstairs/images/Gallery_Up_9.jpg') url('../../src/components/upstairs/images/Gallery_Up_10.jpg') url('../../src/components/upstairs/images/Gallery_Up_11.jpg') 
+    url('../../src/components/upstairs/images/Gallery_Up_13.jpg') url('../../src/components/upstairs/images/Gallery_Up_14.jpg')
+    url('../../src/components/downstairs/images/Gallery_Down_1.jpg') url('../../src/components/downstairs/images/Gallery_Down_2.jpg') url('../../src/components/downstairs/images/Gallery_Down_3.jpg')
+    url('../../src/components/downstairs/images/Gallery_Down_4.jpg') url('../../src/components/downstairs/images/Gallery_Down_5.jpg') url('../../src/components/downstairs/images/Gallery_Down_6.jpg')
+    url('../../src/components/downstairs/images/Gallery_Down_7.jpg') url('../../src/components/downstairs/images/Gallery_Down_8.jpg') url('../../src/components/downstairs/images/Gallery_Down_9.jpg')
+    url('../../src/components/downstairs/images/Gallery_Down_10.jpg') url('../../src/components/downstairs/images/Gallery_Down_11.jpg') url('../../src/components/downstairs/images/Gallery_Down_12.jpg');
     position: absolute;
     right: 1000000px;
     display: none;

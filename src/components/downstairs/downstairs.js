@@ -10,10 +10,10 @@ import Wines from '../upstairs/wines';
 import Footer from '../footer/footer';
 import Gallery from '../gallery/gallery';
 
-const galleryImages = _(_.range(1,12))
-  .map((index)=> require(`./images/gallery_down${index}.jpg`))
+const galleryImages = _(_.range(1,13))
+  .map((index)=> require(`./images/Gallery_Down_${index}.jpg`))
   .value();
-
+  
 const downstairsInfo = {
   title: 'The Lounge Bar',
   description: `Aria's “downstairs” ground floor lounge offers a rich cocktail bar alongside dishes from the chef’s kitchen. The new and advanced sound system provides the perfect setting with the DJ is located at the center of the circular lounge space. The guests sitting at the bar enjoy a unique experience that starts with dinner and drinks accompanied by live performances of the best local and international DJs, followed by a full-blown party into the midnight hours.`,
@@ -135,7 +135,7 @@ export default class Downstairs extends Component {
     let tabs = _.map(menuItems, (menuItem, index) => {
       let isTabSelected = this.state.tabIndex === index ? "selected" : "";
       return (
-        <div key={index} className="large-2 columns xs-padding-sides">
+        <div key={index} className="width20 columns xs-padding-sides">
           <div className={`content-box content-box-btn ${isTabSelected}`} onClick={this.changeTab.bind(this,menuItem, index)}>
             {menuItem.title}
           </div>

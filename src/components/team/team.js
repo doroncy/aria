@@ -25,7 +25,7 @@ export default class Team extends Component {
 
   componentDidMount() {
     bgCarouselInterval = setInterval(()=> {
-      let newBgIndex = this.state.currentBgIndex === 5
+      let newBgIndex = this.state.currentBgIndex === 7
         ? 1
         : this.state.currentBgIndex + 1;
 

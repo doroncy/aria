@@ -69,21 +69,21 @@ const Menu = {
     title: 'Cocktails',
     bg: 'upstairs-cocktails-bg',
     items: [
-      {name: 'AROUND THE WORLD', description: `A cocktail that takes us on a trip around the world. Caribbean Rum scented with pineapple, American Rye whisky, French Vermouth, New Orleans style bitters, Israeli honey, fresh lime & egg white. A sweet & sour cocktail, with wintery Caribbean flavors`, price:"67"},
-      {name: 'SAY HELLO 2 HEAVEN', description: `A Champagne cocktail with a basil twist. Moët & Chandon Champagne, Tanqueray Gin, lemon juice, black mint & lots of basil. A fresh, citrusy & stiff cocktail. Recommended!`, price:"68"},
-      {name: 'DON JUAN', description: `A cocktail with a unique flavor combination. Don Julio Blanco infused with lemongrass & verbena, Green Chartreuse, Midori, pineapple juice, lime & agave syrup. A strong, stiff cocktail that’s sweet & sour.`, price:"64"},
-      {name: 'GODDESS', description: `Like its name, a cocktail you just can’t refuse. Tanqueray Gin, homemade raspberry syrup, lemon juice, wild berries powder & egg white. A fun & light cocktail, with sweet wintery flavors.`, price:"62"},
-      {name: 'FRUIT GARDEN', description: `Sweet and spiced Caribbean cocktail. Based on White Rum with peaches, passion fruit, Elderflower syrup, fresh limejuice and Angostura bitters. Sweet, fruity and fun, just like we like them.`, price:"58"},
-      {name: "ARIA SOUR #4", description: `Our revamped and beloved signature cocktail. Hennessy V.S, Orange Caracao, Amaro Montenegro, lemon juice, maple syrup and egg white, well shaken. A Classic Sour, that’s powerful and complex in an unforgettable way.`, price:"59"},
-      {name: "KALISPERA", description: `The Greek word for good evening, and like it’s name the right way to open an evening. Ouzo, Amaretto Disaronno, housemade almond liqueur, Creole bitters, orange and purple basil. A sweet cocktail, with almonds and anise flavors.`, price:"54"},
-      {name: "SPANISH CARAVAN", description: `Sangria Aria Style Muga Rioja Reserve, Muga Rioja Rose, Elderflower syrup, freshly squeezed orange juice, lemon juice & assorted fruit. Light, sweet & floral`, price:"52"},
-      {name: "PLAGUE WATER COLLINS", description: `An ode to the creator of Gin the Doctor and Scientist Franciscus Sylvius. Legend has it, that he came up with Genever to fight one of the epidemics that hit Europe, but instead of medicine he created one of our favorite spirits. Tanqueray Gin infused with HM brew and hibiscus, fresh lemon juice, mint and tonic. A citrusy, light cocktail, that will make you want another.`, price:"59"},
-      {name: "SPEEDY GONZALEZ", description: `A new version, with a Mexican twist, to the famous Moscow Mule. Aged Tequila, Mezcal, Agave syrup, with Lime, Cucumbers, Mint and Ginger beer. Making this a fun, complex and tantalizing cocktail. You’ll want to order another faster then Speedy Gonzales.`, price:"64"},
-      {name: "SESAME STREET", description: `A Once in a lifetime experience, that goes against the grain. A combination of Citron and Orange Ketel 1 Vodka, housemade creamy Limoncello, vanilla honey and tahini!! Daring, tart, sweet and viscous. Bert and Ernie wouldn’t dare, do you?`, price:"56"},
-      {name: "DANCE WITH THE DEVIL", description: `A cocktail for the bitter cocktail lovers. Campari, Green Chartreuse, Tanqueray Gin, lemon juice & a splash of seltzer. A light yet stiff cocktail, with bitter & sour flavors.`, price:"57"},
-      {name: "SMOKEY THOMAS", description: `An homage cocktail to Prof. Jerry Thomas, the author of the first cocktail book in the world, & the man behind our love of cocktails. Mezcal, Aperol, Smokey Scottish Single Malt, Jerry Thomas bitters, maple & lemon juice. A smokey & seasoned cocktail, with light sweet flavors. Sophisticated & unconventional, just like the man himself`, price:"64"},
-      {name: "BLACK PEARL", description: `A cleaver, boozy cocktail with dark chocolate, coffee and light vanilla flavors. Zacapa 23 Rum, Bulleit Bourbon, Cynar, a touch of vanilla and chocolate bitters. Creating a wintery cocktail, with amazing bittersweet, boozy flavors. An experience for all your senses.`, price:"67"},
-      {name: "WHITE NEGRONI", description: `A twist on the all time classic. Gin, Dry French Vermouth, Aperol, Maraschino, Peychaud bitters and a little dry white wine. All this mixed together creates a gentle yet boozy cocktail, with amazing balance of bitter, sweet and citrus flavors.`, price:"55"}
+      {name: 'AROUND THE WORLD', description: `This cocktail will take you on a trip around the world. With pineapple-flavored Caribbean rum, American rye whiskey, French vermouth, Israeli organic honey, fresh lime and egg white, no packing is required!`, price:"67"},
+      {name: 'SAY HELLO 2 HEAVEN', description: `An elegant blend of champagne with a basil twist. Laurent Perrier champagne, Tanqueray gin, black mint, lemon juice and fresh basil. A fresh, citrusy and stiff cocktail. Very recommended!`, price:"68"},
+      {name: 'DON JUAN', description: `Jump on board and get a proper taste of Mexico with this unique flavored cocktail. Don Julio Blanco infused with lemongrass & verbena, green Chartreuse, Midori, pineapple juice, lime & agave syrup. An interesting combination of stiff, sweet and sour.`, price:"64"},
+      {name: 'GODDESS', description: `Just like its name, this is a cocktail you just can't refuse. Tanqueray gin, homemade raspberry syrup, lemon juice, wild berry powder and egg white. Summery-sweet flavored cocktail.`, price:"62"},
+      {name: 'FRUIT GARDEN', description: `Sweet and spiced Caribbean cocktail, based on white rum with peaches, passionfruit, elderflower syrup, fresh lime juice and Angostura bitter. Sweet fruity & fun, just the way we like it!`, price:"58"},
+      {name: "ARIA SOUR #4", description: `Our signature cocktail in a revamped version. Courvoisier, Orange Curacao, Amaro Montenegro, lemon juice, maple syrup and egg white, well shaken. A sophisticated, powerful twist of a classic sour cocktail that is just unforgettable.`, price:"59"},
+      {name: "KALISPERA", description: `Just like its namesake, “Good Evening” in Greek, this cocktail is the best way to start your evening. Ouzo, Amaretto Disarrono, homemade almond liquor, Creole bitters, orange and purple basil. A sweet cocktail with gentle anis and almond flavors.`, price:"54"},
+      {name: "SPANISH CARAVAN", description: `Aria-style Sangria. Muga Rioja reserve, Muga Rioja rose, elderflower syrup, freshly squeezed orange and lemon juices and assorted fruit. Light, sweet & floral.`, price:"52"},
+      {name: "PLAGUE WATER COLLINS", description: `An ode to the creator of gin, chemist and alchemist Franciscus Sylvius. Legend has it that he invented Genever (the predecessor to gin) as a remedy to an epidemic in Europe which later ended up as one of our favorite spirits. This cocktail is based on Bombay Sapphire gin infused with homemade tea brew and hibiscus, fresh lemon juice, mint and tonic water. A citrusy light cocktail that will make you want another one!`, price:"59"},
+      {name: "SPEEDY GONZALEZ", description: `The famous Moscow Mule with a mexican twist. Aged tequila, mezcal, agave syrup, fresh lime, cucumbers, mint and ginger beer are the components of this fun, tantalizing and interesting cocktail. You'd like to order another faster than Speedy Gonzalez!`, price:"64"},
+      {name: "SESAME STREET", description: `A once in a lifetime experience that goes against the grain! A blend of Citron and Orange Gray Goose, homemade creamy limoncello, vanilla, honey and tahini. Daring, tart, sweet and vicious! Bert and Ernie wouldn't dare, would you?`, price:"56"},
+      {name: "DANCE WITH THE DEVIL", description: `For the bitter cocktails lovers! Campari, Green Chartreuse, Tanqueray gin, lemon juice and a splash of soda water. A stiff cocktail with bitter & sour flavors.`, price:"57"},
+      {name: "SMOKEY THOMAS", description: `A homage to Prof. Jerry Thomas, the author of the first cocktail recipe book and the man who made us love cocktails so much. Mezcal, Aperol, Laphroaig 10, Jerry Thomas Bitters, maple and lemon juice. A smokey & spiced cocktail with sweet undertones. Sophisticated & unconventional, like the man itself!`, price:"64"},
+      {name: "BLACK PEARL", description: `A clever cocktail with coffee, dark chocolate and light vanilla flavors. Zacapa 23 rum, Bulleit bourbon, Cynar and a few drops of vanilla and chocolate bitters. A wintery cocktail with bittersweet, boozy flavors. An experience to all your senses.`, price:"67"},
+      {name: "WHITE NEGRONI", description: `Our version of the all time classic. Gin, dry French vermouth, Aperol, Maraschino, Peychaud Bitters and a splash of white wine. Well-balanced cocktail with sweet, bitter and citrusy tastes.`, price:"55"}
     ]
   },
   alcohol: {
@@ -123,7 +123,7 @@ const Menu = {
             items: [
               "Merlot, Tzuba, Judean Hills, Israel '12",
               "Rosso Di Montepulciano, Boscarelli, Toscany,Italy '15",
-              "Ra’am, Adama II, Tavor, Israel '13",
+              "Cotes Du Rhone, Vidal-Fleury, Rhone Valley, France, '15",
               "Pinot Noir, Jean Bouchard, Bourgogne, France '13",
               "Rioja, Reserve, Muga, Spain '12",
               "Cabernet Sauvignon, Chateau Golan, Golan Heights, Israel '14"
@@ -136,7 +136,8 @@ const Menu = {
               "Chardonnay, Tzuba, Juden Hills, Israel '15",              
               `Rose, Blue C, Covenant, Golan Heights, Israel 16'`,
               "Sancerre, Fournier Pere & Fils, Loire Valley, France '14",
-              "Petit Chablis, J.Moreau & Fils, Bourgogne, France '14"
+              "Petit Chablis, J.Moreau & Fils, Bourgogne, France '14",
+              "Viognier, Tel Shifon single vineyard, Tabor, Israel '16"
             ]
           }
         ]
@@ -147,7 +148,7 @@ const Menu = {
           {
             title: "Sparkling",
             items: [
-              "Moët & Chandon, Brut Impérial N.V, Champagne, France"
+              "Laurent perrier,la cuvee Brut N.V, Champagne, France"
             ]
           },
           {
@@ -160,8 +161,7 @@ const Menu = {
           {
             title: "Red",
             items: [
-              "Château Cissac, Haut Medoc, Bordeaux, France '13",
-              `Cabernet Sauvignon Reserve, "Levanon" vineyard, Recanati, Upper Galilee, Israel '12, 500 ml`,
+              `Cabernet Sauvignon Reserve, "Levanon" vineyard, Recanati, Upper Galilee, Israel '12`,
               "Amarone, Cesari, Veneto, Italy '10"
             ]
           }
@@ -178,13 +178,9 @@ const Menu = {
                 items: [
                   `Cordon Negro, Brut N.V, Freixenet, Penedes, Spain`,
                   `Freixenet Ice, Penedes, Spain`,
-                  `Domaine Huet, Petillant Brut, Vouvray, Loire Valley France '09`,
-                  `Moët & Chandon, Brut Impérial N.V, Champagne, France`,
-                  `Moët & Chandon, Nectar Impérial N.V, Champagne, France`,
-                  `Moët & Chandon, Rosé Impérial N.V, Champagne, France`,
-                  `Jeanmaire, Brut Cuvée N.V, Champagne, France`,                
-                  `Dom Pérignon, Vintage 2006, Champagne, France`,
-                  `Dom Pérignon, Rosé Vintage 2004, Champagne, France`
+                  `Laurent Perrier ,La Cuvee Brut N.v, Champagne, France`,
+                  `Laurent Perrier, Demi Sec N.v, Champagne, France`,
+                  `Laurent Perrier, Cuvee Brut Rose N.v, Champagne, France`
                 ]
               }
             ]
@@ -201,6 +197,7 @@ const Menu = {
                   `Viognier, Blue C, Covenant, Golan Heights 16'`,
                   `Chardonnay, lueria, Golan Heights 16'`,
                   `Chardonnay, Clos De Gat, Judean Hills '14`,
+                  `Viognier, Tel Shifon single vineyard, Tabor 16'`,
                   `Sauvignon Blanc, Chteaua Golan, Golan Heights 15'`,
                   `Chardonnay C, Castel, Judean Hills '15`,
                   `Sycra Chardonnay, Clos De Gat, Judean Hills '09`,
@@ -212,9 +209,11 @@ const Menu = {
                   `Bourgogne Chardonnay, Jean Bouchard, Bourgogne '13`,
                   `Petit Chablis, J. Moreau & Fils, Bourgogne '14`,
                   `Riesling, Schlumberger, Alsace '12`,
-                  `Pouilly-Fumé, Jeunes Vignes, Henri Bourgeois, Loire Valley Pinot Blanc, Schlumberger, Alsace 14’ Sancerre, Fournier Pere & Fils, Loire Valley 14’`,                                  
+                  `Pouilly-Fumé, Jeunes Vignes, Henri Bourgeois, Loire Valley Rose, AIX, Provence 17'`,
+                  `Pinot Blanc, Schlumberger, Alsace 14’ Sancerre, Fournier Pere & Fils, Loire Valley 14’`,                  
                   `Gewürztraminer, Schlumberger, Alsace 14’`,
-                  `Chablis, Vaillons, Premier cru, J. moreau & fils, Bourgogne 14’`,
+                  `Rose, chateau minuty et or, Provence 16' Chablis, Vaillons, Premier cru, J. moreau & fils, Bourgogne 14’`,
+                  `Puligny Montrachet, Château de Puligny-Montrachet, Bourgogne 11’`,
                   `Chablis, Clos, grand cru, Christian Moreau 14’`,
                   `Chablis, Valmur, Grand Cru, J. Moreau & Fils, Bourgogne '14`
                 ]
@@ -223,7 +222,8 @@ const Menu = {
                 name: "Italy",
                 items: [
                   `Masianco, Masi, Veneto '15`,
-                  `Remole Bianco, Frescobaldi, Tuscany 16' Gavi, Pio Cesare, Piedmont 13'`
+                  `Pinot Grigio, Castello Della Rosa, Dolomiti 16'`,
+                  `Gavi, Pio Cesare, Piedmont 13'`
                 ]
               },
               {
@@ -237,14 +237,14 @@ const Menu = {
                 name: "Spain",
                 items: [
                   `Blanco, Muga, Rioja 16'`,
-                  `Flor De Muga Rosado, Rioja 16'`
+                  `Flor De Muga Rosado, Rioja 16'`,
+                  `Finca la colina, verdejo, vinos sanz 16'`
                 ]
               },
               {
                 name: "USA",
                 items: [
-                  `Sauvignon Blanc, Canon Ball, California 15'`,
-                  `Sauvignon Blanc, red c, covenant, California 16'`
+                  `Sauvignon Blanc, Canon Ball, California 15'`                                    
                 ]
               },
               {
@@ -282,7 +282,8 @@ const Menu = {
                 name: "France",
                 items: [
                   `Côtes Du Ventoux, Louis Bernard, Rhône Valley 13’`,
-                  `Pinot Noir, Jean Bouchard, Bourgogne '13`,
+                  `Pino Noir, Jean Bouchard, Bourgogne '13`,
+                  `Cotes Du Rhone, Vidal-Fleury, Rhone Valley 15'`,
                   `Châteauneuf Du Pape, Louis Bernard, Rhône Valley 14’`,
                   `Côte Rôtie, Louis Bernard, Rhône Valley '10`,
                   `Nuits-St- Georges, Clos des Forêts, Premier cru, Domaine de l’Arlot, Bourgogne '11`

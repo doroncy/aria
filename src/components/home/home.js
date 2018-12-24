@@ -15,7 +15,7 @@ export default class Home extends Component {
   }
   componentDidMount() {
     bgCarouselInterval = setInterval(()=> {
-      let newBgIndex = this.state.currentBgIndex === 5
+      let newBgIndex = this.state.currentBgIndex === 10
         ? 1
         : this.state.currentBgIndex + 1;
 

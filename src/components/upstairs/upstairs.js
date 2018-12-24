@@ -10,8 +10,8 @@ import Wines from './wines';
 import Footer from '../footer/footer';
 import Gallery from '../gallery/gallery';
 
-const galleryImages = _(_.range(1,13))
-  .map((index)=> require(`./images/Gallery_UP${index}.jpg`))
+const galleryImages = _(_.range(1,15))
+  .map((index)=> require(`./images/Gallery_Up_${index}.jpg`))
   .value();
 
 const upstairsInfo = {
