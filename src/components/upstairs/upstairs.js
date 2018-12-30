@@ -136,7 +136,7 @@ export default class Upstairs extends Component {
     let tabs = _.map(menuItems, (menuItem, index) => {
       let isTabSelected = this.state.tabIndex === index ? "selected" : "";
       return (
-        <div key={index} className="large-2 columns xs-padding-sides">
+        <div key={index} className="width20 columns xs-padding-sides">
           <div className={`content-box content-box-btn ${isTabSelected}`} onClick={this.changeTab.bind(this,menuItem, index)}>
             {menuItem.title}
           </div>
