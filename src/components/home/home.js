@@ -42,7 +42,7 @@ export default class Home extends Component {
             </Link>
             <div className="action-btn-wrap-flex">
               <div className="content-box content-box-btn table-btn">
-                <a href="http://clickiframe.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%90%D7%A8%D7%99%D7%94-%D7%9E%D7%A1%D7%A2%D7%93%D7%94.aspx" target="_blank">
+                <a href="https://i.clickatable.co.il/iframe.aspx?restID=5F934651-307F-468B-97FF-49AA9271865C" target="_blank">
                   <div className="content-box-title content-box-title-small">Reserve a table</div>
                 </a>
               </div>
@@ -67,7 +67,7 @@ export default class Home extends Component {
             </Link>
             <div className="action-btn-wrap-flex">
               <div className="content-box content-box-btn table-btn">
-                <a href="http://clickiframe.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%90%D7%A8%D7%99%D7%94-%D7%91%D7%A8.aspx" target="_blank">
+                <a href="https://i.clickatable.co.il/iframe.aspx?restID=5339A4DC-E1F3-46FB-9C54-2FFC216BC788" target="_blank">
                   <div className="content-box-title content-box-title-small">Reserve a table</div>
                 </a>
               </div>
