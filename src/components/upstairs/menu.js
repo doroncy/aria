@@ -47,11 +47,12 @@ const Menu = {
     bg: 'upstairs-desserts-bg',
     items: [
       {name: 'NEMESIS', description: "Moist Chocolate cake, oatmeal crumble, milk chocolate ganache marshmallow fluff and vanilla ice cream", price: "48"},
-      {name: "SEMIFREDDO BERGAMOTTO", description: `Salted pistachio ganache, Kadaif pastry, caramelized pistachio, homemade Greek delights & candid rose petals`, price: "52"},            
-      {name: 'ALMOND MALABI', description: `Almond malabi & Turkish salep, salted pistachio, candied nuts, toasted coconut shavings, raspberry coulis & rose water`, price: "48"},
-      {name: 'MAPLE CRÈME BRULEE', description: `Candied pecans, cream ice cream & Atlantic Sea Salt`, price: "48"},
-      {name: 'MARTINI ESPRESSO', description: `Kettle One Vodka, Kahlúa, Beilis, Vanilla and Espresso`, price: "62"},
-      {name: 'SELECTION OF SORBETS', description: "Choice of three Sorbets", price: "38"}
+      {name: "LEMON TART", description: `Seared Swiss meringue and corn sablés`, price: "55"},            
+      {name: 'MAPLE BRULE', description: `Chinese pecan, American ice-cream and Atlantic sea salt`, price: "48"},
+      {name: 'SUN SEBAATIAN CHEESECAKE', description: ``, price: "46"},
+      {name: 'MEKUPLETET BAR', description: `Hazelnut mouse from 67% dark chocolate and gianduia`, price: "55"},
+      {name: 'TIRAMISU', description: `Mascarpone zabaione cream, biscotti dipped in caramel espresso and cocoa powder`, price: "48"},
+      {name: 'SORBET', description: `Mascarpone zabaione cream, biscotti dipped in caramel espresso and cocoa powder`, price: "38"}
     ]
   },
   cocktails: {
