@@ -52,7 +52,7 @@ const Menu = {
       {name: 'SUN SEBAATIAN CHEESECAKE', description: ``, price: "46"},
       {name: 'MEKUPLETET BAR', description: `Hazelnut mouse from 67% dark chocolate and gianduia`, price: "55"},
       {name: 'TIRAMISU', description: `Mascarpone zabaione cream, biscotti dipped in caramel espresso and cocoa powder`, price: "48"},
-      {name: 'SORBET', description: `Mascarpone zabaione cream, biscotti dipped in caramel espresso and cocoa powder`, price: "38"}
+      {name: 'SORBET', description: `A selection of three sorbet flavors`, price: "38"}
     ]
   },
   cocktails: {
