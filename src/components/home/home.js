@@ -93,9 +93,9 @@ export default class Home extends Component {
                 </div>
               </div>
               <div className="small-6 columns no-padding-right small-padding-left">
-                <div className="content-box content-box-btn bottom-btn no-margin-right">
+                <div className="content-box content-box-btn bottom-btn no-margin-right tada animated">
                   <a href="https://buyme.co.il/gift-card/364463#!/?display=money" target="_blank">
-                    <div className="content-box-title content-box-title-small">Get a gift card</div>
+                    <div className="content-box-title content-box-title-small font-SemiBold giftcard">Get a gift card</div>
                   </a>
                 </div>
                 <div className="content-box content-box-btn bottom-btn no-margin-left no-margin-left">
