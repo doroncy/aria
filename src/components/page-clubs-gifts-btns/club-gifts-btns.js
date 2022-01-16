@@ -8,9 +8,9 @@ export default class ClubGiftsBtns extends Component {
 
     this.state = {
       modalIsOpen: false
-    };    
-    this.openModal = this.openModal.bind(this);    
-    this.closeModal = this.closeModal.bind(this);    
+    };
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   openModal() {
@@ -63,29 +63,29 @@ export default class ClubGiftsBtns extends Component {
           </div>
         </div>
         <div className={`content-box social-media-btn mail-btn show-for-medium ${themeClassName}`}>
-          <a href="mailto:tuti.kalman@gmail.com?subject=ARIA%20WEBSITE">
+          <a href="mailto:rona.eldad@gmail.com?subject=ARIA%20WEBSITE">
             <div className={`SVGIcon ${mailIconClass}`}></div>
           </a>
         </div>
         <Modal
-          isOpen={this.state.modalIsOpen}          
-          onRequestClose={this.closeModal}          
+          isOpen={this.state.modalIsOpen}
+          onRequestClose={this.closeModal}
           contentLabel="Choose language"
-        >                
+        >
           <button className="ReactModal__close font-ExBold" onClick={this.closeModal}>X</button>
           <div className="ReactModal__content_inner">
-            <h3 className="font-ExBold">Choose language</h3>   
+            <h3 className="font-ExBold">Choose language</h3>
             <div className={`content-box table-btn ${themeClassName}`}>
               <a href="http://www.valuecard.co.il/aria/tofes_rishum_en.asp" target="_blank">
                 <div className={`content-box-title content-box-title-small ${btnColorClassName}`}>English</div>
               </a>
-            </div>  
+            </div>
             <div className={`content-box table-btn ${themeClassName}`}>
               <a href="http://www.valuecard.co.il/aria/tofes_rishum_he.asp" target="_blank">
                 <div className={`content-box-title content-box-title-small ${btnColorClassName}`}>עברית</div>
               </a>
-            </div>        
-          </div>          
+            </div>
+          </div>
         </Modal>
       </div>
     );

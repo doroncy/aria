@@ -10,10 +10,10 @@ import Wines from '../upstairs/wines';
 import Footer from '../footer/footer';
 import Gallery from '../gallery/gallery';
 
-const galleryImages = _(_.range(1,13))
-  .map((index)=> require(`./images/Gallery_Down_${index}.jpg`))
+const galleryImages = _(_.range(1, 13))
+  .map((index) => require(`./images/Gallery_Down_${index}.jpg`))
   .value();
-  
+
 const downstairsInfo = {
   title: 'The Lounge Bar',
   description: `Aria's “downstairs” ground floor lounge offers a rich cocktail bar alongside dishes from the chef’s kitchen. The new and advanced sound system provides the perfect setting with the DJ is located at the center of the circular lounge space. The guests sitting at the bar enjoy a unique experience that starts with dinner and drinks accompanied by live performances of the best local and international DJs, followed by a full-blown party into the midnight hours.`,
@@ -50,9 +50,9 @@ export default class Downstairs extends Component {
     var menuItemsKeys = _.keys(menuItemsEn);
 
     let that = this;
-    mainElem.onscroll = function(ev) {
+    mainElem.onscroll = function (ev) {
       if ((mainElem.scrollTop + mainElem.clientHeight) >= mainElem.scrollHeight) {
-        let newIndex = _.indexOf(menuItemsKeys, that.state.tabIndex) ===  _.size(menuItemsKeys) - 1
+        let newIndex = _.indexOf(menuItemsKeys, that.state.tabIndex) === _.size(menuItemsKeys) - 1
           ? menuItemsKeys[0]
           : menuItemsKeys[_.indexOf(menuItemsKeys, that.state.tabIndex) + 1];
 
@@ -99,7 +99,7 @@ export default class Downstairs extends Component {
     if (this.state.currentTab === downstairsInfo) {
       currentTab = this.state.currentTab;
     } else {
-      currentTab =  language === 'en'
+      currentTab = language === 'en'
         ? menuItemsEn[this.state.tabIndex]
         : menuItemsHeb[this.state.tabIndex];
     }
@@ -115,7 +115,7 @@ export default class Downstairs extends Component {
     if (this.state.language === 'en') {
       menuItems = menuItemsEn;
       hebLangClass = '';
-      toggleLanguageBtn = <div className="content-box-title font-heb heb-lang-btn">עברית</div>;      
+      toggleLanguageBtn = <div className="content-box-title font-heb heb-lang-btn">עברית</div>;
       reserveTable = (
         <a href="https://i.clickatable.co.il/iframe.aspx?restID=5339A4DC-E1F3-46FB-9C54-2FFC216BC788" target="_blank">
           <div className="content-box-title content-box-title-small">Reserve a table</div>
@@ -135,8 +135,8 @@ export default class Downstairs extends Component {
     let tabs = _.map(menuItems, (menuItem, index) => {
       let isTabSelected = this.state.tabIndex === index ? "selected" : "";
       return (
-        <div key={index} className="width20 columns xs-padding-sides">
-          <div className={`content-box content-box-btn ${isTabSelected}`} onClick={this.changeTab.bind(this,menuItem, index)}>
+        <div key={index} className="width25 columns xs-padding-sides">
+          <div className={`content-box content-box-btn ${isTabSelected}`} onClick={this.changeTab.bind(this, menuItem, index)}>
             {menuItem.title}
           </div>
         </div>
@@ -149,7 +149,7 @@ export default class Downstairs extends Component {
       verticalTabs = _.map(menuItems, (menuItem, index) => {
         return (
           <li key={index} className="vertical-menu-item content-box content-box-btn"
-            onClick={this.changeTab.bind(this,menuItem, index)}>
+            onClick={this.changeTab.bind(this, menuItem, index)}>
             {menuItem.title}
           </li>
         );
@@ -183,11 +183,11 @@ export default class Downstairs extends Component {
     } else {
       contentBody = this.state.currentTab.items.map((item, index) => {
         let price = !_.isEmpty(item.price)
-          ? <span className={hebLangClass}><br/>- {item.price} -</span>
-        : '';
+          ? <span className={hebLangClass}><br />- {item.price} -</span>
+          : '';
         let noPadding = item.noPad ? 'no-margin' : '';
         return (
-          <li className="menuitem" key={item.name+index}>
+          <li className="menuitem" key={item.name + index}>
             <div className={`menuitem-name font-SemiBold ${hebLangClass}`}>{item.name}</div>
             <p className={`menuitem-description font-light ${hebLangClass} ${noPadding}`}>
               {item.description}
@@ -204,14 +204,14 @@ export default class Downstairs extends Component {
       );
     }
 
-    return(
+    return (
       <div className={`animated fadeIn height100 background background-fade ${this.state.currentTab.bg}`}>
         <div className={`tabs-component ${galleryModeClass}`}>
           <div className="row">
             <div className="mall-12 medium-10 columns small-centered">
               <div className="row">
                 <div className="small-12 columns small-centered">
-                  <div className="content-box tabs-header" onClick={this.changeTab.bind(this,downstairsInfo)}>
+                  <div className="content-box tabs-header" onClick={this.changeTab.bind(this, downstairsInfo)}>
                     <div className="SVGIcon downstairs-menu-title"></div>
                   </div>
                 </div>
@@ -240,7 +240,7 @@ export default class Downstairs extends Component {
                 <div className="content-box-title content-box-title-small">Gallery</div>
               </div>
               <div className="action-btn-wrap-flex">
-                <div className={`show-for-medium content-box content-box-btn table-btn ${gallerySelected}`} onClick={this.changeTab.bind(this,galleryInfo)}>
+                <div className={`show-for-medium content-box content-box-btn table-btn ${gallerySelected}`} onClick={this.changeTab.bind(this, galleryInfo)}>
                   <div className="content-box-title content-box-title-small">Gallery</div>
                 </div>
                 <div className="content-box content-box-btn table-btn">

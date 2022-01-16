@@ -3,79 +3,60 @@ const Menu = {
     title: 'Entrees',
     bg: 'upstairs-entrees-bg',
     items: [
-      {name: "OYSTER", description: "Gillardeau oysters from La Rochelle, France", price: "33 per Unit"},
-      {name: "SOUP DUSHPARA UZBEK", description: "Toro tuna balls, coated in a Japanese spice mix, over ponzu & Japanese aioli", price: "58"},
-      {name: "FISH CARPACCIO", description: "Thinly sliced fish carpaccio, seasoned with cured lemon vinaigrette, chopped vegetables salad and dots of yogurt and sumac", price: "65"},
-      {name: "MEDITERRANEAN CRUDO", description: "Raw sea fish with crushed tomatoes, garlic confit & Kalamata olive vinaigrette, fermented green chili & grated Persian lemon", price: "72"},
-      {name: "SALMON TATAKI", description: "Seared Salmon in a tamarind and lemon-grass vinaigrette, with caramelized cashews", price: "65"},
-      {name: "JAPANESE SASHIMI", description: "Slices of red tuna in a citrus ponzu, fermented chili, Okra tempura & coriander seeds", price: "72"},
-      {name: "LOCAL CALAMARI SALAD", description: "Pan-seared calamari with charred vegetables, slices of crispy cauliflower & tahini vinaigrette", price: "68"},
-      {name: "MEDITERRANEAN OCTOPUS", description: "Seared octopus tentacle with lemon cream & mustard seed puree", price: "68"},
-      {name: "SHRIMP SALAD", description: `Vietnamese style shrimp with coconut milk vinaigrette, Pomelo, crispy shallot, chili & aromatic leaves`, price: "68"},
-      {name: "COQUILLES SAINT JACQUES", description: "Seared Sea Scallops in brown butter, over white almonds cream and blue crab bisque", price: "68"},
-      {name: "ARTICHOKE HEART", description: `Artichoke cooked in herbs and wine vinegar on a bed of sweet creamed corn, 18 years-old balsamic glaze and Parmigiano-Reggiano`, price: "65"},    
-      {name: "GREEN SALAD", description: `Winter greens, white & purple endive, orange fillet, crispy kale, sunflower seeds & gorgonzola cheese`, price: "56"},    
-      {name: "ENDIVE AND DOLCE GORGONZOLA", description: `Endive in a Lebanese pomegranate reduction, lightly smoked gorgonzola, sliced shallots and hazelnut crumble`, price: "62"},    
-      {name: "MUSHROOM & ITALIAN MOZZARELLA", description: `Porcini mushroom emulsion, grilled forest mushrooms, Italian buffalo mozzarella slices and coco crumble`, price: "65"},      
-      {name: "FETOUSH SALAD", description: `Maggie tomatoes, baby cucumbers and spicy rocket leaves, seasoned with Egyptian dukkah and sumac, served with Hameiri cheese`, price: "54"},    
-      {name: "CHEESE AND SPINACH CAPPELLETTI", description: `Dumplings stuffed with four types of cheese and wild spinach, and a sage butter glaze`, price: "65"},      
-      {name: "SZECHUAN GRILLED FLANK STEAK", description: `Grilled and sliced flank steak in caramelized soy sauce, coconut milk, sesame oil, scallions and wasabi peas.`, price: "66"},
-      {name: "LAMB SWEETBREADS", description: `Sweetbreads, lightly smoked cabbage cream, lamb broth, puffed toasted green wheat and kale chips`, price: "72"},    
-      {name: "BEEF TARTARE BRIOCHE", description: `Chopped beef with mustard aioli, shallots, green onion, parmesan & bone marrow`, price: "72"},
-      {name: "FOIE GRAS STEAK", description: `Pan seared, served on a wintery chestnut cream, leeks & pumpkin dumplings, glazed in wine sauce`, price: "98"}      
+      { name: "EXTRA THIN SLICED FISH", description: "Slices of raw fish with lemon juice and garlic confit, tomato seeds, pine nuts, za'atar and sesame seeds, sour Labane and olive oil", price: "" },
+      { name: "SLICES OF SEA FISH", description: "Za'atar soup and summer tomatoes with Kalamata olive salsa in cherry vinegar, served with grated dried yogurt", price: "" },
+      { name: "MEDITERRANEAN FISH", description: "Raw fish with crushed tomatoes, garlic confit & Kalamata olive vinaigrette, fermented green chili & grated Persian lemon", price: "" },
+      { name: "SCALLOP", description: "Scallop seared in a pan served up on white almond cream and blue crab bisque", price: "" },
+      { name: "CALAMARI SALAD", description: "Calamari grilled on an iron pan, with aromatic leaves, hyssop oil, cold labane soup, mint, hot green pepper and white almond tuile", price: "" },
+      { name: "CHARCOAL SEARED OCTOPUS", description: "With kuku sabzi mouse, potato puffs, curcumin and spring onion oil", price: "" },
+      { name: "FISH BRUSCHETTA", description: "2 hand-made bruschetta from white and black sesame, with sweet peppers' salsa and coriander seeds, olive oil and lemon juice over a crispy-skinned baby-fish fillet.", price: "" },
+      { name: "PERSIAN KPFTE", description: "Baby lettuce stuffed with burgul and Ras-el-hanout, pomegranate concentrate and a mixture of herbs, peppers and yogurt", price: "" },
+      { name: "FATTOUSH SALAD", description: "Maggie tomatoes, pecos, purple onion, arugula, Egyptian dukkah and sumac, olive oil with Hameiri cheese and crunchy Jerusalem pretzel", price: "" },
+      { name: "CRISPY LEAF SALAD", description: `Baby Arab lettuce, seasonal fruit, aromatic leaves, sour pomegranate vinaigrette and grated yogurt stone`, price: "" },
+      { name: "ZUCCHINI ON CHARCOAL", description: "Baby zucchini served on goat labane, grape honey, dried mint and lemon juice", price: "" },
+      { name: "SALTY CHEESE DUMPLINGS", description: `Cooked dumpling stuffed with zucchini and Hameiri cheese with warm sheep yogurt`, price: "" },
+      { name: "NONI TOKI", description: `Caraway and cumin seeds tartlet, stuffed with chopped short ribs dressed in white and green onions, dried mint, egg yolk vinaigrette and green oil`, price: "" },
+      { name: "SWEETBREADS VEAL", description: `Sweetbreads lightly smoked cabbage cream, beef broth, saffron rice twill and kale chips`, price: "" },
+      { name: "TURKISH PASTRAMA", description: `Weissbraten in a spice blend with almonds and herbs, horseradish & lemon aioli and Persian pistachio`, price: "" },
+      { name: "LAMB CHEBUREKI", description: `Choux pastry stuffed with beef, coriander and caraway, deep fried with a small aromatic green salad`, price: "" },
+      { name: "BREAD BASKET", description: `jerusalem pretzels, rye bread, arisa spice, za'atar and olive oil`, price: "" }
     ]
   },
   main: {
     title: 'main',
     bg: 'upstairs-main-bg',
     items: [
-      {name: "SEA MEAGRE", description: `In light soy butter, Zebra cherry tomatoes, lemon thyme and bok choy`, price: "140/89"},
-      {name: 'SEA BREAM FILLET', description: `Oven baked under a fresh salad of ginger, shallots, lemon grass, aromatic leaves and piquant red curry`, price: "129"},
-      {name: "BLUE CRAB RISOTTO", description: `Cooked crab meat with shallots, garlic, thyme and white wine, arborio rice, yellow tomato stock and parmesan cheesel`, price: "105"},
-      {name: "PICI PASTA AND CRYSTAL SHRIMP", description: `Handmade Pici pasta, Maggie tomatoes matbucha, crystal shrimp in an iron pan, with coriander powder`, price: "136"},
-      {name: "SWEET POTATO TORTELLINI", description: `Brown butter glazed dough dumplings on pecorino sauce and sage fries`, price: "88"},
-      {name: "40 YOLK FETTUCCINI", description: `40 egg yolk fettuccine with porcini mushrooms, free-range egg yolk and pumpkin seeds`, price: "88"},
-      {name: "OXTAIL PAPPARDELLE", description: `Oxtail cooked for 4 hours in red wine and root vegetables, with egg yolk pappardelle and parmesan cheese`, price: "105"},
-      {name: "BONE-IN NEW YORK STEAK", description: `Bone-in sirloin steak served with spicy mustard, French fries and organic vegetables`, price: "55 (for 100 gram)"},
-      {name: "BEEF FILET", description: "250 grams seared beef fillet, potato mousse and burnt shallots, tortellini stuffed with caramelized shallot, seasonal vegetables and reduced wine sauce", price: "198"},
-      {name: "LAMB CHOPS", description: "Seared in an iron pan with a collection of organic carrots in different textures and Persian pistachio powder", price: "198"},
-      {name: "HANGER STEAK", description: `On Jerusalem artichoke cream and burnt leeks with red wine stock`, price: "130/86"}      
+      { name: "SEA MEAGRE", description: `Hot salad misbaha of bess beans with sage, garlic, tomato and Egyptian onion`, price: "" },
+      { name: `TROUT FROM KIBBUTZ DAN`, description: `Turkish spinach stew, Egyptian onion, okra and Persian lemon, over pan-seared trout fillet`, price: "" },
+      { name: "CALAMARI PASTA", description: `Broad pasta with fresh calamari, pickled lemon sauce, coriander seeds and chard`, price: "" },
+      { name: "CAULIFLOWER STEAK", description: `Cauliflower in brown butter, served on cauliflower cream, toasted almonds and browned bread crumbs`, price: "" },
+      { name: "PERSIAN KEBAB", description: `Shpondera beef kebab on pita with za'atar and white onion with burnt salad, amba yogurt, arisa and greens`, price: "" },
+      { name: "SIRLOIN FROM THE GOLAN HEIGHTS", description: `Sirloin seared in an iron pan served over on Jerusalem artichoke cream and burnt leeks with bonfire potato and herbs salsa`, price: "" },
+      { name: "LAMB CHOPS", description: "Roasted lamb chops on charcoal grill with rich Persian rice, mint and parsley, almonds, pistachio, sugared roses and lamb bisque", price: "" },
+      { name: "DUCK BREAST", description: "A pinkish duck from the Valley of Jezreel, with dried cherries stock, pomegranate concentrate, and Ratte potatoes purée", price: "" }
     ]
   },
   deserts: {
     title: 'Desserts',
     bg: 'upstairs-desserts-bg',
     items: [
-      {name: 'NEMESIS', description: "Moist Chocolate cake, oatmeal crumble, milk chocolate ganache marshmallow fluff and vanilla ice cream", price: "48"},
-      {name: "LEMON TART", description: `Seared Swiss meringue and corn sablés`, price: "55"},            
-      {name: 'MAPLE BRULE', description: `Chinese pecan, American ice-cream and Atlantic sea salt`, price: "48"},
-      {name: 'SUN SEBAATIAN CHEESECAKE', description: ``, price: "46"},
-      {name: 'MEKUPLETET BAR', description: `Hazelnut mouse from 67% dark chocolate and gianduia`, price: "55"},
-      {name: 'TIRAMISU', description: `Mascarpone zabaione cream, biscotti dipped in caramel espresso and cocoa powder`, price: "48"},
-      {name: 'SORBET', description: `A selection of three sorbet flavors`, price: "38"}
+      { name: 'MILLEFEUILLE', description: "Layers of caramelized puff pastry, diplomat cream, vanilla and salty caramel", price: "" },
+      { name: `OPEN MA'AMOUL`, description: `Ultra-soft dough with layers of date cream, sweet, sugared lemon cream and roasted, salty walnuts ice-cream`, price: "" },
+      { name: "HAZELNUT BRÛLÉE", description: `Crème brûlée with chocolate and sugared hazelnut cream and cocoa tuile`, price: "" },
+      { name: 'CHEESE TORTE', description: `Sablé Breton, cheese pâtissier, fresh berries and blackberry sorbet`, price: "" },
+      { name: 'LEMON', description: `A whole lemon stuffed with lemon cream, meringue, vanilla diplomat and vanilla ice cream, on an airy sablé Breton disk`, price: "" },
+      { name: 'SORBETS', description: `A selection of three sorbet flavors`, price: "" }
     ]
   },
   cocktails: {
     title: 'Cocktails',
     bg: 'upstairs-cocktails-bg',
     items: [
-      {name: 'GOLD DIGGER', description: `A shiny wintery cocktail. Pear Grey Goose Vodka, St-Germain liqueur, Martini Bianco, Choya Umeshu Japanese plum wine and gold powder. Sweet and alcoholic`, price:"64"},
-      {name: 'APRICOT SPIRITS', description: `A light, citrusy cocktail. Boukha Bokobsa infused with Uzbek apricots, Aperol, Amaro Montenegro, Japanese bitters & sparkling wine. Sweet with a light bitter finish`, price:"58"},
-      {name: 'LADY IN RED', description: `A soft, floral cocktail. Tanqueray Gin, Chambord, homemade lavender & hibiscus syrup, fresh lemon juice & a dash of Jasmin Soju. A sweet yet unconventional Cocktail`, price:"62"},
-      {name: 'SPANISH CARAVAN', description: `Aria-style Sangria. Our version of the famous Spanish cocktail. With Muga Rioja reserve, Muga Rioja rosé, elderflower syrup, freshly squeezed orange and lemon juices and assorted fruit. Light, sweet & floral.`, price:"56"},
-      {name: 'SAY HELLO 2 HEAVEN', description: `An elegant blend of champagne with a basil twist. Laurent Perrier champagne, Tanqueray gin, black mint, lemon juice and fresh basil. A fresh, citrusy and stiff cocktail. Very recommended!`, price:"69"},
-      {name: 'FRUIT GARDEN', description: `Sweet and spiced Caribbean cocktail, based on white rum with peaches, passionfruit, elderflower syrup, fresh lime juice and Angostura bitter. Sweet fruity & fun, just the way we like it!`, price:"59"},      
-      {name: '007', description: `A tribute to James Bond and his favorite cocktail. Cucumber peels and thyme infused Ketel One Vodka, Tanqueray gin, Lillet Blanc, rocket, lime, yuzu and celery bitters. Shaken, not stirred. Fresh, citrusy and alcoholic`, price:"63"},      
-      {name: "PLAGUE WATER COLLINS", description: `An ode to the creator of gin, chemist and alchemist Franciscus Sylvius. Legend has it that he invented Genever (the predecessor to gin) as a remedy to an epidemic in Europe which later ended up as one of our favorite spirits. This cocktail is based on Bombay Sapphire gin infused with homemade tea brew and hibiscus, fresh lemon juice, mint and tonic water. A citrusy light cocktail that will make you want another one!`, price:"62"},      
-      {name: "ARIA SOUR #4", description: `Our signature cocktail in a revamped version. Courvoisier V.S, Dry Orange Curacao, Amaro Montenegro, lemon juice, maple syrup and egg white, well shaken. A sophisticated, powerful twist on a classic sour cocktail, that is just unforgettable.`, price:"65"},      
-      {name: "KALISPERA", description: `Just like its namesake, “Good Evening” in Greek, this cocktail is the best way to start your evening. Ouzo, Amaretto Disaronno, homemade almond liqueur, Creole bitters, orange and purple basil. A sweet cocktail with gentle anise and almond flavors.`, price:"62"},
-      {name: "BLACK SESAME STREET", description: `A once in a lifetime experience that goes against the grain! A blend of Bacardi, Coffee liqueur, homemade creamy limoncello, honey, Chocolate Bitter, Ground Nigella and tahini. Daring, tart, sweet and vicious! Bert and Ernie wouldn't dare, would you?`, price:"63"},
-      {name: "DON JUAN", description: `Jump on board and get a proper taste of Mexico with this unique flavored cocktail. Don Julio Blanco infused with lemongrass & verbena, green Chartreuse, Midori, pineapple juice, lime & agave syrup. An interesting combination of stiff, sweet and sour.`, price:"64"},
-      {name: "MEZCALITO", description: `A cocktail that takes you on a trip around Latin America. Vida Mezcal, Pisco Peruano, Habanero pepper tincture, fresh lime juice & coriander. A spicy, smoky & fun cocktail`, price:"64"},
-      {name: "STRAWBERRY FIELDS", description: `A summery, bitter cocktail. Bacardi 8, St-Germain, Campari, homemade strawberry syrup, pineapple juice & Angostura bitters. Sweet, bitter and packs a punch`, price:"66"},
-      {name: "BLACK PEARL", description: `A clever cocktail with coffee, dark chocolate and light vanilla flavors. Zacapa 23 rum, Bulleit bourbon, Cynar and a few drops of vanilla and chocolate bitters. A wintery cocktail with bittersweet, boozy flavors. An experience to all your senses.`, price:"68"},
-      {name: "DATES BOULEVARDIEL", description: `A twist on the classic and elegant cocktail. Bulleit rye infused in Medjool dates, Cynar liqueur, dry vermouth, bitters and a touch of Fernet-Branca. Bitter, sweet and with a bit of a kick.`, price:"65"},
-      {name: "SPEEDY GONZALEZ", description: `The famous Moscow Mule with a mexican twist. Aged tequila, mezcal, agave syrup, fresh lime, cucumbers, mint and ginger beer are the components of this fun, tantalizing and interesting cocktail. You'd like to order another faster than Speedy Gonzalez!`, price:"62"}
+      { name: 'TUNISIAN SPRITZ', description: `A light and summery cocktail. Boukha Bukobsa infused with Uzbek apricot, bitter, Amaro Montenegro and sparkling wine. Sweetish with gentle bitterness.`, price: "" },
+      { name: 'FARID AL-ATRASH', description: `Gin infuced with zawatar leaves, yellow chartreuse, lillet blanc, israeli absinthe, lime juice, mint, cucumber and orange blossom water. Sour and spicy.`, price: "" },
+      { name: 'PLAGUE WATER', description: `Gray Goose infused with lemongrass and louise, lime, mint and tonic. Light and fun`, price: "" },
+      { name: 'SHCHEM GATE', description: `A refined aniseed cocktail. Arak, Triple Sq. spicy wine, lemon juice, mint and tamarind. Light, fun sweet and sour.`, price: "" },
+      { name: "STRAWBERRY BLOSSOM", description: `White rum, apricot, St. Germain, homemade strawberry syrup, basil and Peyghaud's bitter, A light cocktail with bitterness and fun sweetness.`, price: "" }
     ]
   },
   wine: {
@@ -84,7 +65,7 @@ const Menu = {
     items: {
       glass: {
         title: 'By the Glass',
-        items:[
+        items: [
           {
             title: "Sparkling",
             items: [
@@ -107,7 +88,7 @@ const Menu = {
             title: "White",
             items: [
               "Gewürztraminer, Josef Drathen, Rhein,Germany '18",
-              "Chardonnay, Tzuba, Juden Hills, Israel '17",              
+              "Chardonnay, Tzuba, Juden Hills, Israel '17",
               `Rose, Blue C, Covenant, Golan Heights, Israel 17'`,
               "Sancerre, Fournier Pere & Fils, Loire Valley, France '18",
               "Petit Chablis, J.Moreau & Fils, Bourgogne, France '18",
@@ -143,7 +124,7 @@ const Menu = {
       },
       bottle: {
         title: 'By the Bottle',
-        items:[
+        items: [
           {
             title: "Sparkling",
             countries: [
@@ -176,7 +157,7 @@ const Menu = {
                   `Chardonnay, Clos De Gat, Judean Hills '17`,
                   `Viognier, Tel Shifon single vineyard, Tabor 17'`,
                   `Sauvignon Blanc, Chteaua Golan, Golan Heights 18'`,
-                  `Chardonnay, C, castel, Judean Hills 18’`                  
+                  `Chardonnay, C, castel, Judean Hills 18’`
                 ]
               },
               {
@@ -224,7 +205,7 @@ const Menu = {
               {
                 name: "USA",
                 items: [
-                  `Sauvignon Blanc, Canon Ball, California 16'`                                    
+                  `Sauvignon Blanc, Canon Ball, California 16'`
                 ]
               },
               {
@@ -274,7 +255,7 @@ const Menu = {
                 name: "Italy",
                 items: [
                   `Rosso Di Montepulciano, Boscarelli, Tuscany '17`,
-                  `Chianti Superiore, Banfi, Tuscany '16`,                  
+                  `Chianti Superiore, Banfi, Tuscany '16`,
                   `Campofiorin, Masi, Veneto ’18`,
                   `Ripasso Mare, Cesari, Veneto '16`,
                   `Chianti Rufina, Nipozzano Riserva, Tuscany '14`,
@@ -304,7 +285,7 @@ const Menu = {
           }
         ]
       }
-    }          
+    }
   }
 }
 
