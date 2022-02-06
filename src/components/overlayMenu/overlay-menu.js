@@ -18,7 +18,8 @@ export default class OverlayMenu extends Component {
       {title: 'Aria Moments' , link:'/moments'},
       {title: 'Events' , link:'/events'},
       {title: 'The Aria Team' , link:'/team'},
-      {title: 'Contact', link:'contact'}
+      {title: 'Contact', link:'contact'},
+      {title: 'Accessibility', link:'/accessibility'},
     ];
 
     this.navigateTo = this.navigateTo.bind(this);

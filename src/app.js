@@ -22,6 +22,7 @@ import Team from './components/team/team';
 import Music from './components/music/music';
 import Events from './components/events/events';
 import Loading from './components/loading/loading';
+import Accessibility from './components/accessibility/accessibility';
 
 let lastLocationPathname = '/'
 const App = React.createClass({
@@ -101,9 +102,10 @@ render((
       <Route path="downstairs" component={Downstairs} />
       <Route path="philosophy" component={Philosophy} />
       <Route path="moments" component={Moments} />
-      <Route path="team" component={Team} />    
+      <Route path="team" component={Team} />
       <Route path="music" component={Music} />
       <Route path="events" component={Events} />
+      <Route path="accessibility" component={Accessibility} />
     </Route>
   </Router>
 ), document.getElementById('root'));

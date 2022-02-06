@@ -2,7 +2,6 @@
 
 .footer-wrap {
   padding: 30px 20px 20px;
-  pointer-events: none;
 
   @media (max-height: 700px) {
     position: static !important;
@@ -27,6 +26,6 @@
   }
   .footer-text {
     color:#fff;
-    font-size:10px;
+    font-size:12px;
   }
 }
