@@ -24,7 +24,7 @@
     "html-webpack-plugin": "2.22.0",
     "image-webpack-loader": "1.8.0",
     "jquery": "2.2.3",
-    "node-sass": "3.7.0",
+    "node-sass": "7.0.0",
     "query-string": "3.0.0",
     "react": "15.4.2",
     "react-addons-css-transition-group": "15.4.2",
